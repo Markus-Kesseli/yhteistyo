@@ -22,10 +22,6 @@
           <td class="oikea"><input type="text" name="sukunimi" value=""></td>
         </tr>
         <br><br>
-        <tr>
-          <td>Anna etunimi:</td>
-          <td class="oikea"><input type="text" name="enimi" value=""></td>
-        </tr>
         <br><br>
         <tr>
           <td>Anna sahköpostisi:</td>
@@ -62,20 +58,21 @@
       <label for="sivusto"> Ostan sinulta!</label><br><br>
       <h3>Mikä on lempiaineesi Keudassa?</h3>
       <label for="lempiaineesi">lempiaineesi</label>
-      <select id="4" name="valitse"><br>
+      <select id="4" name="valitse">
         <option value="(Valitse alta oikea vaihtoehto)"></option>
         <option value="Tietotekniikka">Tietotekniikka</option>
         <option value="Kielet">Kielet</option>
         <option value="Matematiikka">Matematiikka</option>
         <option value="Yhteiskunta-aineet">Yhteiskunta-aineet</option>
-        <option value="Ruokatunti">Terveystieto</option>
+        <option value="Terveystieto">Terveystieto</option>
       </select>
       <br> <br>
       <h3>Kerro, miten kehittäisit sivujani?</h3>
       <br>
-      <textarea name="name" rows="8" cols="30"></textarea>
+      <p>Palaute:</p>
+      <textarea  name="name" rows="8" cols="30"></textarea>
       <br><br>
-      <button type="button" name="button">Lähetä</button>
+      <button type="button" name="button" onclick="projekti()">Lähetä</button>
     </form>
   </body>
 </html>
