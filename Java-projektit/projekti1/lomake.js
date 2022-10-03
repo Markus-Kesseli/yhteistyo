@@ -34,16 +34,4 @@ function projekti() //väliaikainen function ja (vaihda) nimi pitää korjata oi
     if (pallo[i].checked == true) {
       vastaus = true;
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
 }
