@@ -5,6 +5,7 @@ function projekti() //väliaikainen function ja (vaihda) nimi pitää korjata oi
   var sposti = form.email.value;
   var pallo = form.pallo.value;
   var palaute = form.palaute.value;
+  var salasana = form.salasana.value;
   var check = form.boksi;
 
   //Tarkastetaan etunimen pituus
