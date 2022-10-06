@@ -3,13 +3,12 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="lomake.css">
-    <script type="text/javascript" src="lomake.js">
-
-    </script>
+    <script type="text/javascript" src="lomake.js"></script>
     <title>Tietojenkeruulomake</title>
   </head>
   <body>
-    <h1>Kirjautumislomake</h1>
+
+<h1>Kirjautumislomake</h1>
     <form class="" action="kiitos.html" method="post" onsubmit="return(tama)" onreset="return tyhjenna(tama)">
       <table>
         <tr>
@@ -49,14 +48,14 @@
         </tr>
         <br><br>
       </table>
-      <h3>Mitä mieltä olet sivustani?</h3>
+      <p> <b>Mitä mieltä olet sivuistani tähän asti</b> </p>
       <input type="checkbox" id="1" name="mp" value="Todella hieno">
       <label for="sivusto"> Todella hieno</label><br>
       <input type="checkbox" id="2" name="mp" value="Ammattimaiseti tehty">
       <label for="sivusto"> Ammattimaiseti tehty</label><br>
       <input type="checkbox" id="3" name="mp" value="Ostan sinulta!">
       <label for="sivusto"> Ostan sinulta!</label><br><br>
-      <h3>Mikä on lempiaineesi Keudassa?</h3>
+      <p><b>Mikä on lempiaineesi Keudassa</b></p>
       <label for="lempiaineesi">lempiaineesi</label>
       <select id="4" name="valitse">
         <option value="(Valitse alta oikea vaihtoehto)"></option>
@@ -66,13 +65,12 @@
         <option value="Yhteiskunta-aineet">Yhteiskunta-aineet</option>
         <option value="Terveystieto">Terveystieto</option>
       </select>
-      <br> <br>
-      <h3>Kerro, miten kehittäisit sivujani?</h3>
       <br>
-      <p>Palaute:</p>
+      <p><b>Kerro, miten kehittäisit sivujani</b></p>
       <textarea  name="name" rows="8" cols="30"></textarea>
       <br><br>
       <button type="button" name="button" onclick="projekti()">Lähetä</button>
     </form>
+
   </body>
 </html>

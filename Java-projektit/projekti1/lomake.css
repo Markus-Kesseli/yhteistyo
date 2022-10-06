@@ -1,4 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Peralta&display=swap');
+
+
 body
 {
   margin: auto;
+}
+
+h1
+{
+  font-family: 'Peralta', cursive;
+  color: red;
 }
