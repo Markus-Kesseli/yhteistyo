@@ -7,70 +7,80 @@
     <title>Tietojenkeruulomake</title>
   </head>
   <body>
-
-<h1>Kirjautumislomake</h1>
-    <form class="" action="kiitos.html" method="post" onsubmit="return(tama)" onreset="return tyhjenna(tama)">
-      <table>
-        <tr>
-          <td>Anna etunimi:</td>
-          <td class="oikea"><input type="text" name="enimi" value=""></td>
-        </tr>
-        <br><br>
-        <tr>
-          <td>Anna sukunimi:</td>
-          <td class="oikea"><input type="text" name="sukunimi" value=""></td>
-        </tr>
-        <br><br>
-        <br><br>
-        <tr>
-          <td>Anna sahköpostisi:</td>
-          <td class="oikea"><input type="text" name="sposti" value=""></td>
-        </tr>
-        <br><br>
-        <tr>
-          <td>Anna salasana:</td>
-          <td class="oikea"><input type="text" name="salasana" value=""></td>
-        </tr>
-        <h2>Tätä tietoa ei näytetä käyttäjälle</h2>
+    <fieldset class="f1">
+      <h1>Kirjautumislomake</h1>
+      <form class="" action="kiitos.html" method="post" onsubmit="return(tama)" onreset="return tyhjenna(tama)">
+        <table>
+          <tr>
+            <td>Anna etunimi:</td>
+            <td class="oikea"><input type="text" name="enimi" value=""></td>
+          </tr>
+          <br>
+          <tr>
+            <td>Anna sukunimi:</td>
+            <td class="oikea"><input type="text" name="sukunimi" value=""></td>
+          </tr>
+          <br>
+          <tr>
+            <td>Anna sahköpostisi:</td>
+            <td class="oikea"><input type="text" name="sposti" value=""></td>
+          </tr>
+          <br>
+          <tr>
+            <td>Anna salasana:</td>
+            <td class="oikea"><input type="text" name="salasana" value=""></td>
+          </tr>
+          <h2>Tätä tietoa ei näytetä käyttäjälle</h2>
+          <br>
+          <h3>Millainen tietokoneen käyttäjä olet?</h3>
+          <tr>
+            <td>himopelaaja</td>
+            <td class="oikea"><input type="radio" name="tietokoneen käyttö" value="himopelaaja"></td>
+          </tr>
+          <tr>
+            <td>käytän opiskeluun</td>
+            <td class="oikea"><input type="radio" name="tietokoneen käyttö" value="käytän opiskeluun"></td>
+          </tr>
+          <tr>
+            <td>en käytä konetta</td>
+            <td class="oikea"><input type="radio" name="tietokoneen käyttö" value="en käytä konetta"></td>
+          </tr>
+          <br>
+        </table>
+        <p> <b>Mitä mieltä olet sivuistani tähän asti</b> </p>
+        <input type="checkbox" id="1" name="mp" value="Todella hieno">
+        <label for="sivusto"> Todella hieno</label><br>
+        <input type="checkbox" id="2" name="mp" value="Ammattimaiseti tehty">
+        <label for="sivusto"> Ammattimaiseti tehty</label><br>
+        <input type="checkbox" id="3" name="mp" value="Ostan sinulta!">
+        <label for="sivusto"> Ostan sinulta!</label><br><br>
+        <p><b>Mikä on lempiaineesi Keudassa</b></p>
+        <label for="lempiaineesi">lempiaineesi</label>
+        <select id="4" name="valitse">
+          <option value="(Valitse alta oikea vaihtoehto)"></option>
+          <option value="Tietotekniikka">Tietotekniikka</option>
+          <option value="Kielet">Kielet</option>
+          <option value="Matematiikka">Matematiikka</option>
+          <option value="Yhteiskunta-aineet">Yhteiskunta-aineet</option>
+          <option value="Terveystieto">Terveystieto</option>
+        </select>
         <br>
-        <h3>Millainen tietokoneen käyttäjä olet?</h3>
-        <tr>
-          <td>himopelaaja</td>
-          <td class="oikea"><input type="radio" name="tietokoneen käyttö" value="himopelaaja"></td>
-        </tr>
-        <tr>
-          <td>käytän opiskeluun</td>
-          <td class="oikea"><input type="radio" name="tietokoneen käyttö" value="käytän opiskeluun"></td>
-        </tr>
-        <tr>
-          <td>en käytä konetta</td>
-          <td class="oikea"><input type="radio" name="tietokoneen käyttö" value="en käytä konetta"></td>
-        </tr>
-        <br><br>
-      </table>
-      <p> <b>Mitä mieltä olet sivuistani tähän asti</b> </p>
-      <input type="checkbox" id="1" name="mp" value="Todella hieno">
-      <label for="sivusto"> Todella hieno</label><br>
-      <input type="checkbox" id="2" name="mp" value="Ammattimaiseti tehty">
-      <label for="sivusto"> Ammattimaiseti tehty</label><br>
-      <input type="checkbox" id="3" name="mp" value="Ostan sinulta!">
-      <label for="sivusto"> Ostan sinulta!</label><br><br>
-      <p><b>Mikä on lempiaineesi Keudassa</b></p>
-      <label for="lempiaineesi">lempiaineesi</label>
-      <select id="4" name="valitse">
-        <option value="(Valitse alta oikea vaihtoehto)"></option>
-        <option value="Tietotekniikka">Tietotekniikka</option>
-        <option value="Kielet">Kielet</option>
-        <option value="Matematiikka">Matematiikka</option>
-        <option value="Yhteiskunta-aineet">Yhteiskunta-aineet</option>
-        <option value="Terveystieto">Terveystieto</option>
-      </select>
-      <br>
-      <p><b>Kerro, miten kehittäisit sivujani</b></p>
-      <textarea  name="name" rows="8" cols="30"></textarea>
-      <br><br>
-      <button type="button" name="button" onclick="projekti()">Lähetä</button>
-    </form>
+        <p><b>Kerro, miten kehittäisit sivujani</b></p>
+        <textarea  name="name" rows="8" cols="30"></textarea>
+        <br>
+        <button type="button" name="button" onclick="projekti()">Lähetä</button>
+      </form>
+
+
+    </fieldset>
+
+
+
+
+
+
+
+
 
   </body>
 </html>

@@ -4,10 +4,19 @@
 body
 {
   margin: auto;
+
 }
 
 h1
 {
   font-family: 'Peralta', cursive;
   color: red;
+}
+
+.f1
+{
+
+  margin: auto;
+  padding-left: 50%;
+  padding-right: 50%;
 }
