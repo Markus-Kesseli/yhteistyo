@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="/css/master.css">
+    <link rel="stylesheet" href="lomake.css">
     <script type="text/javascript" src="lomake.js">
 
     </script>
@@ -14,45 +14,42 @@
       <table>
         <tr>
           <td>Anna etunimi:</td>
-          <td class="oikea">< <input type="text" name="enimi" value=""></td>
+          <td class="oikea"><input type="text" name="enimi" value=""></td>
         </tr>
         <br><br>
         <tr>
           <td>Anna sukunimi:</td>
-          <td class="oikea">< <input type="text" name="sukunimi" value=""></td>
+          <td class="oikea"><input type="text" name="sukunimi" value=""></td>
         </tr>
         <br><br>
-        <tr>
-          <td>Anna etunimi:</td>
-          <td class="oikea">< <input type="text" name="enimi" value=""></td>
-        </tr>
         <br><br>
         <tr>
           <td>Anna sahköpostisi:</td>
-          <td class="oikea">< <input type="text" name="sposti" value=""></td>
+          <td class="oikea"><input type="text" name="sposti" value=""></td>
         </tr>
         <br><br>
         <tr>
           <td>Anna salasana:</td>
-          <td class="oikea">< <input type="text" name="salasana" value=""></td>
+          <td class="oikea"><input type="text" name="salasana" value=""></td>
         </tr>
-        <h2>Tätä titoa ei näytetä käyttäjälle</h2>
+        <br><br>
+        <h2>Tätä tietoa ei näytetä käyttäjälle</h2>
         <br>
         <h3>Millainen tietokoneen käyttäjä olet?</h3>
         <tr>
           <td>himopelaaja</td>
-          <td class="oikea">< <input type="radio" name="tietokoneen käyttö" value="himopelaaja"></td>
+          <td class="oikea"><input type="radio" name="tietokoneen käyttö" value="himopelaaja"></td>
         </tr>
         <tr>
           <td>käytän opiskeluun</td>
-          <td class="oikea">< <input type="radio" name="tietokoneen käyttö" value="käytän opiskeluun"></td>
+          <td class="oikea"><input type="radio" name="tietokoneen käyttö" value="käytän opiskeluun"></td>
         </tr>
         <tr>
           <td>en käytä konetta</td>
-          <td class="oikea">< <input type="radio" name="tietokoneen käyttö" value="en käytä konetta"></td>
+          <td class="oikea"><input type="radio" name="tietokoneen käyttö" value="en käytä konetta"></td>
         </tr>
-        <br><br>
       </table>
+      <br><br>
       <h3>Mitä mieltä olet sivustani?</h3>
       <input type="checkbox" id="1" name="mp" value="Todella hieno">
       <label for="sivusto"> Todella hieno</label><br>
@@ -61,17 +58,25 @@
       <input type="checkbox" id="3" name="mp" value="Ostan sinulta!">
       <label for="sivusto"> Ostan sinulta!</label><br><br>
       <h3>Mikä on lempiaineesi Keudassa?</h3>
+      <br><br>
       <label for="lempiaineesi">lempiaineesi</label>
-      <select id="" name=""> <br>
+      <select id="4" name="valitse">
         <option value="(Valitse alta oikea vaihtoehto)"></option>
         <option value="Tietotekniikka">Tietotekniikka</option>
         <option value="Kielet">Kielet</option>
         <option value="Matematiikka">Matematiikka</option>
         <option value="Yhteiskunta-aineet">Yhteiskunta-aineet</option>
-        <option value="Ruokatunti">Ruokatunti</option>
+        <option value="Terveystieto">Terveystieto</option>
       </select>
-      <br> <br>
-
+      <br><br><br><br><br><br>
+      <h3>Kerro, miten kehittäisit sivujani?</h3>
+      <br>
+      <p>Palaute:</p>
+      <textarea  name="name" rows="8" cols="30"></textarea>
+      <br><br>
+      <button type="button" name="button" onclick="projekti()">Paina</button>
+      <br><br>
+      <button type="button" name="button" onclick="projekti()">Lähetä</button>
     </form>
   </body>
 </html>
