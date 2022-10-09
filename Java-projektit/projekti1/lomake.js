@@ -1,39 +1,39 @@
-function projekti(forms)
+function projekti()
 {
   //Luodaan muuttujat
-  var etunimi = form.enimi.value;
-  var sukunimi = form.sukunimi.value;
-  var palaute = form.palaute.value;
-  var pallo = form.pallo.value;
-  var sposti = form.email.value;
-  var salasana = form.salasana.value;
-  var check = form.boksi;
+  var etunimi = document.formi.enimi.value;
+  var sukunimi = document.formi.snimi.value;
+  var sposti = document.formi.email.value;
+  var salasana = document.formi.salasana.value;
+  var check = document.formi.mp;
+  var palaute = document.formi.palautet.value;
+  var checkVastaus = document.formi.kivointa;
+  var pallo = document.formi.tietokone;
 
   //Tarkastetaan etunimen pituus
   if (etunimi.length < 6)
   {
     alert("Anna vähintään 6-merkkinen etunimi");
-    form.enimi.focus();
     return false; //Ei palauta mitään
   }
 
     //Tarkastetaan sukunimen pituus
-  if (sukunimi.length < 6) {
-      alert("Anna vähintään 6-merkkinen etunimi");
-      form.enimi.focus();
+  if (sukunimi.length < 6)
+  {
+      alert("Anna vähintään 6-merkkinen sukunimi");
       return false; //Ei palauta mitään
-    }
+  }
   //Tarkastetaan sähköposti
   var tarkistus = /\S+@\S+/;
-  if (!tarkistus.test(sahkoposti)) {
+  if (!tarkistus.test(sposti)) {
     alert("Anna kunnon sähköposti");
   }
-  //Tarkastetaan tekstialue
-  if (palaute.length < 30) {
-    alert("Palautteessa tulee olla vähintään 30-merkkiä!");
-    form.palaute.focus();
-    return false;
-  }
+
+  if (salasana.length < 6)
+  {
+      alert("Anna vähintään 6-merkkinen salasana");
+      return false;
+
   //Tarkastetaan radio-buttonit
   //Tehdään tosi/epätosi -muuttuja, joka asetetaan sitten epätodeksi
   var vastaus = false;
@@ -51,6 +51,13 @@ function projekti(forms)
       checkVastaus = true;
     }
   }
+}
+//Tarkastetaan tekstialue
+if (palaute.length < 30) {
+  alert("Palautteessa tulee olla vähintään 30-merkkiä!");
+  document.formi.palaute.focus();
+  return false;
+}
   if (checkVastaus == false) {
     alert("Et valinnut, mikä on kivaa");
     return false;
