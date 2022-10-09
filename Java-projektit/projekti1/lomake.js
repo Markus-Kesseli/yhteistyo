@@ -1,4 +1,5 @@
-function katso(forms) {
+function projekti(forms)
+{
   //Luodaan muuttujat
   var etunimi = form.enimi.value;
   var sukunimi = form.sukunimi.value;
@@ -9,7 +10,8 @@ function katso(forms) {
   var check = form.boksi;
 
   //Tarkastetaan etunimen pituus
-  if (etunimi.length < 6) {
+  if (etunimi.length < 6)
+  {
     alert("Anna vähintään 6-merkkinen etunimi");
     form.enimi.focus();
     return false; //Ei palauta mitään
@@ -44,7 +46,8 @@ function katso(forms) {
   //Tarkastetaan checkboxit
   var tarkastaVastaus = false;
   for (var h = 0; h < check.length; h++) {
-    if (check[h]).checked == true; {
+    if (check[h])checked == true;
+    {
       checkVastaus = true;
     }
   }
@@ -60,6 +63,6 @@ function katso(forms) {
   //Tyhjennetään lomake, jos siinä on tietoja (dataa)
   function tyhjenna(Lomake) {
     var clean = lomake.value;
-    if (!confirm("Oletko varma?")) {
-    }
+    if (!confirm("Oletko varma?"));
     return false;
+}
