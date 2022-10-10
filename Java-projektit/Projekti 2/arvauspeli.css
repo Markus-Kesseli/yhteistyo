@@ -1,0 +1,17 @@
+body
+{
+  margin: auto;
+
+}
+
+#sisalto
+{
+  margin-left: 20px;
+  margin-top: 20px;
+  box-sizing: border-box;
+  border-style: groove;
+  width: 350px;
+  height: 150px;
+  border-radius: 30px;
+  padding-left: 20px;
+}
