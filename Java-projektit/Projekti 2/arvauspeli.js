@@ -7,13 +7,13 @@ var nro_of_guesses = 0;
 var guessed_nums = [];
 
 function arvauspeli() {
-  var user_guess = document.getElementById("arvaa").value;
+  var user_guess = document.getElementById("guess").value;
   if (user_guess < 1 || user_guess > 10) {
     alert("Ole hyvä ja laita 1-10 numeroiden väliltä");
   }
   else {
     guessed_nums.push(user_guess);
-    nro_of_geuesses += 1;
+    nro_of_guesses += 1;
     if (user_guess < answer) {
       msg1.textContent = "Your guess is too low";
       msg2.textContent = "Nro. Of guesses: " + nro_of_guesses;
@@ -21,13 +21,14 @@ function arvauspeli() {
       }
       else if (user_guess > answer) {
         msg1.textContent = "Your guess is too high";
-        msg2.textContent = "Nro. Of guesses: " + nro_of_guesses;
-        msg3.textContent = "Guessed: numbers are: :" + guessed_nums;
+        msg2.textContent = "Nro. of guesses: " + nro_of_guesses;
+        msg3.textContent = "Guessed numbers are: " + guessed_nums;
       }
         else if (user_guess == answer) {
-         msg1.textContent = "Nice! You win!";
-         msg2.textContent = "The number was: " + answer;
-         msg3.textContent = "Guessed: numbers are: :" + nro_of_guesses + "guesses" ;
+          msg1.textContent = "Nice! You win!";
+          msg2.textContent = "The number was: " + answer;
+          msg3.textContent = "You guessed it in:" + nro_of_guesses + "guesses";
+          document.getElementById("btn").disabled = true;
         }
       }
     }
