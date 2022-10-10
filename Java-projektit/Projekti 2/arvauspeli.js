@@ -1,3 +1,4 @@
+  //Nyt toimii peli
   var luku1 = document.getElementById("message1");
   var luku2= document.getElementById("message2");
   var luku3 = document.getElementById("message3");
