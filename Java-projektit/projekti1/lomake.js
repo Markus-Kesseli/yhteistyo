@@ -68,8 +68,13 @@ if (palaute.length < 30) {
     }
   }
   //Tyhjennetään lomake, jos siinä on tietoja (dataa)
+<<<<<<< HEAD
   function tyhjenna(Lomake) {
     var clean = lomake.value;
+=======
+  function tyhjenna() {
+    var clean = document.formi.reset();
+>>>>>>> ae91791a8de8a951e24326b6d3d666a4425733bc
     if (!confirm("Oletko varma?"));
     return false;
 }
