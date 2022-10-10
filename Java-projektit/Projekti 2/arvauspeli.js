@@ -26,5 +26,5 @@
       nro_of_guesses++;
       message2.innerHTML = "nro_of_guesses: " + nro_of_guesses;
       message2.innerHTML = "guessed nums: " + guessed_nums;
-    }
+  }
 
