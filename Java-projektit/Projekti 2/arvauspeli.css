@@ -1,16 +1,22 @@
-/*Arvauspelin väri*/
-body {
-background-color: #ffbf80;
-}
-/*Rajataan ja keskitetään*/
-#sisalto {
-  border: 5px solid
-  height 275px;
-  width: 750px;
+body
+{
   margin: auto;
-  text-align:
 
 }
+
+#sisalto
+{
+  margin-left: 20px;
+  margin-top: 20px;
+  box-sizing: border-box;
+  border-style: groove;
+  width: 350px;
+  height: 150px;
+  border-radius: 30px;
+  padding-left: 20px;
+  background-image: linear-gradient(to right, #7EEA7B, #DFEA7B);
+}
+
 /*Annetaan teksille väri ja koko*/
 p {
   color: white;
