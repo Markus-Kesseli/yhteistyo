@@ -27,9 +27,11 @@
      }
     if (user_guess < answer) {
      message1.innerHTML = "Your guess is too low.";
+      message2.innerHTML = "nro of guesses: " + nro_of_guesses;
       }
     else if (user_guess > answer) {
       message1.innerHTML = "Your guess is too high.";
+       message2.innerHTML = "nro of guesses: " + nro_of_guesses;
       }
      else {
        message1.innerHTML = "Nice! You win!";
