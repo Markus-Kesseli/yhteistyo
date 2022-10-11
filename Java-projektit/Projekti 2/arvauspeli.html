@@ -2,17 +2,18 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="arvauspeli_2.css">
+    <script src="arvauspeli_2.js">
+
+    </script>
     <title>Arvauspeli</title>
-    <link rel="stylesheet" href="arvauspeli.css">
-    <script type="text/javascript" src="arvauspeli.js"></script>
-    <!--Linkitetään css ja haetaan javascript-tiedosto-->
   </head>
   <body>
-    <div id="sisalto">
-      <p>Arvaa numero 1-10 väliltä</p>
-      <p id="ulostuloteksti">Laita numero alapuolelle</p>
-      <input type="text" id="syota" name="" value="">
-      <button type="button" id="btn" onclick="arvauspeli()"  name="button">Lähetä</button>
-    </div>
+      <h3>Arvaa 1-10 väliltä</h3>
+      <input type="text" placeholder="num" id="guess"><br>
+    <button type="button" onclick="arvauspeli()" name="button" id="btn">GUESS</button>
+    <p id="message1">Nro. Of Guesses: 0</p>
+    <p id="message2">Guessed: numbers are: None</p>
+    <p id="message3"></p>
   </body>
 </html>
