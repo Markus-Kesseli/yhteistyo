@@ -1,0 +1,27 @@
+/*Arvauspelin väri*/
+body {
+background-color: #ffbf80;
+}
+/*Rajataan ja keskitetään*/
+#sisalto {
+  border: 5px solid
+  height 275px;
+  width: 750px;
+  margin: auto;
+  text-align:
+
+}
+/*Annetaan teksille väri ja koko*/
+p {
+  color: white;
+  font-size: 24px;
+}
+/*Rajataan käyttäjän syöttämää aluetta ja keskitetään*/
+#input {
+  width: 100px;
+  margin: 25px auto;
+}
+/*Rajataan button-painiketta*/
+#btn {
+  margin: 25px auto auto 5px;
+}
