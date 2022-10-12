@@ -45,3 +45,9 @@
         }
         nro_of_guesses++;
 }
+
+function uusipeli()
+  {
+    answer = Math.floor(Math.random()*10) + 1;
+    arvauspeli();
+  }
