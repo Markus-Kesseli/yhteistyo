@@ -3,14 +3,14 @@ body {
 background-color: #ffbf80;
 }
 /*Rajataan ja keskitetään*/
-.sisalto
+#sisalto
 {
   margin-left: 20px;
   margin-top: 20px;
   box-sizing: border-box;
   border-style: groove;
   width: 350px;
-  height: 300px;
+  height: 310px;
   border-radius: 30px;
   padding-left: 20px;
   background-image: linear-gradient(to right, #7EEA7B, #DFEA7B);
