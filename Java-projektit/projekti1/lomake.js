@@ -68,12 +68,10 @@ if (palaute.length < 20) {
     }
   }
   //Tyhjennetään lomake, jos siinä on tietoja (dataa)
-
-
-  function tyhjenna() {
-
-    if (!confirm("Oletko varma?"))
+  function tyhjenna()
+  {
+    if (confirm("Oletko varma?"))
     {
-      document.formi.reset();
+      document.getElementById('clear').reset();
     }
 }
