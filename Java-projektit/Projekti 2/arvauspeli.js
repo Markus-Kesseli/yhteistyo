@@ -1,87 +1,38 @@
-<<<<<<< HEAD
-//Määritetään muuttujat ja haetaan html-documentista käyttöjän syöttämä luku
-var luku1 = document.getElementById("message1");
-var luku2 = document.getElementById("message2");
-var luku3 = document.getElementById("message3");
-
-var answer = Math.floor(Math.random()*10) + 1;
-var nro_of_guesses = 1;
-var guessed_nums = [];
-var taulukko = ["a-z"];
-
-function arvauspeli()
-{
-var user_guess = document.getElementById("guess").value;
-if (user_guess >= 10) {
-  guessed_nums.push(user_guess);
-  document.getElementById("btn").hidden = true;
-  message2.innerHTML = "nro of guesses: " + nro_of_guesses;
-  message3.innerHTML = "guessed nums: " + guessed_nums;
-}
-  else {
-   if
-    (user_guess < 1 || user_guess > 10) {
-    alert("Ole hyvä ja anna numero 1 ja 10 välillä")
-    }
-  else {
-   guessed_nums.push(user_guess);
-    }
-    if (user_guess < answer) {
-     message1.innerHTML = "Your guess is too low.";
-    }
-    else if (user_guess > answer) {
-      message1.innerHTML = "Your guess is too high.";
-    }
-    else {
-      message1.innerHTML = "Nice! You win!";
-      message2.innerHTML = "nro of guesses: " + nro_of_guesses;
-      message3.innerHTML = "guessed nums: " + guessed_nums;
+var highLimit = 10;
+   var randNum = Math.floor((Math.random() * highLimit) + 1);
+   var allowedGuesses = 3;
+   var numGuesses = 0;
+   function guessingGame() {
+       if (numGuesses <= allowedGuesses) {
+          do {
+               inputNum = document.numForm.number.value;
+               inputNum = parseInt(inputNum);
+               if (inputNum < randNum && inputNum > 1) {
+                   document.numForm.gameResults.value = "Sorry, your guess was too low.";
+                   numGuesses++;
+               }
+               else if (inputNum > randNum && inputNum < highLimit) {
+                   document.numForm.gameResults.value = "Sorry, your guess was too high.";
+                   numGuesses++;
+               }
+               else if (inputNum == randNum) {
+                   document.numForm.gameResults.value = "Congratulations! You guessed correctly.";
+                   numGuesses++;
+               }
+               else {
+                   document.numForm.gameResults.value = "Your guess was out of the desired parameters. Please guess again.";
+                   numGuesses--;
+               }
+           } while(numGuesses < allowedGuesses && inputNum != randNum);
+       }
+           else {
+               document.numForm.gameResults.value = "Sorry, you have reached the allowed number of guesses, which is " + allowedGuesses + "." + " Click 'New Game' to try again.";
+           }
+       return false;
+   }
+   numGuesses = 0;
+   function newGame() {
+           randNum = Math.floor((Math.random() * highLimit) + 1);
+           guessingGame();
+           return false;
       }
-    }
-      nro_of_guesses++;
-}
-=======
-  //Nyt toimii
-  //Määritetään muuttujat ja haetaan html-documentista käyttöjän syöttämä luku
-  var luku1 = document.getElementById("message1");
-  var luku2 = document.getElementById("message2");
-  var luku3 = document.getElementById("message3");
-
-  var answer = Math.floor(Math.random()*10) + 1;
-  var nro_of_guesses = 1;
-  var guessed_nums = [];
-
-  function arvauspeli()
-{
-  var user_guess = document.getElementById("guess").value;
-  if (user_guess >= 10) {
-    guessed_nums.push(user_guess);
-    document.getElementById("btn").hidden = true;
-    message2.innerHTML = "nro of guesses: " + nro_of_guesses;
-    message3.innerHTML = "guessed nums: " + guessed_nums;
-  }
-   else {
-    if
-     (user_guess < 1 || user_guess > 10) {
-       alert("Ole hyvä ja anna numero 1 ja 10 välillä")
-      }
-   else {
-    guessed_nums.push(user_guess);
-     }
-    if (user_guess < answer) {
-     message1.innerHTML = "Your guess is too low.";
-      message2.innerHTML = "nro of guesses: " + nro_of_guesses;
-      }
-    else if (user_guess > answer) {
-      message1.innerHTML = "Your guess is too high.";
-       message2.innerHTML = "nro of guesses: " + nro_of_guesses;
-      }
-     else {
-       message1.innerHTML = "Nice! You win!";
-       message2.innerHTML = "nro of guesses: " + nro_of_guesses;
-       message3.innerHTML = "guessed nums: " + guessed_nums;
-        }
-      }
-       nro_of_guesses++;
-  }
->>>>>>> dfc5c0a3c7b840321c140c5f7b2d71c0c1515dd5

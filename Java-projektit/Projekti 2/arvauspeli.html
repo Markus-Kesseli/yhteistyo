@@ -2,34 +2,21 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-<<<<<<< HEAD
-    <link rel="stylesheet" href="arvauspeli_2.css">
-    <script src="arvauspeli_2.js">
-=======
     <link rel="stylesheet" href="arvauspeli.css">
-    <script src="arvauspeli.js">
->>>>>>> dfc5c0a3c7b840321c140c5f7b2d71c0c1515dd5
-
-    </script>
+    <script src="arvauspeli.js"></script>
     <title>Arvauspeli</title>
   </head>
   <body>
-<<<<<<< HEAD
-      <h3>Arvaa 1-10 väliltä</h3>
-      <input type="text" placeholder="num" id="guess"><br>
-    <button type="button" onclick="arvauspeli()" name="button" id="btn">GUESS</button>
-    <p id="message1">Nro. Of Guesses: 0</p>
-    <p id="message2">Guessed: numbers are: None</p>
-    <p id="message3"></p>
-=======
-    <div class="sisalto">
-      <h3>Arvaa 1-10 väliltä</h3>
-      <input type="text" placeholder="Num" id="guess"><br>
-    <button type="button" onclick="arvauspeli()" name="button" id="btn">GUESS</button>
-    <p id="message1"></p>
-    <p id="message2"></p>
-    <p id="message3"></p>
-    </div>
->>>>>>> dfc5c0a3c7b840321c140c5f7b2d71c0c1515dd5
+    <form name = "numForm">
+           <fieldset>
+               <label for = "randNum">Enter a number between 1 and 10: </label>
+               <input type = "text" name = "number" value = "" id = "randNum" size = "1" maxlength = "1" />
+           </fieldset>
+           <input class = "button" type = "button" name = "submit" onclick = "guessingGame()" value = "Submit Number"  />
+           <input class = "button" type = "reset" name = "newGame" onclick = "newGame()" value = "New Game" />
+           <fieldset>
+               <textarea name = "gameResults"  onclick = "" readonly = "true" value = "" rows = "5" cols = "40" ></textarea>
+           </fieldset>
+       </form>
   </body>
 </html>

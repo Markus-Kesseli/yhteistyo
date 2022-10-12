@@ -11,16 +11,16 @@ function projekti()
   var pallo = document.formi.tietokone;
 
   //Tarkastetaan etunimen pituus
-  if (etunimi.length < 6)
+  if (etunimi.length < 4)
   {
-    alert("Anna vähintään 6-merkkinen etunimi");
+    alert("Anna vähintään 4-merkkinen etunimi");
     return false; //Ei palauta mitään
   }
 
     //Tarkastetaan sukunimen pituus
-  if (sukunimi.length < 6)
+  if (sukunimi.length < 5)
   {
-      alert("Anna vähintään 6-merkkinen sukunimi");
+      alert("Anna vähintään 5-merkkinen sukunimi");
       return false; //Ei palauta mitään
   }
   //Tarkastetaan sähköposti
@@ -53,9 +53,9 @@ function projekti()
   }
 }
 //Tarkastetaan tekstialue
-if (palaute.length < 30) {
-  alert("Palautteessa tulee olla vähintään 30-merkkiä!");
-  document.formi.palaute.focus();
+if (palaute.length < 20) {
+  alert("Palautteessa tulee olla vähintään 20-merkkiä!");
+  document.formi.palautet.focus();
   return false;
 }
   if (checkVastaus == false) {
@@ -68,13 +68,12 @@ if (palaute.length < 30) {
     }
   }
   //Tyhjennetään lomake, jos siinä on tietoja (dataa)
-<<<<<<< HEAD
-  function tyhjenna(Lomake) {
-    var clean = lomake.value;
-=======
+
+
   function tyhjenna() {
-    var clean = document.formi.reset();
->>>>>>> ae91791a8de8a951e24326b6d3d666a4425733bc
-    if (!confirm("Oletko varma?"));
-    return false;
+
+    if (!confirm("Oletko varma?"))
+    {
+      document.formi.reset();
+    }
 }
