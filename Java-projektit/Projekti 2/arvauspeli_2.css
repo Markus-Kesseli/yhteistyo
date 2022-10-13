@@ -10,7 +10,7 @@ background-color: #ffbf80;
   box-sizing: border-box;
   border-style: groove;
   width: 430px;
-  height: 310px;
+  height: 330px;
   border-radius: 30px;
   padding-left: 20px;
   background-image: linear-gradient(to right, #7EEA7B, #DFEA7B);
@@ -30,14 +30,14 @@ p {
   margin: 24px auto auto 5px;
 }
 
-#message4
+#wins
 {
   float: left;
   margin: auto;
   padding-left: 230px;
 }
 
-#message5
+#loose
 {
   float: right;
   margin: auto;

@@ -17,8 +17,8 @@
   if (user_guess >= 10) {
     guessed_nums.push(user_guess);
 
-    message2.innerHTML = "nro of guesses: " + nro_of_guesses;
-    message3.innerHTML = "guessed nums: " + guessed_nums;
+    message2.innerHTML = "Nro Of guesses: " + nro_of_guesses;
+    message3.innerHTML = "Guessed numbers: " + guessed_nums;
   }
     else {
      if
@@ -29,10 +29,10 @@
      guessed_nums.push(user_guess);
       }
       if (user_guess < answer) {
-       message1.innerHTML = "Your guess is too low.";
+       message1.innerHTML = " is too low.";
       }
       else if (user_guess > answer) {
-        message1.innerHTML = "Your guess is too high.";
+        message1.innerHTML = " is too high.";
       }
       else if (user_guess == answer){
         message1.innerHTML = "Nice! You win!";
@@ -43,9 +43,9 @@
       }
       for (let i = 3 ; i > 0; i--) {
         message2.innerHTML = "Nro Of guesses: " + nro_of_guesses;
-        message3.innerHTML = "Guessed nums: " + guessed_nums;
-        message4.innerHTML = "Wins " + wins;
-        message5.innerHTML = "Loose " + loose;
+        message3.innerHTML = "Guessed numbers: " + guessed_nums;
+        wins.innerHTML = "Wins " + wins;
+        loose.innerHTML = "Loose " + loose;
         }
         nro_of_guesses++;
       }
@@ -62,7 +62,7 @@
       if (clicks >= 3)
           return;
       clicks += 1;
-      message2.innerHTML = "nro of guesses: " + nro_of_guesses;
+      message2.innerHTML = "Nro Of guesses: " + nro_of_guesses;
       nro_of_guesses++;
       document.getElementById("clicks").innerHTML = clicks;
     };
