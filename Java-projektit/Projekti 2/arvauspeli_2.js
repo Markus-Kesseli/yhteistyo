@@ -38,7 +38,6 @@ if (user_guess >= 10) {
       message1.innerHTML = "Nice! You win!";
       document.getElementById("btn").hidden = true;
       wins++;
-
     }
     else {
       alert("Anna numeroina, ei kirjaimina")
