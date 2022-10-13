@@ -13,13 +13,18 @@
       <h3>Arvaa 1-10 väliltä</h3>
           <p id="message4">Wins</p><p id="message5">Loose</p>
       <input type="number" placeholder="Num" id="guess"><br><br>
-      <input type = "submit"  onclick="arvauspeli()">
       <button type="button" onclick="uusipeli()" name="button">Uusi peli</button>
-<div class="pisteet">
-  <p id="voitot"></p>
-  <p id="haviot"></p>
+      <button type="button" onclick="onClick()">Click me</button>
+        <div class="pisteet">
+      <p id="message1">nro Of Guesses: 0</p>
+      <p id="message2">Guessed: numbers are:</p>
+      <p id="message3"></p>
+      <p id="message4"></p>
+      <p>Clicks: <a id="clicks">0</a></p>
+      </div>
+    </form>
 
-</div>
+
     <p id="message1">Your guess is too</p>
     <p id="message2">Nro Of guesses:</p>
     <p id="message3">Guessed nums</p>

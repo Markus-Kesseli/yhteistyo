@@ -2,8 +2,8 @@
   var luku1 = document.getElementById("message1");
   var luku2 = document.getElementById("message2");
   var luku3 = document.getElementById("message3");
-  var luku4 = document.getElementById("message4");
 
+  var clicks = 0;
   var answer = Math.floor(Math.random()*10) + 1;
   var nro_of_guesses = 1;
   var guessed_nums = [];
@@ -51,9 +51,17 @@
       }
 
 }
-
-function uusipeli()
-  {
+    //Kun painetaan "uusipeli" web-sivustossa, niin sivu tyhjentää käyttäjän laittaman numeron
+    function uusipeli() {
+      document.getElementById("formi").reset();
+      }
     answer = Math.floor(Math.random()*10) + 1;
-    arvauspeli();
-  }
+
+    function onClick()
+    {
+      if (clicks >= 3)
+          return;
+
+      clicks += 1;
+      document.getElementById("clicks").innerHTML = clicks;
+    };
