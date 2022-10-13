@@ -11,6 +11,7 @@ background-color: #ffbf80;
   border-style: groove;
   width: 430px;
   height: 330px;
+  border-color: #AAAAAA;
   border-radius: 30px;
   padding-left: 20px;
   background-image: linear-gradient(to right, #7EEA7B, #DFEA7B);
@@ -42,6 +43,11 @@ p {
   float: right;
   margin: auto;
   padding-right: 30px;
+}
 
-
+button
+{
+  background-color: #57C8D2;
+  border-radius: 7px;
+  border-color: #5DDC8F;
 }
