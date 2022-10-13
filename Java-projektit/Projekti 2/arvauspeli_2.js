@@ -45,9 +45,8 @@
         nro_of_guesses++;
       }
 }
-
+    //Tyhjennetään
     function uusipeli() {
       document.getElementById("formi").reset();
-
-}
+      }
     answer = Math.floor(Math.random()*10) + 1;
