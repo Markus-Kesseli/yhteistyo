@@ -15,7 +15,6 @@ function lomake1B() {
   var min = (Math.min(1));
   var max = (Math.max(110));
 
-
   //Tarkastetaan ikä
   for (var i = 0; i < ika; i++) {
     alert("Syötä ikäsi");
@@ -38,4 +37,3 @@ function lomake1B() {
   if (ruokalaji == true) {
   vastaus = true;
   }
-
