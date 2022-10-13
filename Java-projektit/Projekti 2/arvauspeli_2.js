@@ -36,8 +36,9 @@ if (user_guess >= 10) {
     }
     else if (user_guess == answer){
       message1.innerHTML = "Nice! You win!";
-      document.getElementById("btn").hidden = true;
+
       wins++;
+      document.getElementById("btn").disabled = true;
     }
     else {
       alert("Anna numeroina, ei kirjaimina")
@@ -59,9 +60,5 @@ if (user_guess >= 10) {
     document.getElementById("loose").innerHTML = "Looses " + loose;
     document.getElementById("wins").innerHTML = "Wins " + wins;
     document.getElementById("clicks").innerHTML = clicks;
-
-
-
-
     nro_of_guesses++;
   };
