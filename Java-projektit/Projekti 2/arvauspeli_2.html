@@ -3,20 +3,16 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="arvauspeli_2.css">
-    <script src="arvauspeli_2.js">
-
-    </script>
+    <script src="arvauspeli_2.js"></script>
     <title>Arvauspeli</title>
   </head>
   <body>
     <form id="formi" action="index.html" method="post">
-      <input type="number" placeholder="Num" id="guess"><br><br>
-      <button type="button" onclick="uusipeli()" name="button">Uusi peli</button>
-      <button type="button" onclick="onClick()">Enter</button>
+
       <div id="sisalto">
         <h3>Arvaa 1-10 väliltä</h3>
         <p id="wins">Wins</p><p id="loose">Loose</p>
-        <form id="formi" action="index.html" method="post">
+
           <input type="number" placeholder="Num" id="guess"><br><br>
           <button type="button"  onclick="onClick()">Enter</button>
           <button type="button" onclick="uusipeli()" name="button">Uusi peli</button>
@@ -24,7 +20,6 @@
         <div class="pisteet">
       <p id="message1">nro Of Guesses: 0</p>
       <p id="message2">Guessed: numbers are:</p>
-      <p id="message3"></p>
       <p> <a id="clicks"></a></p>
       </div>
     </form>

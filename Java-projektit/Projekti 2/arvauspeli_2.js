@@ -41,8 +41,6 @@
       else {
         alert("Anna numeroina, ei kirjaimina")
       }
-
-
     }
 }
     //Kun painetaan "uusipeli" web-sivustossa, niin sivu tyhjentää käyttäjän laittaman numeron
@@ -53,10 +51,13 @@
     //Annetaan käyttäjälle kolme arvaus kertaa
     function onClick()
     {
+
       if (clicks >= 3)
           return;
       clicks += 1;
-      message2.innerHTML = "Nro Of guesses: " + nro_of_guesses;
+
+    document.getElementById("loose").innerHTML = clicks;
+    document.getElementById("Wins").innerHTML = clicks;
+      document.getElementById("Enter").innerHTML = clicks;
       nro_of_guesses++;
-      document.getElementById("clicks").innerHTML = clicks;
     };
