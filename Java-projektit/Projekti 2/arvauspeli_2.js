@@ -57,6 +57,7 @@
       if (clicks >= 3)
           return;
       clicks += 1;
+      message2.innerHTML = "nro of guesses: " + nro_of_guesses;
       nro_of_guesses++;
       document.getElementById("clicks").innerHTML = clicks;
     };
