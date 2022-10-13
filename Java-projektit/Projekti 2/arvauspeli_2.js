@@ -56,7 +56,7 @@
           return;
       clicks += 1;
 
-    document.getElementById("loose").innerHTML = "Loose " + clicks;
+    document.getElementById("loose").innerHTML = "Looses " + clicks;
     document.getElementById("wins").innerHTML = "Wins " + clicks;
       document.getElementById("Enter").innerHTML = clicks;
       nro_of_guesses++;
