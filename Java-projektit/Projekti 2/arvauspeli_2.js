@@ -57,7 +57,7 @@
       clicks += 1;
 
     document.getElementById("loose").innerHTML = clicks;
-    document.getElementById("Wins").innerHTML = clicks;
+    document.getElementById("wins").innerHTML = clicks;
       document.getElementById("Enter").innerHTML = clicks;
       nro_of_guesses++;
     };
