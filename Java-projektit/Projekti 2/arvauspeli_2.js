@@ -41,22 +41,16 @@
       else {
         alert("Anna numeroina, ei kirjaimina")
       }
-      for (let i = 3 ; i > 0; i--) {
-        message2.innerHTML = "Nro Of guesses: " + nro_of_guesses;
-        message3.innerHTML = "Guessed numbers: " + guessed_nums;
-        wins.innerHTML = "Wins " + wins;
-        loose.innerHTML = "Loose " + loose;
-        }
-        nro_of_guesses++;
-      }
 
+
+    }
 }
     //Kun painetaan "uusipeli" web-sivustossa, niin sivu tyhjentää käyttäjän laittaman numeron
     function uusipeli() {
       document.getElementById("formi").reset();
       }
     answer = Math.floor(Math.random()*10) + 1;
-
+    //Annetaan käyttäjälle kolme arvaus kertaa
     function onClick()
     {
       if (clicks >= 3)
