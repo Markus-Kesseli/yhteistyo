@@ -7,6 +7,8 @@
   var answer = Math.floor(Math.random()*10) + 1;
   var nro_of_guesses = 1;
   var guessed_nums = [];
+  var wins = 0;
+  var loose = 0;
 
 
   function arvauspeli()
@@ -34,13 +36,16 @@
       }
       else if (user_guess == answer){
         message1.innerHTML = "Nice! You win!";
+        wins++;
       }
       else {
         alert("Anna numeroina, ei kirjaimina")
       }
       for (let i = 3 ; i > 0; i--) {
-        message2.innerHTML = "nro of guesses: " + nro_of_guesses;
-        message3.innerHTML = "guessed nums: " + guessed_nums;
+        message2.innerHTML = "Nro Of guesses: " + nro_of_guesses;
+        message3.innerHTML = "Guessed nums: " + guessed_nums;
+        message4.innerHTML = "Wins " + wins;
+        message5.innerHTML = "Loose " + loose;
         }
         nro_of_guesses++;
       }

@@ -18,7 +18,7 @@ background-color: #ffbf80;
 /*Annetaan teksille väri ja koko*/
 p {
   color: #892F2F;
-  font-size: 24px;
+  font-size: 20px;
 }
 /*Rajataan käyttäjän syöttämää aluetta ja keskitetään*/
 #input {
@@ -28,4 +28,20 @@ p {
 /*Rajataan button-painiketta*/
 #btn {
   margin: 25px auto auto 5px;
+}
+
+#message4
+{
+  float: left;
+  margin: auto;
+  padding-left: 230px;
+}
+
+#message5
+{
+  float: right;
+  margin: auto;
+  padding-right: 30px;
+
+
 }
