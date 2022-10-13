@@ -18,7 +18,7 @@ background-color: #ffbf80;
 }
 /*Annetaan teksille väri ja koko*/
 p {
-  color: #892F2F;
+
   font-size: 20px;
 }
 /*Rajataan käyttäjän syöttämää aluetta ja keskitetään*/
@@ -36,6 +36,7 @@ p {
   float: left;
   margin: auto;
   padding-left: 230px;
+
 }
 
 #loose
@@ -43,6 +44,7 @@ p {
   float: right;
   margin: auto;
   padding-right: 30px;
+
 }
 
 button
