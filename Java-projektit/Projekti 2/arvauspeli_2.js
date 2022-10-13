@@ -61,7 +61,7 @@
     {
       if (clicks >= 3)
           return;
-
       clicks += 1;
+      nro_of_guesses++;
       document.getElementById("clicks").innerHTML = clicks;
     };
