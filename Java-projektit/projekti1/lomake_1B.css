@@ -45,6 +45,12 @@ body {
 button {
   margin-bottom: 10%;
 }
+#field
+{
+  margin: auto;
+  width: 500px;
+  height: 600px;
+}
 .f1
 {
 width: 350px;
