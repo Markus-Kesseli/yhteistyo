@@ -1,5 +1,8 @@
 /*Arvauspelin väri*/
 body {
+  margin: auto;
+  margin-top: 10%;
+  width: 30%;
 background-color: #ffbf80;
 }
 /*Rajataan ja keskitetään*/
@@ -43,5 +46,5 @@ p {
 {
   float: right;
   margin: auto;
-  padding-right: 32px;
+  padding-right: 30px;
 }
