@@ -38,7 +38,7 @@ if (user_guess >= 10) {
       message1.innerHTML = "Nice! You win!";
 
       wins++;
-      document.getElementById("btn").disabled = true;
+      document.getElementById("btn").hidden = true;
     }
     else {
       alert("Anna numeroina, ei kirjaimina")
@@ -49,6 +49,7 @@ if (user_guess >= 10) {
   function uusipeli() {
     document.getElementById("formi").reset();
     }
+
   answer = Math.floor(Math.random()*10) + 1;
   //Annetaan käyttäjälle kolme arvaus kertaa
   function onClick()
@@ -62,3 +63,4 @@ if (user_guess >= 10) {
     document.getElementById("clicks").innerHTML = clicks;
     nro_of_guesses++;
   };
+  
