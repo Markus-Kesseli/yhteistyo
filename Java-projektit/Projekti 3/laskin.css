@@ -1,3 +1,7 @@
+
+
+
+
 *, *::before, *::after{
     box-sizing: border-box;
     font-family: Roboto, sans-serif;
@@ -9,7 +13,7 @@ body{
     width: 100px;
     background-image: linear-gradient(to left, #009fff, #ec2f4b);
 }
-#calculator-grid{
+#laskin{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -22,7 +26,7 @@ body{
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: minmax(120px, auto) repeat(5, 100px);
 }
-#calculator-grid > button{
+#laskin > button{
     cursor: pointer;
     font-size: 2rem;
     border-radius: 10px;
@@ -30,7 +34,7 @@ body{
     background-color: #858585;
 }
 
-#calculator-grid > button:hover{
+#laskin > button:hover{
     background-color: rgba(255, 255, 255, 0.45);
 
 
@@ -39,7 +43,7 @@ body{
 .span-two{
     grid-column: span 2;
 }
-#output{
+#tulos{
     grid-column: 1/-1;
     background-color: rgba(0, 0, 0, .75);
     display: flex;
@@ -52,12 +56,12 @@ body{
 
 }
 
-#previous-operand{
+#ednum{
     color: rgba(255, 255, 255, .75);
     font-size: 1.5rem;
 }
 
-#current-operand{
+#nyknum{
     color: rgb(255, 255, 255);
     font-size: 2.5rem;
 }
