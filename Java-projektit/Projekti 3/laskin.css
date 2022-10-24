@@ -1,7 +1,6 @@
 
 
-
-
+/*Määritetään elementtien erityistilat*/
 *, *::before, *::after{
     box-sizing: border-box;
     font-family: Roboto, sans-serif;
@@ -13,6 +12,7 @@ body{
     width: 100px;
     background-image: linear-gradient(to left, #009fff, #ec2f4b);
 }
+/*Määritetään laskimen sijainti näytölle*/
 #laskin{
     position: absolute;
     top: 50%;
@@ -39,7 +39,7 @@ body{
 
 
 }
-
+/*Tehdän värit id:n sisällölle*/.
 .span-two{
     grid-column: span 2;
 }
