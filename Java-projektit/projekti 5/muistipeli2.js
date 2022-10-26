@@ -161,7 +161,7 @@ startButton.addEventListener("click", () => {
   initializer();
 });
 
-//Stop game
+//pystäytä peli
 stopButton.addEventListener(
   "click",
   (stopGame = () => {
