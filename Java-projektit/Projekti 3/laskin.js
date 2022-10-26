@@ -6,7 +6,9 @@ const deleteButton = document.querySelector('[data-delete]');
 const allClearButton = document.querySelector('[data-all-clear]');
 const previousOperandTextElement = document.querySelector('[data-previous-operand]');
 const currentOperandTextElement = document.querySelector('[data-current-operand]');
-class Calculator{
+
+class Calculator
+{
     constructor(){
         this.previousOperandTextElement = previousOperandTextElement;
         this.currentOperandTextElement = currentOperandTextElement;
@@ -81,6 +83,7 @@ class Calculator{
             this.previousOperandTextElement.innerText = `${this.getDisplayNumber(this.previousOperand)} ${this.operation}`;
         else this.previousOperandTextElement.innerText = '';
     }
+
 }
 
 numberButtons.forEach(button => {
@@ -112,4 +115,4 @@ deleteButton.addEventListener('click', () => {
     calculator.updateDisplay();
 })
 
-const calculator = new Calculator();
+  const calculator = new Calculator();
