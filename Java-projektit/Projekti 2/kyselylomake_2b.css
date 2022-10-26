@@ -13,6 +13,7 @@ body
   margin: 20px auto;
   overflow: auto;
   padding: 25px;
+  border-radius: 10px;
 }
 
 header
@@ -52,6 +53,7 @@ input[type='submit']
   cursor: pointer;
   font-size: 14px;
   margin-top: 15px;
+  border-radius: 10px;
 }
 
 #tulokset h3
