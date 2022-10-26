@@ -1,3 +1,5 @@
+
+//luodaan functio
 function lahetaVastaukset()
 {
 var yhteensa = 5;
