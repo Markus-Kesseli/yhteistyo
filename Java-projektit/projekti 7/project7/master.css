@@ -1,11 +1,12 @@
 figure
 {
   float: left;
-  text-align: center;
-
   margin: 0px 5px;
 }
-
+figcaption
+{
+  text-align: center;
+}
 h3
 {
   font-size: 36px;
