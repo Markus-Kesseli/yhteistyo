@@ -1,3 +1,4 @@
+//
 function aanet(elain)
 {
   aani = elain.id;
