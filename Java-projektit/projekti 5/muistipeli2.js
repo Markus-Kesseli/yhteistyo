@@ -1,3 +1,4 @@
+//
 const moves = document.getElementById("moves-count");
 const aikaValue = document.getElementById("aika");
 const startButton = document.getElementById("start");
