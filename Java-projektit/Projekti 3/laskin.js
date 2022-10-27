@@ -1,4 +1,4 @@
-
+//Luodaan muuttuja, joka tallentaa kaikki buttonit ja teksti-elementit käyttöen querySelector
 const numberButtons = document.querySelectorAll('[data-number]');
 const operationButtons = document.querySelectorAll('[data-operation]');
 const equalsButton = document.querySelector('[data-equals]');
@@ -7,6 +7,7 @@ const allClearButton = document.querySelector('[data-all-clear]');
 const previousOperandTextElement = document.querySelector('[data-previous-operand]');
 const currentOperandTextElement = document.querySelector('[data-current-operand]');
 
+//Luodaan class,jonka nimi on Calculator, jolla on toiminnot
 class Calculator
 {
     constructor(){
@@ -83,36 +84,40 @@ class Calculator
             this.previousOperandTextElement.innerText = `${this.getDisplayNumber(this.previousOperand)} ${this.operation}`;
         else this.previousOperandTextElement.innerText = '';
     }
-
 }
-
-numberButtons.forEach(button => {
-    button.addEventListener('click', () => {
+    //Luodaan addEventListener numeron klikkaamista varten
+    //Kutsutaan appendNumber metodia ja sen jälkeen updateDisplay metodia
+    numberButtons.forEach(button => {
+      button.addEventListener('click', () => {
         calculator.appendNumber(button.innerText);
         calculator.updateDisplay();
     })
 })
-
-operationButtons.forEach(button => {
-    button.addEventListener('click', () => {
+    //Luodaan addEventListener operaattorin klikkaamista varten
+    //Kutsutaan chooseOperation sekä updateDisplay metodia ja sn jälkeen updateDisplay metodia
+    operationButtons.forEach(button => {
+      button.addEventListener('click', () => {
         calculator.chooseOperation(button.innerText);
         calculator.updateDisplay();
     })
 })
-
-equalsButton.addEventListener('click', () => {
-    calculator.compute();
-    calculator.updateDisplay();
+    ////Luodaan addEventListener (=) -operaattorin klikkaamista varten
+    //Kutsutaan compute metodia sekä updateDisplay metodia
+      equalsButton.addEventListener('click', () => {
+        calculator.compute();
+        calculator.updateDisplay();
 })
-
-allClearButton.addEventListener('click', () => {
-    calculator.clear();
-    calculator.updateDisplay();
+    //Luodaan addEventListener (AC) -operaattorin klikkaamista varten
+    //Kutsutaan clear metodia sekä updateDisplay metodia
+      allClearButton.addEventListener('click', () => {
+        calculator.clear();
+        calculator.updateDisplay();
 })
-
-deleteButton.addEventListener('click', () => {
-    calculator.delete();
-    calculator.updateDisplay();
+    //Luodaan addEventListener (DEL) -operaattorin klikkaamista varten
+    //Kutsutaan clear metodia sekä updateDisplay metodia
+    deleteButton.addEventListener('click', () => {
+        calculator.delete();
+        calculator.updateDisplay();
 })
-
+  //Laskin saa edeletävistä tiedoista datan ja alempana se käynnistää toiminnot
   const calculator = new Calculator();

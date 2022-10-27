@@ -1,5 +1,3 @@
-
-
 /*Määritetään elementtien erityistilat*/
 *, *::before, *::after{
     box-sizing: border-box;
