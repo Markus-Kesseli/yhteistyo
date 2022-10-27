@@ -1,0 +1,38 @@
+body
+{
+  background-color: #f4c531;
+}
+
+.otsikko
+{
+margin-left: 100px;
+background-color: white;
+width: 300px;
+padding-top: 20px;
+padding-bottom: 20px;
+border-radius: 25px;
+text-align: center;
+font-family: "Poppins", sans-serif;
+
+}
+
+
+
+.valikko
+{
+  display: block;
+  background-color: white;
+  border-radius: 15px;
+  width: 130px;
+  text-align: center;
+  font-size: 25px;
+  height: 100px;
+  text-align: inherit;
+
+
+}
+
+.valikko a
+{
+
+}
