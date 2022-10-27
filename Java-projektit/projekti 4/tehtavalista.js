@@ -34,7 +34,7 @@ window.addEventListener('load', ()=>{
         const task_actions_div= document.createElement("div");
         task_actions_div.classList.add("actions");
         task_div.appendChild(task_actions_div);
-        
+
         //Tuo edit-painikkeen näkyviin, kun painetaan "add" -näppäintä
         //Tällä ominaisuudella käyttäjä voi muokata syöttämäänsä tehtävää
         //(jonka hän on lisänyt on tehtävälistaan)
@@ -54,6 +54,7 @@ window.addEventListener('load', ()=>{
         task_completed_button.classList.add("Completed");
         task_completed_button.innerHTML = "Completed";
 
+        //Liitetään "click" toiminnolle
         task_actions_div.appendChild(task_edit_botton);
         task_actions_div.appendChild(task_completed_button);
         task_actions_div.appendChild(task_delete_button);
@@ -65,6 +66,7 @@ window.addEventListener('load', ()=>{
                     task_edit_botton.innerText = "Save";
                     task_input.style.textDecoration="none"
             }
+            //Jos jostain syystä edeltävä ei toimi, niin alustetaan atribuutit inputiin
             else{
                 task_input.setAttribute("readonly", "readonly");
                 task_edit_botton.innerText ="Edit";
