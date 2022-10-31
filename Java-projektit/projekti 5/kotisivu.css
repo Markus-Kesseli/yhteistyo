@@ -38,6 +38,6 @@ margin-right: 20px;
   border-radius: 15px;
   background-color: #F1D376;
   margin-top: 20px;
-  height: 60px;
-  text-align: justify;
+  height: 90px;
+  overflow: auto;
 }
