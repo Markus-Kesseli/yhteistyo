@@ -31,13 +31,3 @@ font-size: 25px;
 margin-top: 20px;
 margin-right: 20px;
 }
-
-.paivitykset
-{
-  border-style: inset;
-  border-radius: 15px;
-  background-color: #F1D376;
-  margin-top: 20px;
-  height: 90px;
-  overflow: auto;
-}
