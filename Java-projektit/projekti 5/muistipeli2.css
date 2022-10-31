@@ -1,28 +1,47 @@
+<<<<<<< HEAD
 /*   */
+=======
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit&display=swap');
+
+
+>>>>>>> b4c5c172a1ae85d07cf3d91a619ef7207fa54533
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  margin: auto;
 }
 body {
   background-color: #f4c531;
+
+}
+
+.palkki
+{
+  border-radius: 15px;
+  background-color: white;
+  height: 92px;
+  margin-top: 10px;
+  width: 99%;
+}
+
+.otsikko
+{
+float: left;
+font-family: 'Bebas Neue', cursive;
+margin-left: 20px;
+margin-top: 20px;
 }
 
 .valikko
 {
-  display: block;
-  background-color: white;
-  border-radius: 15px;
-  width: 180px;
-  text-align: center;
-  font-size: 25px;
-  height: 100px;
-  text-align: inherit;
-  padding-top: 10px;
-  padding-left: 25px;
-  margin-left: 20px;
-  margin-top: 150px;
+float: right;
+display: block;
+font-family: 'Kanit', sans-serif;
+font-size: 25px;
+margin-top: 20px;
+margin-right: 20px;
 }
 
 .wrapper {
