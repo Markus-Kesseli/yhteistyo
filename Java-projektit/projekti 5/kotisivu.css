@@ -1,1 +1,40 @@
+<<<<<<< HEAD
 /* */
+=======
+body
+{
+  background-color: #f4c531;
+}
+
+.otsikko
+{
+margin: auto;
+background-color: white;
+width: 250px;
+height: 40px;
+padding-top: 10px;
+padding-bottom: 45px;
+border-radius: 25px;
+text-align: center;
+font-family: "Poppins", sans-serif;
+margin-bottom: 40px;
+
+}
+
+
+
+.valikko
+{
+  display: block;
+  background-color: white;
+  border-radius: 15px;
+  width: 130px;
+  text-align: center;
+  font-size: 25px;
+  height: 70px;
+  text-align: inherit;
+  padding-top: 10px;
+  padding-left: 25px;
+  margin-left: 20px;
+}
+>>>>>>> 4fc810367398f37bc782c138c71f22ec76bca702

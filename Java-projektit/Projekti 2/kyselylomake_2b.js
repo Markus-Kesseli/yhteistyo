@@ -1,4 +1,3 @@
-
 //luodaan functio
 function lahetaVastaukset()
 {
