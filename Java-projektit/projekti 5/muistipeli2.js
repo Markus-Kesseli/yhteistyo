@@ -24,6 +24,7 @@ const items = [
   { name: "sloth", image: "sloth.png" },
   { name: "cockatoo", image: "cockatoo.png" },
   { name: "toucan", image: "toucan.png" },
+  
 ];
 
 //Initial Time
