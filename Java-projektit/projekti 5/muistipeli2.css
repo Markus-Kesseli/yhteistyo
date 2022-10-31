@@ -7,6 +7,23 @@
 body {
   background-color: #f4c531;
 }
+
+.valikko
+{
+  display: block;
+  background-color: white;
+  border-radius: 15px;
+  width: 180px;
+  text-align: center;
+  font-size: 25px;
+  height: 100px;
+  text-align: inherit;
+  padding-top: 10px;
+  padding-left: 25px;
+  margin-left: 20px;
+  margin-top: 150px;
+}
+
 .wrapper {
   box-sizing: content-box;
   width: 26.87em;

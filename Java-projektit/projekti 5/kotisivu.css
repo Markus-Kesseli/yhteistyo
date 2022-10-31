@@ -5,14 +5,16 @@ body
 
 .otsikko
 {
-margin-left: 100px;
+margin: auto;
 background-color: white;
-width: 300px;
-padding-top: 20px;
-padding-bottom: 20px;
+width: 250px;
+height: 40px;
+padding-top: 10px;
+padding-bottom: 45px;
 border-radius: 25px;
 text-align: center;
 font-family: "Poppins", sans-serif;
+margin-bottom: 40px;
 
 }
 
@@ -26,13 +28,9 @@ font-family: "Poppins", sans-serif;
   width: 130px;
   text-align: center;
   font-size: 25px;
-  height: 100px;
+  height: 70px;
   text-align: inherit;
-
-
-}
-
-.valikko a
-{
-
+  padding-top: 10px;
+  padding-left: 25px;
+  margin-left: 20px;
 }
