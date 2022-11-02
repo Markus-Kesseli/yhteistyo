@@ -1,30 +1,31 @@
 //
 const moves = document.getElementById("moves-count");
-const aikaValue = document.getElementById("aika");
+const timeValue = document.getElementById("aika");
 const startButton = document.getElementById("start");
 const stopButton = document.getElementById("stop");
 const gameContainer = document.querySelector(".game-container");
 const result = document.getElementById("result");
 const controls = document.querySelector(".controls-container");
-let kortit;
+let cards;
 let interval;
-let ekaKortti = false;
-let tokaKortti = false;
+let firstCard = false;
+let secondCard = false;
+
 
 //Items array
 const items = [
-  { name: "bee", image: "bee.png" },
-    { name: "crocodile", image: "crocodile.png" },
-    { name: "macaw", image: "macaw.png" },
-    { name: "gorilla", image: "gorilla.png" },
-    { name: "tiger", image: "tiger.png" },
-    { name: "monkey", image: "monkey.png" },
-    { name: "chameleon", image: "chameleon.png" },
-    { name: "piranha", image: "piranha.png" },
-    { name: "anaconda", image: "anaconda.png" },
-    { name: "sloth", image: "sloth.png" },
-    { name: "cockatoo", image: "cockatoo.png" },
-    { name: "toucan", image: "toucan.png" },
+  { name: "emoji", image: "image/disguised.png" },
+    { name: "emoji", image: "image/smiling.png" },
+    { name: "emoji", image: "image/sleeping.png" },
+    { name: "emoji", image: "image/pouting.png" },
+    { name: "emoji", image: "image/screaming.png" },
+    { name: "emoji", image: "image/cold.png" },
+    { name: "emoji", image: "image/medicalmask.png" },
+    { name: "emoji", image: "image/nerd.png" },
+    { name: "emoji", image: "image/thinking.png" },
+    { name: "emoji", image: "image/neutral.png" },
+    { name: "emoji", image: "image/ghost.png" },
+    { name: "emoji", image: "image/grinning.png" },
   ];
 //Initial Time
 let seconds = 0,
@@ -42,7 +43,7 @@ const timeGenerator = () => {
     seconds = 0;
   }
   //format time before displaying
-  let secondsValue = seconds < 10 ? `0${seconds}` : seconds;
+  let secondCard = seconds < 10 ? `0${seconds}` : seconds;
   let minutesValue = minutes < 10 ? `0${minutes}` : minutes;
   timeValue.innerHTML = `<span>Time:</span>${minutesValue}:${secondsValue}`;
 };
@@ -96,12 +97,12 @@ const matrixGenerator = (cardValues, size = 4) => {
 
   //Cards
   cards = document.querySelectorAll(".card-container");
-  cards.forEach((card) => {
-    card.addEventListener("click", () => {
+  cards.forEach((cards) => {
+    cards.addEventListener("click", () => {
       //If selected card is not matched yet then only run (i.e already matched card when clicked would be ignored)
-      if (!card.classList.contains("matched")) {
+      if (!cards.classList.contains("matched")) {
         //flip the cliked card
-        card.classList.add("flipped");
+        cards.classList.add("flipped");
         //if it is the firstcard (!firstCard since firstCard is initially false)
         if (!firstCard) {
           //so current card will become firstCard
@@ -112,14 +113,14 @@ const matrixGenerator = (cardValues, size = 4) => {
           //increment moves since user selected second card
           movesCounter();
           //secondCard and value
-          secondCard = card;
-          let secondCardValue = card.getAttribute("data-card-value");
-          if (firstCardValue == secondCardValue) {
+          secondsValue = card;
+          let secondsValue = card.getAttribute("data-card-value");
+          if (firstCardValue == secondsValue) {
             //if both cards match add matched class so these cards would beignored next time
-            firstCard.classList.add("matched");
-            secondCard.classList.add("matched");
+            firstCardValue.classList.add("matched");
+            secondsValue.classList.add("matched");
             //set firstCard to false since next card would be first now
-            firstCard = false;
+            firstCardValue = false;
             //winCount increment as user found a correct match
             winCount += 1;
             //check if winCount ==half of cardValues
@@ -179,4 +180,12 @@ const initializer = () => {
   let cardValues = generateRandom();
   console.log(cardValues);
   matrixGenerator(cardValues);
+};
+function show(value) {
+  document.querySelector(".text-box").value = value;
+}
+
+let dropdown = document.querySelector(".dropdown")
+dropdown.onclick = function() {
+    dropdown.classList.toggle("active")
 };
