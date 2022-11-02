@@ -181,7 +181,7 @@ const initializer = () => {
   console.log(cardValues);
   matrixGenerator(cardValues);
 };
-function show(value) {
+function peli(value) {
   document.querySelector(".text-box").value = value;
 }
 
