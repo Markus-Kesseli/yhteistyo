@@ -28,8 +28,8 @@ const items = [
     { name: "emoji", image: "image/grinning.png" },
   ];
 //Initial Time
-let seconds = 0,
-  minutes = 0;
+let seconds = 0;
+let  minutes = 0;
 //Initial moves and win count
 let movesCount = 0,
   winCount = 0;
@@ -43,7 +43,7 @@ const timeGenerator = () => {
     seconds = 0;
   }
   //format time before displaying
-  let secondCard = seconds < 10 ? `0${seconds}` : seconds;
+  let secondsValue = seconds < 10 ? `0${seconds}` : seconds;
   let minutesValue = minutes < 10 ? `0${minutes}` : minutes;
   timeValue.innerHTML = `<span>Time:</span>${minutesValue}:${secondsValue}`;
 };
@@ -106,15 +106,15 @@ const matrixGenerator = (cardValues, size = 4) => {
         //if it is the firstcard (!firstCard since firstCard is initially false)
         if (!firstCard) {
           //so current card will become firstCard
-          firstCard = card;
+          firstCard = cards;
           //current cards value becomes firstCardValue
-          firstCardValue = card.getAttribute("data-card-value");
+          firstCardValue = cards.getAttribute("data-card-value");
         } else {
           //increment moves since user selected second card
           movesCounter();
           //secondCard and value
-          secondsValue = card;
-          let secondsValue = card.getAttribute("data-card-value");
+          secondsValue = cards;
+          let secondsValue = cards.getAttribute("data-card-value");
           if (firstCardValue == secondsValue) {
             //if both cards match add matched class so these cards would beignored next time
             firstCardValue.classList.add("matched");
