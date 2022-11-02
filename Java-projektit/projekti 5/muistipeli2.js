@@ -113,12 +113,12 @@ const matrixGenerator = (cardValues, size = 4) => {
           //increment moves since user selected second card
           movesCounter();
           //secondCard and value
-          secondsValue = cards;
-          let secondsValue = cards.getAttribute("data-card-value");
-          if (firstCardValue == secondsValue) {
+          secondCard = cards;
+          let secondValue = cards.getAttribute("data-card-value");
+          if (firstCardValue == secondCard) {
             //if both cards match add matched class so these cards would beignored next time
             firstCardValue.classList.add("matched");
-            secondsValue.classList.add("matched");
+            secondCard.classList.add("matched");
             //set firstCard to false since next card would be first now
             firstCardValue = false;
             //winCount increment as user found a correct match
