@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+* {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+body {
+  margin: 0;
+}
+.parallax-wrapper {
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.background {
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex: 1 0 auto;
+  position: relative;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  transform: translateZ(-1px) scale(2);
+}
+.background--spring {
+  background-image: url('https://www.publicdomainpictures.net/pictures/40000/velka/spring-1366454807AK6.jpg');
