@@ -25,5 +25,73 @@ body {
   align-items: center;
   transform: translateZ(-1px) scale(2);
 }
-.background--spring {
+
+.background--spring
+{
   background-image: url('https://www.publicdomainpictures.net/pictures/40000/velka/spring-1366454807AK6.jpg');
+}
+
+.background--summer
+{
+  background-image: url('https://images.pexels.com/photos/375152/summer-sun-blooming-season-375152.jpeg?cs=srgb&dl=beautiful-bloom-blossom-375152.jpg&fm=jpg');
+}
+
+.background--fall
+{
+  background-image: url('https://images.pexels.com/photos/33060/road-forest-season-autumn.jpg?cs=srgb&dl=autumn-fall-forest-33060.jpg&fm=jpg');
+}
+
+.background--winter
+{
+  background-image: url('https://images.pexels.com/photos/235595/pexels-photo-235595.jpeg?cs=srgb&dl=branches-cold-season-235595.jpg&fm=jpg');
+}
+
+.title
+{
+  position: absolute;
+  margin: 0;
+  top: calc(50% - 50px);
+  width: 100%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  height: 100px;
+  color: white;
+  font-size: 5rem;
+  background: rgba(0,0,0,0.4);
+}
+
+.season-desc
+{
+  z-index: 1;
+  position: relative;
+  background: #282E34;
+  color: white;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  line-height: 2em;
+  padding: 3rem;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  .desc-wrapper {
+    margin: auto;
+    box-sizing: border-box;
+  }
+
+  .season--title
+  {
+    text-align: center;
+    font-size: 4rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin: 20px 0;
+  }
+
+  .season--about
+  {
+    margin-top: 50px;
+    padding: 0;
+  }
