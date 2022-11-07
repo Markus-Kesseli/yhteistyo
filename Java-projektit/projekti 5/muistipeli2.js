@@ -1,7 +1,9 @@
 //
 const moves = document.getElementById("moves-count");
 const timeValue = document.getElementById("aika");
-const startButton = document.getElementById("start");
+const startButton = document.getElementById("4x4");
+const mem4x6 = document.getElementById('4x6');
+const mem6x6 = document.getElementById('6x6');
 const stopButton = document.getElementById("stop");
 const gameContainer = document.querySelector(".game-container");
 const result = document.getElementById("result");
@@ -162,6 +164,36 @@ startButton.addEventListener("click", () => {
   initializer();
 });
 
+mem4x6.addEventListener("click", () => {
+  movesCount = 0;
+  seconds = 0;
+  minutes = 0;
+  //controls amd buttons visibility
+  controls.classList.add("hide");
+  stopButton.classList.remove("hide");
+  mem4x6.classList.add("hide");
+  //Start timer
+  interval = setInterval(timeGenerator, 1000);
+  //initial moves
+  moves.innerHTML = `<span>Moves:</span> ${movesCount}`;
+  initializer();
+});
+
+mem6x6.addEventListener("click", () => {
+  movesCount = 0;
+  seconds = 0;
+  minutes = 0;
+  //controls amd buttons visibility
+  controls.classList.add("hide");
+  stopButton.classList.remove("hide");
+  mem6x6.classList.add("hide");
+  //Start timer
+  interval = setInterval(timeGenerator, 1000);
+  //initial moves
+  moves.innerHTML = `<span>Moves:</span> ${movesCount}`;
+  initializer();
+});
+
 //pystäytä peli
 stopButton.addEventListener(
   "click",
@@ -171,6 +203,8 @@ stopButton.addEventListener(
     startButton.classList.remove("hide");
     clearInterval(interval);
   })
+
+
 );
 
 //Initialize values and func calls
