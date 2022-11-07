@@ -135,7 +135,7 @@ const matrixGenerator = (cardValues, size = 4) => {
             //if the cards dont match
             //flip the cards back to normal
             let [tempFirst, tempSecond] = [firstCard, secondCard];
-            firstCard = false;
+            firstCardValue = false;
             secondCard = false;
             let delay = setTimeout(() => {
               tempFirst.classList.remove("flipped");
