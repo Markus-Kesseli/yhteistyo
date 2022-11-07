@@ -1,7 +1,28 @@
 /* Taustaväri*/
 body {
-  background-color: #fc4a1a;
+  background-color: #0F0F07;
+    color: white;
+    text-align: center;
+}
+h2 li{
+  text-align: center;
 }
 img {
   width: 100px;
+}
+input {
+  width: 150px;
+  border-radius: 10px;
+}
+table{
+  align-items: center;
+}
+
+.moon {
+  float: right;
+  transform: translate(-15px, -10px);
+  width: 70px;
+  height: 80px;
+  border-radius: 60%;
+  box-shadow: 15px 15px 0 5 #eee9a3;
 }
