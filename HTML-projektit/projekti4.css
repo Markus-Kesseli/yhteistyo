@@ -37,13 +37,19 @@ h3
 {
   font-family: 'Lato', sans-serif;
 }
-td{
+
+table {
+  margin: auto;
+}
+
+td {
   text-align: center;
   box-sizing: border-box;
   border-radius: 5px;
   border-style: solid;
   font-family: 'Kanit', sans-serif;
 }
+
 p {
   margin: auto;
   box-sizing: border-box;
