@@ -1,0 +1,7 @@
+.tbl , th, td{
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid;
+  column-count: 2;
+  column-gap: 40px;
+ }

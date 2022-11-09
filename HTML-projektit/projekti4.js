@@ -1,39 +1,84 @@
-function lomake1B() {
-  //Haetaan html-documentista käyttäjän syöttämät arvot
-  var form = document.getElementById("kyselylomake").value;
-  var nimi = document.getElementById("nimisyotto").value;
-  var sposti = document.getElementById("emailsyotto").value;
-  var ika = document.getElementById("ikasyotto").value;
-  var palaute = document.form.palautet.value;
-
-  //Tarkistetaan nimi
-  for (var i = 0; i < nimi.length; i++) {
-    alert("Et syöttänyt koko nimeä");
-    return false;
+function projekti()
+{
+  //Luodaan muuttujat
+  var etunimi = document.formi.enimi.value;
+  var sukunimi = document.formi.snimi.value;
+  var check = document.formi.mp;
+  var checkVastaus = document.formi.kivointa;
+  var pallo = document.formi.tietokone;
+  //Lisää tarkastukset myös allaoleviin muuttujiin
+  var osoitetitedot = document.formi.osoitetitedot;
+  var puh = document.formi.puh;
+  var sposti = document.formi.email.value;
+  var oppilaitos = document.formi.oppilaitos;
+  var opiskelija = document.formi.opiskelija;
+  var syntymaaika = document.formi.syntymaaika;
+  var hinta = document.formi.hinta;
+  var erityisruokavalio = document.formi.ruokvalio;
+  var lisatieto = document.formi.lisatieto.value;
+  
+  //Tarkastetaan etunimen pituus
+  if (etunimi.length < 4)
+  {
+    alert("Anna vähintään 4-merkkinen etunimi");
+    return false; //Ei palauta mitään
   }
-  //min- ja max-määrite?
-  var min = (Math.min(1));
-  var max = (Math.max(110));
 
-  //Tarkastetaan ikä
-  for (var i = 0; i < ika; i++) {
-    alert("Syötä ikäsi");
-    return false;
+    //Tarkastetaan sukunimen pituus
+  if (sukunimi.length < 5)
+  {
+      alert("Anna vähintään 5-merkkinen sukunimi");
+      return false; //Ei palauta mitään
   }
-  //Tarkastetaan s-posti
+  //Tarkastetaan sähköposti
   var tarkistus = /\S+@\S+/;
   if (!tarkistus.test(sposti)) {
-  alert("Anna kunnon sähköposti");
-  return false;
-  }
-}
-  if (palaute.length < 35) {
-    alert("Palautteessa tulee olla vähintään 35-merkkiä!");
+    alert("Anna kunnon sähköposti");
   }
 
- var vastaus = false;
- //Edellistä kohtaa varten tehdään silmukka, joka sitten käy jokaisen painikkeen läpi
-  var ruokalaji = ruoka, ruoka, ruoka;
-  if (ruokalaji == true) {
-  vastaus = true;
+  if (salasana.length < 6)
+  {
+      alert("Anna vähintään 6-merkkinen salasana");
+      return false;
+
+  //Tarkastetaan radio-buttonit
+  //Tehdään tosi/epätosi -muuttuja, joka asetetaan sitten epätodeksi
+  var vastaus = false;
+  //Edellistä kohtaa varten tehdään silmukka, joka sitten käy jokaisen painikkeen läpi
+  for (var i = 0; i < pallo.length; i++) {
+    if (pallo[i].checked == true) {
+      vastaus = true;
+    }
   }
+  //Tarkastetaan checkboxit
+  var tarkastaVastaus = false;
+  for (var h = 0; h < check.length; h++) {
+    if (check[h])checked == true;
+    {
+      checkVastaus = true;
+    }
+  }
+}
+//Tarkastetaan tekstialue
+if (palaute.length < 20) {
+  alert("Palautteessa tulee olla vähintään 20-merkkiä!");
+  document.formi.palautet.focus();
+  return false;
+}
+  if (checkVastaus == false) {
+    alert("Et valinnut, mikä on kivaa");
+    return false;
+  }
+  else {
+    alert("Kiitos lomakkeen täytöstä!")
+    return false;
+    }
+  }
+  //Tyhjennetään lomake, jos siinä on tietoja (dataa)
+  function tyhjenna()
+  {
+    if (confirm("Oletko varma?"))
+    {
+      document.getElementById('clear').reset();
+    }
+}
