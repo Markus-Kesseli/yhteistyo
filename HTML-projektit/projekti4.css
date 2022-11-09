@@ -55,6 +55,12 @@ p {
 
 }
 
+.logo
+{
+  float: left;
+  width: 180px;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 .moon {
@@ -64,6 +70,8 @@ p {
   height: 80px;
   border-radius: 60%;
   box-shadow: 15px 15px 0 5 #eee9a3;
+  margin-top: 20px;
+  margin-right: 25px;
 }
 
 li
