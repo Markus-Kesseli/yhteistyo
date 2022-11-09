@@ -14,8 +14,6 @@
   var lisatieto = document.formi.lisatieto.value;
   var checkVastaus = document.formi.kivointa;
 
-
-
   //Tarkastetaan etunimen pituus
   if (etunimi.length < 4)
   {
