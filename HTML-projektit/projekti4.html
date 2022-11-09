@@ -93,6 +93,62 @@
           <img src="imagez/ticketmaster.png">
         </div>
       </section>
+      <!--ilmoittautumislomake-->
+      <fieldset class="f1">
+      <form name="formi" class="" action="kiitos.html" method="post" id="clear">
+        <h1>Ilmoittautuminen</h1>
+        <table>
+          <tr>
+            <td>Anna etunimi:</td>
+            <td class="oikea"><input type="text" name="enimi" value=""></td>
+          </tr>
+          <br>
+          <tr>
+            <td>Anna sukunimi:</td>
+            <td class="oikea"><input type="text" name="snimi" value=""></td>
+          </tr>
+          <br>
+          <tr>
+            <tr>
+              <td>Anna osoitetitedot:</td>
+              <td class="oikea"><input type="text" name="osoitetitedot" value=""></td>
+            </tr>
+          </tr><br><br>
+          <tr>
+            <td>Anna puhelinnumerosi:</td>
+            <td class="oikea"><input type="tel" name="puh" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br></td>
+            <small>Format: 123-45-6785</small><br><br>
+            <tr>
+              <td>Anna oppilaitos:</td>
+              <td class="oikea"><input type="text" name="oppilaitos" value=""></td>
+            </tr><tr>
+              <td>Ammattinimike/opiskelija:</td>
+              <td class="oikea"><input type="text" name="opiskelija" value=""></td>
+            </tr><tr>
+              <td>Anna syntymäaikasi:</td>
+              <td class="oikea"><input type="text" name="syntymaaika" value=""></td>
+            </tr><tr>
+              <td>Hinta:</td>
+              <td class="oikea"><input type="text" name="hinta" value=""></td>
+            </tr><tr>
+              <td>Erityisruokavalio:</td>
+              <td class="oikea"><input type="text" name="erityisruokavalio" value=""></td>
+            </tr>
+          </tr>
+          <tr>
+            <td>Anna sähköpostisi:</td>
+            <td class="oikea"><input type="text" name="email" value=""></td>
+          </tr>
+          <br>
+        </table>
+        <br>
+        <h4>Lisatieto:</h4>
+        <textarea name="lisatieto" rows="8" cols="30"></textarea>
+        <br>
+        <button type="button" name="button" onclick="ilmoittautuminen()">Lähetä</button>
+        <input type="button" onclick="tyhjenna()" name="" value="Tyhjennä">
+      </form>
+      </fieldset>
       <footer>Copyright Jani Kekäläinen</footer>
   </body>
 </html>
