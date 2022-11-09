@@ -11,14 +11,17 @@ body {
 a {
   font-size: 20px;
   font-weight: bold;
+  font-family: 'Kanit', sans-serif;
 }
 h1 {
   text-decoration: underline;
+  font-family: 'Lato', sans-serif;
 
 }
 h2 {
   text-align: center;
   text-decoration: underline;
+  font-family: 'Lato', sans-serif;
 }
 
 img {
@@ -28,20 +31,31 @@ input {
   width: 150px;
   border-radius: 10px;
 }
+
+h3
+{
+  font-family: 'Lato', sans-serif;
+}
 td{
   text-align: center;
   box-sizing: border-box;
   border-radius: 5px;
   border-style: solid;
+  font-family: 'Kanit', sans-serif;
 }
 p {
   margin: auto;
   box-sizing: border-box;
   border-radius: 14px;
   border-style: solid;
-  height: 150px;
+  height: 175px;
   width:710px;
+  font-family: 'Kanit', sans-serif;
+
 }
+
+}
+
 .moon {
   float: right;
   transform: translate(-15px, -10px);
@@ -49,4 +63,14 @@ p {
   height: 80px;
   border-radius: 60%;
   box-shadow: 15px 15px 0 5 #eee9a3;
+}
+
+li
+{
+  font-family: 'Kanit', sans-serif;
+}
+
+footer
+{
+  font-family: 'Kanit', sans-serif;
 }
