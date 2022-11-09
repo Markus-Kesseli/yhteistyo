@@ -4,6 +4,7 @@ body {
     color: white;
     text-align: center;
 }
+
 .valikko {
     background-color: purple;
     padding: 50px;
@@ -73,4 +74,5 @@ li
 footer
 {
   font-family: 'Kanit', sans-serif;
+  margin-top: 15px;
 }
