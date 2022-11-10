@@ -48,10 +48,9 @@
     alert("Anna vähintään 10-merkkinen opiskelija");
     return false; //Ei palauta mitään
   }
-//Meni syntymäajan tarkistuksen läpi, vaikka väärin laittaisi. Pitää kokeilla toista metodia
   var now = new Date();
-  //Validate birth date some time before today's date and
-  //within 120 years
+  //Tarkastetaan syntymäaika
+  // 120v mittakaavassa
   var paiva = /^(0[1-9]|1[0-2])\.(0[1-9]|1\d|2\d|3[01])\.(19|20)\d{2}$/;
   if (!(paiva.test(syntymaaika))) {
     alert("Anna syntymäaika!")
