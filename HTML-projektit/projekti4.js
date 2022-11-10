@@ -37,9 +37,9 @@
      return false;
   }
 
-  if (oppilaitos.length < 15)
+  if (oppilaitos.length < 5)
   {
-    alert("Anna vähintään 15-merkkinen oppilaitos");
+    alert("Anna vähintään 5-merkkinen oppilaitos");
     return false; //Ei palauta mitään
   }
 
@@ -54,7 +54,7 @@
   //within 120 years
   var paiva = /^(0[1-9]|1[0-2])\.(0[1-9]|1\d|2\d|3[01])\.(19|20)\d{2}$/;
   if (!(paiva.test(syntymaaika))) {
-    alert("Anna syntymäaika")
+    alert("Anna syntymäaika!")
     return false;
 }
 
