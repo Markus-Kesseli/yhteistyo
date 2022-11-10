@@ -4,7 +4,7 @@
   var sukunimi = document.formi.snimi.value;
   //Lisää tarkastukset myös allaoleviin muuttujiin
   var osoitetitedot = document.formi.osoitetitedot.value;
-  var puh = document.formi.puh.value;
+  var puhe = document.formi.puh.value;
   var sposti = document.formi.email.value;
   var oppilaitos = document.formi.oppilaitos.value;
   var opiskelija = document.formi.opiskelija.value;
@@ -27,17 +27,14 @@
       alert("Anna vähintään 5-merkkinen sukunimi");
       return false; //Ei palauta mitään
   }
-  //Tarkastetaan sähköposti
-  var tarkistus = /\S+@\S+/;
-  if (!tarkistus.test(sposti)) {
-    alert("Anna kunnon sähköposti");
-  }
+
   //puhelinnumeron tarkistus
 
-  var puh = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im
-  if(!puh.test(puh))
+  var puh = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4}$/im
+  if(!puh.test(puhe))
   {
-     alert("Anna  kunnon puhelinnumero!");
+     alert("Anna puhelinnumero!");
+     return false;
   }
 
   if (oppilaitos.length < 15)
@@ -55,11 +52,16 @@
   var now = new Date();
   //Validate birth date some time before today's date and
   //within 120 years
-  if(syntymaaika == null ||
-    (syntymaaika < now && now.getFullYear() - date.getFullYear() < 120)){
-   true;
-  } else{
-   false;
+  var paiva = /^(0[1-9]|1[0-2])\.(0[1-9]|1\d|2\d|3[01])\.(19|20)\d{2}$/;
+  if (!(paiva.test(syntymaaika))) {
+    alert("Anna syntymäaika")
+    return false;
+}
+
+   //Tarkastetaan sähköposti
+   var tarkistus = /\S+@\S+/;
+   if (!tarkistus.test(sposti)) {
+     alert("Anna sähköposti");
    }
 
 //Tarkastetaan tekstialue
