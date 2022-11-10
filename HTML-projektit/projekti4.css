@@ -1,51 +1,47 @@
 html {
   scroll-behavior: smooth;
 }
-
 /* Taustaväri*/
 body {
-  background-color: black;
-    color: white;
+    background: linear-gradient(to bottom, #3333cc 0%, #cc0000 100%);
+    color: #ffffff;
     text-align: center;
     margin: auto;
-    width: 1800px;
+    width: 1010px;
 }
 .hr {
-  color: white;
-
+  color: black;
 }
 .valikko {
+
   font-size: 25px;
-    background-color: #CC4646;
-    padding: 50px;
-    font-family: 'Lato', sans-serif;
+  background: linear-gradient(to bottom, #ffffff 0%, #0000cc 100%);
+  padding: 50px;
+  font-family: 'Lato', sans-serif;
 }
 a:hover{
   font-size: 28px;
   font-weight: bold;
-  color: #00bfff;
+   background: linear-gradient(to bottom, #ffffff 0%, #9900cc 100%);;
   position: sticky;
-
 }
 h1 {
-text-decoration: underline;
-background-size: 100% 100%;
-background-image: url('https://thumbs.dreamstime.com/b/silhouette-people-raised-hands-concer-crowd-music-show-171619919.jpg');
-font-family: 'Lato', sans-serif;
-padding: 300px;
-font-size: 35px;
+  text-decoration: underline;
+  background-size: 100% 100%;
+  background-image: url('https://thumbs.dreamstime.com/b/silhouette-people-raised-hands-concer-crowd-music-show-171619919.jpg');
+  font-family: 'Lato', sans-serif;
+  padding: 300px;
+  font-size: 35px;
 }
 
 h2
 {
   font-family: 'Lato', sans-serif;
 }
-
 h2:hover {
   text-align: center;
   text-decoration: underline;
 }
-
 h3
 {
   font-family: 'Lato', sans-serif;
@@ -66,7 +62,6 @@ input {
   column-gap: 20px;
   font-family: 'Kanit', sans-serif;
  }
-
 p {
   margin: auto;
   text-align: center;
@@ -117,7 +112,6 @@ margin-right: auto;
   margin-right: 10px;
   margin-top: 10px;
 }
-
 li
 {
   font-family: 'Kanit', sans-serif;
@@ -126,9 +120,7 @@ li
 .lomake2
 {
   margin: auto;
-
 }
-
 footer
 {
   font-family: 'Kanit', sans-serif;
