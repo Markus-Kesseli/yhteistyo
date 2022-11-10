@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 /* Taustaväri*/
 body {
   background-color: black;
