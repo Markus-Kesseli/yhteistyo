@@ -95,7 +95,21 @@ p {
   margin-left: 10px;
   margin-top: 15px;
 }
-
+.digital_teknologia{
+margin-left:auto;
+margin-right: auto;
+  margin-bottom: 170px;
+  width: 200px;
+  height: 200px;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4thOe3F2ze6jfkR4_i0q1T0wpZ3FtsuxMGGJmJcmZ5_Uk5AdFO8TEW-vjc5RhkN0dNMI&usqp=CAU');
+}
+.teknologia1 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 950px;
+  height: 300px;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/ba/Digital_Technology_International_logo.png');
+}
 .moon {
   float: right;
   height: 100px;
