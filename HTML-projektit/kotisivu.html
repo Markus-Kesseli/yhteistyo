@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <script type="text/javascript" src="projekti4.js"></script>
     <link rel="stylesheet" href="projekti4.css">
-    <link rel="stylesheet" href="fontit.css">
     <title>Moon Festival seminar</title>
   </head>
   <body>
@@ -12,16 +11,13 @@
     <div class="container">
       <nav class="flex items-centre justify-between">
              <div class="left flex justfiy-right">
-               <img class="logo" src="imagez/festival.png">
-             </div>
-             <div class="moon">
-               <img src="imagez/moon.gif">
+               <img src="imagez/festival.png">
              </div>
              <!--Valikko-->
              <nav>
                <div class="valikko">
                  <a href="kotisivu.html">Koti</a> |
-                 <a href="projekti4_aikataulu.html">Aikataulu</a> |
+                 <a href="#">Aikataulu</a> |
                  <a href="#">Liput</a> |
                  <a href="#">Syö & Juo</a> |
                  <a href="#">Vastuullisuus</a>
@@ -41,7 +37,6 @@
       <!--Aikataulu-->
       <table class="tbl">
         <tr>
-          <h2>Aikataulu</h2>
           <td>Friday</td>
           <td>9:00 - 9:45</td> <td>Seminaarin avaus</td>
           <td>Tauko</td>
@@ -56,6 +51,9 @@
       </table>
       <br> <hr class="hr">
       <h2>Esittely</h2>
+      <div class="">
+        <p>imo Honkela on kolmessa yliopistossa toiminut professori. Hän on rakentanut siltaa tekoälytutkimuksen ja humanististen ja yhteiskuntatieteiden välille yli 30 vuoden ajan. Hänen työnsä keskeinen kohde on ollut kieli ja merkitys sekä rakkain harrastuksensa musiikki. Nykyisin Honkela on tutkimusjohtaja Helsingin yliopiston Digitaalisissa ihmistieteissä. Hänen kehittämänsä ajatus rauhankoneesta on herättänyt runsaasti kansainvälistä huomiota. Honkela lähestyy ilmiöitä laajoina kokonaisuuksina niin, ettei ihmisen näkökulmaa unohdeta intensiivisen teknologisen kehityksen keskellä.</p>
+      </div>
       <div>
         <p> Miten tekoäly vaikuttaa musiikkiin? Miten ja mikä musiikissa muuttuu? Siirtyykö musiikin tekeminen ja esittäminen ihmisiltä tekoälylle? Onko kyseessä luovuuden ja kulttuurin uusi aika – halusimme tai emme?
           Tervetuloa kuulemaan, miten musiikin tekeminen ja esittäminen voivat tulevaisuudessa muuttua!
@@ -77,8 +75,8 @@
           <li>Markus Kesseli</li>
         </div>
         <br> <hr class="hr">
-      </section>
-      <section class="vast">
+      </section>'
+    <section>
       <h2>Vastuullisuus</h2>
       <p>Festivaalin vastuullisuus tarkoittaa konkreettista toimintaa ja kehitystyötä jokaisessa kestävän kehityksen kolmesta kulmasta: sosiaalinen vastuu, ympäristövastuu ja taloudellinen vastuu. Kehittämällä tätä kolminaisuutta tasapainoisesti, kiihdytämme muutosta kohti parempaa.
         Yhteisö:
@@ -88,6 +86,7 @@
       <section>
         <div class="tickets.html">
           <li>Price: 10e</li> <hr class="hr">
+
         </div>
       </section>
       <section>
@@ -97,62 +96,6 @@
           <img src="imagez/ticketmaster.png">
         </div>
       </section>
-      <!--ilmoittautumislomake-->
-      <fieldset class="f1">
-      <form name="formi" class="" action="kiitos.html" method="post" id="clear">
-        <h1>Ilmoittautuminen</h1>
-        <table>
-          <tr>
-            <td>Anna etunimi:</td>
-            <td class="oikea"><input type="text" name="enimi" value=""></td>
-          </tr>
-          <br>
-          <tr>
-            <td>Anna sukunimi:</td>
-            <td class="oikea"><input type="text" name="snimi" value=""></td>
-          </tr>
-          <br>
-          <tr>
-            <tr>
-              <td>Anna osoitetitedot:</td>
-              <td class="oikea"><input type="text" name="osoitetitedot" value=""></td>
-            </tr>
-          </tr><br><br>
-          <tr>
-            <td>Anna puhelinnumerosi:</td>
-            <td class="oikea"><input type="tel" name="puh" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br></td>
-            <small>Format: 123-45-6785</small><br><br>
-            <tr>
-              <td>Anna oppilaitos:</td>
-              <td class="oikea"><input type="text" name="oppilaitos" value=""></td>
-            </tr><tr>
-              <td>Ammattinimike/opiskelija:</td>
-              <td class="oikea"><input type="text" name="opiskelija" value=""></td>
-            </tr><tr>
-              <td>Anna syntymäaikasi:</td>
-              <td class="oikea"><input type="text" name="syntymaaika" value=""></td>
-            </tr><tr>
-              <td>Hinta:</td>
-              <td class="oikea"><input type="text" name="hinta" value=""></td>
-            </tr><tr>
-              <td>Erityisruokavalio:</td>
-              <td class="oikea"><input type="text" name="erityisruokavalio" value=""></td>
-            </tr>
-          </tr>
-          <tr>
-            <td>Anna sähköpostisi:</td>
-            <td class="oikea"><input type="text" name="email" value=""></td>
-          </tr>
-          <br>
-        </table>
-        <br>
-        <h4>Lisatieto:</h4>
-        <textarea name="lisatieto" rows="8" cols="30"></textarea>
-        <br>
-        <button type="button" name="button" onclick="ilmoittautuminen()">Lähetä</button>
-        <input type="button" onclick="tyhjenna()" name="" value="Tyhjennä">
-      </form>
-      </fieldset>
       <footer>Copyright Jani Kekäläinen</footer>
   </body>
 </html>
