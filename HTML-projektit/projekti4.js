@@ -64,8 +64,8 @@
    }
 
 //Tarkastetaan tekstialue
-if (lisatieto.length < 20) {
-  alert("Lisätiedossa tulee olla vähintään 20-merkkiä!");
+if (lisatieto.length < 10) {
+  alert("Lisätiedossa tulee olla vähintään 10-merkkiä!");
   document.formi.lisatieto.focus();
   return false;
 }
