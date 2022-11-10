@@ -1,18 +1,23 @@
-/*  */
 figure
 {
   float: left;
-  margin: 0px 5px;
+  margin: 0px 10px;
 }
 figcaption
 {
   text-align: center;
 }
-h3
+h1
 {
-  font-size: 36px;
+  font-size: 50px;
 }
 p
 {
-  font-size: 18px;
+  font-size: 20px;
+}
+img {
+    float: left;
+    width:  200px;
+    height: 200px;
+    object-fit: cover;
 }
