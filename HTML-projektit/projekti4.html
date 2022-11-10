@@ -13,12 +13,12 @@
              <!--Valikko-->
              <nav>
                <div class="valikko">
-                 <a href="kotisivu.html">Koti</a> |
-                 <a href="projekti4_aikataulu.html">Aikataulu</a> |
-                 <a href="#">Liput</a> |
-                 <a href="#">Syö & Juo</a> |
-                 <a href="#">Vastuullisuus</a>
-                 <a href="#projekti4.html">Ilmoittautuminen</a> |
+                 <a href="projekti4.html">Koti</a> |
+                 <a href="#aikataulu">Aikataulu</a> |
+                 <a href="#vastuu">Vastuullisuus</a> |
+                 <a href="#ruokailu">Syö & Juo</a> |
+                 <a href="#hinnasto">Liput</a> |
+                 <a href="#ilm">Ilmoittautuminen</a> |
                  <input type="text" placeholder="search">
                </div>
              </nav>
@@ -30,7 +30,7 @@
       <!--Aikataulu-->
       <table class="tbl">
         <tr>
-          <h2>Aikataulu</h2>
+          <h2 id="aikataulu">Aikataulu</h2>
           <td>Friday</td>
           <td>9:00 - 9:45</td> <td>Seminaarin avaus</td>
           <td>Tauko</td>
@@ -52,7 +52,7 @@
           Puhujana professori, tutkimusjohtaja Jani Kekäläinen & Markus Kesseli. Aiheeseen liittyvää voi lukea myös vieressä oelvasta linkistä: <a href="#">https://www.impe.fi/pages/1/134 </p></a> <hr class="hr">
       </div>
 
-      <h2 class="food">Food</h2>
+      <h2 id="ruokailu" class="food">Ruokailu</h2>
         <li>Buffet</li>
         <li>Cafeteria</li>
       <br> <hr class="hr">
@@ -68,7 +68,7 @@
         <br> <hr class="hr">
       </section>
       <section class="vast">
-      <h2>Vastuullisuus</h2>
+      <h2 id="vastuu">Vastuullisuus</h2>
       <p>Festivaalin vastuullisuus tarkoittaa konkreettista toimintaa ja kehitystyötä jokaisessa kestävän kehityksen kolmesta kulmasta: sosiaalinen vastuu, ympäristövastuu ja taloudellinen vastuu. Kehittämällä tätä kolminaisuutta tasapainoisesti, kiihdytämme muutosta kohti parempaa.
         Yhteisö:
         Festivaaliviikonlopun ympärillä noin tuhat ihmistä työskentelee Tuskan riveissä. Kehitämme henkilöstömme osaamista jatkuvasti ja koulutamme paitsi itseämme, myös uusia tapahtuma-alan ammattilaisia aktiivisesti. Jatkuva oppiminen on keskeinen keino viedä tapahtuma-alaa sekä elinkeinoa eteenpäin.</p>
@@ -76,7 +76,9 @@
         <br> <hr class="hr">
       <section>
         <div class="tickets.html">
-          <li>Price: 10e</li> <hr class="hr">
+          <h2 id="hinnasto">Hinnasto</h2>
+          <li>Lippu: 60€</li>
+          <li>Buffet: 10€</li> <hr class="hr">
         </div>
       </section>
       <section>
@@ -90,9 +92,9 @@
       <fieldset class="f1">
       <form name="formi" class="lomake" action="kiitos.html" method="post" id="clear">
         <h1>Ilmoittautuminen</h1>
-        <table class="lomake">
+        <table class="lomake2">
           <tr>
-            <td>Anna etunimi:</td>
+            <td id="ilm">Anna etunimi:</td>
             <td class="oikea"><input type="text" name="enimi" value=""></td>
           </tr>
           <br>
@@ -135,13 +137,13 @@
           <br>
         </table>
         <br>
-        <h4>Lisatieto:</h4>
+        <h4>Lisätieto:</h4>
         <textarea name="lisatieto" rows="8" cols="30"></textarea>
         <br>
         <button type="button" name="button" onclick="ilmoittautuminen()">Lähetä</button>
         <input type="button" onclick="tyhjenna()" name="" value="Tyhjennä">
       </form>
       </fieldset>
-      <footer>Copyright Jani Kekäläinen</footer>
+      <footer>Copyright&#169; Jani Kekäläinen</footer>
   </body>
 </html>

@@ -8,6 +8,7 @@ body {
 }
 .hr {
   color: white;
+
 }
 .valikko {
   font-size: 25px;
@@ -55,11 +56,10 @@ input {
   border-radius: 10px;
 }
 .tbl , th, td{
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   border: 1px solid;
   column-count: 2;
-  column-gap: 40px;
+  column-gap: 20px;
   font-family: 'Lato', sans-serif;
  }
 
@@ -105,7 +105,7 @@ li
   font-family: 'Kanit', sans-serif;
 }
 
-.lomake
+.lomake2
 {
   margin: auto;
 }
