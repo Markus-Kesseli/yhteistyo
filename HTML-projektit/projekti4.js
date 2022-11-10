@@ -4,7 +4,7 @@
   var sukunimi = document.formi.snimi.value;
   //Lisää tarkastukset myös allaoleviin muuttujiin
   var osoitetitedot = document.formi.osoitetitedot.value;
-  var puh = document.formi.puh.value;
+  var phoneno = document.formi.phoneno.value;
   var sposti = document.formi.email.value;
   var oppilaitos = document.formi.oppilaitos.value;
   var opiskelija = document.formi.opiskelija.value;
@@ -34,11 +34,12 @@
   }
   //puhelinnumeron tarkistus
 
-  var puh = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im
-  if(!puh.test(puh))
-  {
-     alert("Anna  kunnon puhelinnumero!");
-  }
+  var puh = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+   if(!puh.test(phoneno))
+      {
+ 	   alert("Not a valid Phone Number");
+ 	   return false;
+      }
 
   if (oppilaitos.length < 15)
   {
