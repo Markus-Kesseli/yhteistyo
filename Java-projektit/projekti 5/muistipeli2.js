@@ -16,18 +16,18 @@ let secondCard = false;
 
 //Items array
 const items = [
-  { name: "emoji", image: "image/disguised.png" },
-    { name: "emoji", image: "image/smiling.png" },
-    { name: "emoji", image: "image/sleeping.png" },
-    { name: "emoji", image: "image/pouting.png" },
-    { name: "emoji", image: "image/screaming.png" },
-    { name: "emoji", image: "image/cold.png" },
-    { name: "emoji", image: "image/medicalmask.png" },
-    { name: "emoji", image: "image/nerd.png" },
-    { name: "emoji", image: "image/thinking.png" },
-    { name: "emoji", image: "image/neutral.png" },
-    { name: "emoji", image: "image/ghost.png" },
-    { name: "emoji", image: "image/grinning.png" },
+  { name: "image/disguised.png", image: "image/disguised.png" },
+    { name: "image/smiling.png", image: "image/smiling.png" },
+    { name: "image/sleeping.png", image: "image/sleeping.png" },
+    { name: "image/pouting.png", image: "image/pouting.png" },
+    { name: "image/screaming.png", image: "image/screaming.png" },
+    { name: "image/cold.png", image: "image/cold.png" },
+    { name: "image/medicalmask.png", image: "image/medicalmask.png" },
+    { name: "image/nerd.png", image: "image/nerd.png" },
+    { name: "image/thinking.png", image: "image/thinking.png" },
+    { name: "image/neutral.png", image: "image/neutral.png" },
+    { name: "image/ghost.png", image: "image/ghost.png" },
+    { name: "image/grinning.png", image: "image/grinning.png" },
   ];
 //Initial Time
 let seconds = 0;
@@ -99,24 +99,26 @@ const matrixGenerator = (cardValues, size = 4) => {
 
   //Cards
   cards = document.querySelectorAll(".card-container");
-  cards.forEach((cards) => {
-    cards.addEventListener("click", () => {
+  console.log(cards);
+  cards.forEach((card) => {
+    console.log(card)
+    card.addEventListener("click", () => {
       //If selected card is not matched yet then only run (i.e already matched card when clicked would be ignored)
-      if (!cards.classList.contains("matched")) {
+      if (!card.classList.contains("matched")) {
         //flip the cliked card
-        cards.classList.add("flipped");
+        card.classList.add("flipped");
         //if it is the firstcard (!firstCard since firstCard is initially false)
         if (!firstCard) {
           //so current card will become firstCard
-          firstCard = cards;
+          firstCard = card;
           //current cards value becomes firstCardValue
-          firstCardValue = cards.getAttribute("data-card-value");
+          firstCardValue = card.getAttribute("data-card-value");
         } else {
           //increment moves since user selected second card
           movesCounter();
           //secondCard and value
-          secondCard = cards;
-          let secondValue = cards.getAttribute("data-card-value");
+          secondCard = card;
+          let secondValue = card.getAttribute("data-card-value");
           if (firstCardValue == secondCard) {
             //if both cards match add matched class so these cards would beignored next time
             firstCardValue.classList.add("matched");
@@ -171,7 +173,7 @@ mem4x6.addEventListener("click", () => {
   //controls amd buttons visibility
   controls.classList.add("hide");
   stopButton.classList.remove("hide");
-  mem4x6.classList.add("hide");
+  //mem4x6.classList.add("hide");
   //Start timer
   interval = setInterval(timeGenerator, 1000);
   //initial moves
@@ -186,7 +188,7 @@ mem6x6.addEventListener("click", () => {
   //controls amd buttons visibility
   controls.classList.add("hide");
   stopButton.classList.remove("hide");
-  mem6x6.classList.add("hide");
+  //mem6x6.classList.add("hide");
   //Start timer
   interval = setInterval(timeGenerator, 1000);
   //initial moves
