@@ -18,14 +18,35 @@ function lomake1B() {
   //Tarkistetaan nimi
   if (etunimi.length < 4)
   {
-    alert("Anna vähintään 4-merkkinen etunimi");
+    alert("Anna vähintään 4-merkkinen etunimi!");
     return false; //Ei palauta mitään
   }
 
   //Tarkastetaan sukunimen pituus
   if (sukunimi.length < 5)
   {
-    alert("Anna vähintään 5-merkkinen sukunimi");
+    alert("Anna vähintään 5-merkkinen sukunimi!");
+    return false; //Ei palauta mitään
+  }
+
+  //Tarkistetaan lähiosoite
+  if (lahiosoite.length < 5)
+  {
+    alert("Anna lähiosoite!");
+    return false; //Ei palauta mitään
+  }
+
+  //Tarkistetaan postinumero
+  if (postinumero.length < 5)
+  {
+    alert("Anna postinumero!");
+    return false; //Ei palauta mitään
+  }
+
+  //Tarkistetaan postitoimipaikka
+  if (postitoimipaikka.length < 4)
+  {
+    alert("Anna postitoimipaikka!");
     return false; //Ei palauta mitään
   }
 
@@ -40,7 +61,7 @@ function lomake1B() {
   //Tarkastetaan sähköposti
   var tarkistus = /\S+@\S+/;
   if (!tarkistus.test(sposti)) {
-  alert("Anna sähköposti");
+  alert("Anna sähköposti!");
   }
 }
 

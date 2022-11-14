@@ -28,7 +28,7 @@
             </tr>
             <tr>
               <td>Anna Postinumero:</td>
-              <td class="oikea"><input type="text" name="pnumero" value=""></td>
+              <td class="oikea"><input type="number" name="pnumero" value=""></td>
             </tr>
             <tr>
               <td>Anna postitoimipaikka:</td>
@@ -36,17 +36,14 @@
             </tr>
           <tr>
             <td>Anna puhelinnumerosi:</td>
-            <td class="oikea"><input type="tel" name="puh" placeholder="123-456-7890" required><br><br></td>
-            <small>Format: 123-450-6785</small><br><br>
+            <td class="oikea"><input type="tel" name="puh" placeholder="123-456-7890" required><br></td>
             <tr>
             <td>Anna sähköpostisi:</td>
             <td class="oikea"><input type="text" name="email" value=""></td>
           </tr>
           <br>
         </table>
-        <br>
-        <h4>Lisätieto:</h4>
-        <textarea name="lisatieto" rows="8" cols="30"></textarea>
+
         <br>
         <button type="button" name="button" onclick="lomake1B()">Tallenna</button>
         <input type="button" onclick="tyhjenna()" name="" value="Tyhjennä">
