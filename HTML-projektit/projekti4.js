@@ -29,7 +29,6 @@
   }
 
   //puhelinnumeron tarkistus
-
   var puh = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4}$/im
   if(!puh.test(puhe))
   {

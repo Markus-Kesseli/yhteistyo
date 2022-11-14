@@ -4,42 +4,50 @@ localStorage.setItem("lastname", "Smith");
 
 // Retrieve
 document.getElementById("demo").innerHTML = localStorage.getItem("lastname");
+
 function lomake1B() {
   //Haetaan html-documentista käyttäjän syöttämät arvot
-  var form = document.getElementById("kyselylomake").value;
-  var nimi = document.getElementById("nimisyotto").value;
-  var sposti = document.getElementById("emailsyotto").value;
-  var ika = document.getElementById("ikasyotto").value;
-  var palaute = document.form.palautet.value;
+  var etunimi = document.form.enimi.value;
+  var sukunimi = document.form.snimi.value;
+  var lahiosoite = document.form.losoite.value;
+  var postinumero = document.form.pnumero.value;
+  var postitoimipaikka = document.form.posoite.value;
+  var puhe = document.form.puh.value;
+  var sposti = document.form.email.value;
 
   //Tarkistetaan nimi
-  for (var i = 0; i < nimi.length; i++) {
-    alert("Et syöttänyt koko nimeä");
-    return false;
+  if (etunimi.length < 4)
+  {
+    alert("Anna vähintään 4-merkkinen etunimi");
+    return false; //Ei palauta mitään
   }
-  //min- ja max-määrite?
-  var min = (Math.min(1));
-  var max = (Math.max(110));
 
-  //Tarkastetaan ikä
-  for (var i = 0; i < ika; i++) {
-    alert("Syötä ikäsi");
-    return false;
+  //Tarkastetaan sukunimen pituus
+  if (sukunimi.length < 5)
+  {
+    alert("Anna vähintään 5-merkkinen sukunimi");
+    return false; //Ei palauta mitään
   }
-  //Tarkastetaan s-posti
+
+  //puhelinnumeron tarkistus
+  var puh = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4}$/im
+  if(!puh.test(puhe))
+  {
+   alert("Anna puhelinnumero!");
+   return false;
+  }
+
+  //Tarkastetaan sähköposti
   var tarkistus = /\S+@\S+/;
   if (!tarkistus.test(sposti)) {
-  alert("Anna kunnon sähköposti");
-  return false;
+  alert("Anna sähköposti");
   }
 }
-  if (palaute.length < 35) {
-    alert("Palautteessa tulee olla vähintään 35-merkkiä!");
-  }
 
- var vastaus = false;
- //Edellistä kohtaa varten tehdään silmukka, joka sitten käy jokaisen painikkeen läpi
-  var ruokalaji = ruoka, ruoka, ruoka;
-  if (ruokalaji == true) {
-  vastaus = true;
-  }
+  function tyhjenna()
+  {
+    if (confirm("Oletko varma?"))
+    {
+      document.getElementById('clear').reset();
+    }
+}

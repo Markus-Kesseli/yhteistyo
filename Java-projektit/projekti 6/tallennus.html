@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="tallennus.css">
+    <script type="text/javascript" src="paikallinen_tallennus.js"></script>
+    <title>tallennus lomake</title>
+  </head>
+  <body>
+    <fieldset class="kehys">
+      <form name="form" class="lomake" action="kiitos.html" method="post" id="clear">
+        <h1>Ilmoittautuminen</h1>
+        <table class="lomake2">
+          <tr>
+            <td id="ilm">Anna etunimi:</td>
+            <td class="oikea"><input type="text" name="enimi" value=""></td>
+          </tr>
+          <br>
+          <tr>
+            <td>Anna sukunimi:</td>
+            <td class="oikea"><input type="text" name="snimi" value=""></td>
+          </tr>
+          <br>
+          <tr>
+            <tr>
+              <td>Anna lähiosoite:</td>
+              <td class="oikea"><input type="text" name="losoite" value=""></td>
+            </tr>
+            <tr>
+              <td>Anna Postinumero:</td>
+              <td class="oikea"><input type="text" name="pnumero" value=""></td>
+            </tr>
+            <tr>
+              <td>Anna postitoimipaikka:</td>
+              <td class="oikea"><input type="text" name="posoite" value=""></td>
+            </tr>
+          <tr>
+            <td>Anna puhelinnumerosi:</td>
+            <td class="oikea"><input type="tel" name="puh" placeholder="123-456-7890" required><br><br></td>
+            <small>Format: 123-450-6785</small><br><br>
+            <tr>
+            <td>Anna sähköpostisi:</td>
+            <td class="oikea"><input type="text" name="email" value=""></td>
+          </tr>
+          <br>
+        </table>
+        <br>
+        <h4>Lisätieto:</h4>
+        <textarea name="lisatieto" rows="8" cols="30"></textarea>
+        <br>
+        <button type="button" name="button" onclick="lomake1B()">Tallenna</button>
+        <input type="button" onclick="tyhjenna()" name="" value="Tyhjennä">
+      </form>
+      </fieldset>
+  </body>
+</html>
