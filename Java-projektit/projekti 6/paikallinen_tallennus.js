@@ -71,7 +71,7 @@
 
   const textToBLOB = new Blob([data], { type: "text/plain" });
 
-  var filename = new Date();
+  var tiedosto = new Date();
 
             var month =new Date(); //months from 1-12
             month = month.getMonth();
@@ -83,7 +83,7 @@
             var year = year.getUTCFullYear();
 
             newdate = year + "/" + month + "/" + day;
-            const sFileName = filename; // The file to save the data.
+            const sFileName = tiedosto; // The file to save the data.
 
             let newLink = document.createElement("a");
             newLink.download = new Date();
