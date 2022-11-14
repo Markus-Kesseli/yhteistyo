@@ -1,19 +1,14 @@
-// Set Item
-//Tällä saamme kaiken tallennettua?
-localStorage.setItem("lastname", "Smith");
 
-// Retrieve
-document.getElementById("demo").innerHTML = localStorage.getItem("lastname");
+  let lomake1B = () => {
 
-function lomake1B() {
   //Haetaan html-documentista käyttäjän syöttämät arvot
-  var etunimi = document.form.enimi.value;
-  var sukunimi = document.form.snimi.value;
-  var lahiosoite = document.form.losoite.value;
-  var postinumero = document.form.pnumero.value;
-  var postitoimipaikka = document.form.posoite.value;
-  var puhe = document.form.puh.value;
-  var sposti = document.form.email.value;
+  const etunimi = document.form.enimi;
+  const sukunimi = document.form.snimi;
+  const lahiosoite = document.form.losoite;
+  const postinumero = document.form.pnumero;
+  const postitoimipaikka = document.form.posoite;
+  const puhe = document.form.puh;
+  const sposti = document.form.email;
 
   //Tarkistetaan nimi
   if (etunimi.length < 4)
@@ -52,7 +47,7 @@ function lomake1B() {
 
   //puhelinnumeron tarkistus
   var puh = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4}$/im
-  if(!puh.test(puhe))
+  if(puh.test(puhe))
   {
    alert("Anna puhelinnumero!");
    return false;
@@ -60,10 +55,50 @@ function lomake1B() {
 
   //Tarkastetaan sähköposti
   var tarkistus = /\S+@\S+/;
-  if (!tarkistus.test(sposti)) {
+  if (tarkistus.test(sposti)) {
   alert("Anna sähköposti!");
   }
-}
+
+  var data = "Nimi: " + etunimi.value + "\r\n" +
+  "Sukunimi: " + sukunimi.value + "\r\n" +
+  "Lähiosoite: " + lahiosoite.value + "\r\n" +
+  "Postinumero: " + postinumero.value + "\r\n" +
+  "Postitoimipaikka: " + postitoimipaikka.value + "\r\n" +
+  "Puhelin: " + puhe.value + "\r\n" +
+  "Sähköposti: " + sposti.value;
+
+  console.log(data);
+
+  const textToBLOB = new Blob([data], { type: "text/plain" });
+
+  var filename = new Date();
+
+            var month =new Date(); //months from 1-12
+            month = month.getMonth();
+
+            var day = new Date();
+            var day = day.getUTCDate();
+
+            var year = new Date();
+            var year = year.getUTCFullYear();
+
+            newdate = year + "/" + month + "/" + day;
+            const sFileName = filename; // The file to save the data.
+
+            let newLink = document.createElement("a");
+            newLink.download = new Date();
+
+            if (window.webkitURL != null) {
+                newLink.href = window.webkitURL.createObjectURL(textToBLOB);
+            } else {
+                newLink.href = window.URL.createObjectURL(textToBLOB);
+                newLink.style.display = "none";
+                document.body.appendChild(newLink);
+            }
+
+            newLink.click();
+        };
+
 
   function tyhjenna()
   {
