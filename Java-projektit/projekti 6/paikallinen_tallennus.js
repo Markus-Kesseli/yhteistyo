@@ -10,6 +10,7 @@
   const puhe = document.form.puh;
   const sposti = document.form.email;
 
+  //Tallennetaan käyttäjän syöttämät tiedot
   localStorage.setItem("Etunimi", etunimi.value);
   localStorage.setItem("Sukunimi", sukunimi.value);
   localStorage.setItem("Lähiosoite", lahiosoite.value);
@@ -19,7 +20,7 @@
   localStorage.setItem("Sähköposti", sposti.value);
 };
 
-
+  //tyhjennetään lomake
   function tyhjenna()
   {
     if (confirm("Oletko varma?"))
@@ -28,7 +29,8 @@
     }
 }
 
-function poista()
-{
-  localStorage.clear();
-}
+  //Tyhjennetään paikallinen muisti
+  function poista()
+    {
+      localStorage.clear();
+    }
