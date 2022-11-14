@@ -3,51 +3,74 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="tallennus.css">
-    <script type="text/javascript" src="paikallinen_tallennus.js"></script>
+    <script type="text/javascript" src="main.js"></script>
     <title>tallennus lomake</title>
   </head>
   <body>
-    <fieldset class="kehys">
-      <form name="form" class="lomake" action="kiitos.html" method="post" id="clear">
-        <h1>Lomake</h1>
-        <table class="lomake2">
-          <tr>
-            <td id="ilm">Anna etunimi:</td>
-            <td><input type="text" name="enimi" value=""></td>
-          </tr>
-          <br>
-          <tr>
-            <td>Anna sukunimi:</td>
-            <td class="oikea"><input type="text" name="snimi" value=""></td>
-          </tr>
-          <br>
-          <tr>
-            <tr>
-              <td>Anna lähiosoite:</td>
-              <td><input type="text" name="losoite" value=""></td>
-            </tr>
-            <tr>
-              <td>Anna Postinumero:</td>
-              <td><input type="number" name="pnumero" value=""></td>
-            </tr>
-            <tr>
-              <td>Anna postitoimipaikka:</td>
-              <td><input type="text" name="posoite" value=""></td>
-            </tr>
-          <tr>
-            <td>Anna puhelinnumerosi:</td>
-            <td><input type="tel" name="puh" placeholder="123-456-7890" required><br></td>
-            <tr>
-            <td>Anna sähköpostisi:</td>
-            <td><input type="text" name="email" value=""></td>
-          </tr>
-          <br>
-        </table>
+    <fieldset>
+
+
+  <div id="formDiv">
+        <form id="lomake" class="kehys">
+            <h1>Local Storage</h1>
+            <table>
+              <tr>
+                <td><label for="key" >Avain: </label></td>
+                <td>  <input type="text" id="key" placeholder="Key" required></td>
+              </tr>
+              <tr>
+                <td><label for="carBrand" >etunimi: </label></td>
+                <td><input type="text" id="enimi" placeholder="etunimi" required autofocus></td>
+              </tr>
+              <tr>
+                <td><label for="carModel" >sukunimi: </label></td>
+                <td><input type="text" id="snimi" placeholder="osoite" required autofocus></td>
+              </tr>
+              <tr>
+                <td><label for="losoite" >osoite: </label></td>
+                <td><input type="text" id="losoite" placeholder="osoite" required></td>
+              </tr>
+
+              <tr>
+                <td></td>
+                <td><button type="submit">Tallenna arvot</button></td>
+              </tr>
+            </table>
+
+        </form>
         <br>
-        <button type="button" name="button" onclick="lomake1B()">Tallenna</button>
-        <input type="button" onclick="tyhjenna()" name="" value="Tyhjennä">
-        <input type="button" onclick="poista()" name="" value="Poista">
-      </form>
+        <table>
+          <tr>
+            <td><label for="retrieveKey" >Anna hakuavain</label></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="text" id="retrieveKey" placeholder="retrieveKey" required></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><button id="retrieveButton">Hae arkistosta</button></td>
+          </tr>
+          <tr>
+            <td id="retrieve">    <br></td>
+          </tr>
+          <tr>
+            <td colspan=2><label for="removeKey" >Anna poistettavan tiedoston avain</label></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="text" id="removeKey" placeholder="removeKey" required></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><button id="removeButton">Poista tietue</button></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><button id="clearButton">Poista kaikki tietueet</button></td>
+          </tr>
+        </table>
+      </div>
       </fieldset>
-  </body>
+</body>
 </html>

@@ -75,3 +75,10 @@ if (palaute.length < 20) {
       document.getElementById('clear').reset();
     }
 }
+function palauta() {
+  .executeScript('return window.localStorage.getItem("key");')
+      .then((itemValue) => {
+          console.log(itemValue);
+      });
+
+}
