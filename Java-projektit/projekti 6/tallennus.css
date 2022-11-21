@@ -13,7 +13,7 @@ body
 {
   width: 500px;
   background: rgba(0, 0, 0, 0.8);
-  margin: 12% auto;
+  margin: 9% auto;
   padding: 50px 0;
   color: #fff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
@@ -28,4 +28,14 @@ body
 h1
 {
   text-align: center;
+}
+
+td
+{
+  margin-left: 10px;
+}
+
+table
+{
+  margin: auto;
 }
