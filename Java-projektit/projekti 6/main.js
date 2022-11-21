@@ -1,12 +1,21 @@
 function store(){ //stores items in the localStorage
     var etunimi = document.getElementById('enimi').value;
     var sukunimi = document.getElementById('snimi').value;
+    var lahiosoite = document.getElementById('losoite').value;
+    var postinumero = document.getElementById('pnumero').value;
+    var postitoimipaikka = document.getElementById('posoite').value;
+    var puhelin = document.getElementById('puhe').value;
+    var sahkoposti = document.getElementById('sposti').value;
     var key = document.getElementById('key').value;
 
     const lomake = {
-        losoite: losoite,
+        lahiosoite: lahiosoite,
         etunimi: etunimi,
         sukunimi: sukunimi,
+        postinumero: postinumero,
+        postitoimipaikka: postitoimipaikka,
+        puhelin: puhelin,
+        sahkoposti: sahkoposti
     }
 
     window.localStorage.setItem(key,JSON.stringify(lomake));
