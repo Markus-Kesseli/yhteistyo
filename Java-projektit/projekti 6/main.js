@@ -15,7 +15,7 @@ function store(){ //stores items in the localStorage
         postinumero: postinumero,
         postitoimipaikka: postitoimipaikka,
         puhelin: puhelin,
-        sahkoposti: sahkoposti
+        sahkoposti: sahkoposti,
     }
 
     window.localStorage.setItem(key,JSON.stringify(lomake));

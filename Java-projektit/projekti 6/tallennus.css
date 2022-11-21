@@ -39,3 +39,8 @@ table
 {
   margin: auto;
 }
+
+div
+{
+  overflow: auto;
+}
