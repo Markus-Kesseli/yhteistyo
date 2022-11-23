@@ -18,7 +18,7 @@ function lomake1B() {
   }
 
   if ( ika < 1 || ika>100 ) {
-      alert("The age must be a number between 1 and 100");
+      alert("Iän tulee olla numeron 1 ja 100 väliltä!");
        return false;
    }
   return true;
