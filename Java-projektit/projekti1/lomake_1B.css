@@ -3,7 +3,7 @@ body {
   margin: auto;
   width: 45%;
   margin-top: 15px;
-  background-image: linear-gradient(to right top, #272710, #463b06, #714d00, #a55900, #e25c00);
+background-image: linear-gradient(to right top, #474f4b, #487757, #559f56, #75c646, #a8eb12);
 }
 button {
   margin-bottom: 10%;
@@ -19,14 +19,20 @@ font-family: 'Shadows Into Light', cursive;
 text-align: left;
 font-size: 110%;
 }
-label {
-  position:absolute;
 
+input{
+  width: 100%;
+  background-color: #white;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-
 .f1{
-  width: 250px;
+  width: 100px;
   margin-top: 20px;
   margin-bottom: 20px;
   border-radius: 15px;
