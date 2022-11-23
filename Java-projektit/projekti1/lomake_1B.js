@@ -13,20 +13,20 @@ function lomake1B() {
   //Tarkistetaan nimi
   if (nimi.length < 5)
   {
-    alert("Anna nimi");
+    alert("Anna nimi!");
     return false; //Ei palauta mitään
   }
 
   if ( ika < 1 || ika>100 ) {
-      alert("The age must be a number between 1 and 100");
+      alert("Anna ikä!");
        return false;
    }
-  return true;
+  
 
   //Tarkastetaan sähköposti
   var tarkistus = /\S+@\S+/;
   if (!tarkistus.test(sposti)) {
-    alert("Anna oikea sähköposti!");
+    alert("Anna sähköposti!");
   }
 
   if(valinta.selectedIndex <=0)
