@@ -63,4 +63,3 @@ if (user_guess >= 10) {
     document.getElementById("clicks").innerHTML = clicks;
     nro_of_guesses++;
   };
-  
