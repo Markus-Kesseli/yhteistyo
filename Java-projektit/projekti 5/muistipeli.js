@@ -1,18 +1,5 @@
 // Luodaan kortit
-var merkit =  [
-    "disguised.png", "disguised.png",
-     "smiling.png",  "smiling.png",
-     "sleeping.png", "sleeping.png",
-     "pouting.png",  "pouting.png",
-     "screaming.png","screaming.png",
-     "cold.png", "cold.png",
-      "medicalmask.png", "medicalmask.png",
-      "nerd.png",  "nerd.png",
-      "poop.png",  "poop.png",
-      "neutral.png",  "neutral.png",
-      "ghost.png",  "ghost.png",
-      "monkey.png", "monkey.png",
-  ];
+var merkit = ['cold.png','disguised.png','ghost.png','grinning.png','medicalmask.png','monkey.png','nerd.png','neutral.png','cold.png','disguised.png','ghost.png','grinning.png','medicalmask.png','monkey.png','nerd.png','neutral.png'];
 // luodaan laskurimuuttuja
 var smerkki = 0;
 // luodaan vanha-muuttuja vanhaa korttia varten
