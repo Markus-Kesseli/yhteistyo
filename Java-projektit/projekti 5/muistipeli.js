@@ -1,11 +1,14 @@
 // Luodaan kortit
 var merkit =  [
-    "disguised.png", "disguised.png",  "smiling.png",  "smiling.png",  "sleeping.png", "sleeping.png",  "pouting.png",  "pouting.png",
+    "disguised.png", "disguised.png",
+     "smiling.png",  "smiling.png",
+     "sleeping.png", "sleeping.png",
+     "pouting.png",  "pouting.png",
      "screaming.png","screaming.png",
      "cold.png", "cold.png",
       "medicalmask.png", "medicalmask.png",
       "nerd.png",  "nerd.png",
-      "thinking.png",  "thinking.png",
+      "poop.png",  "poop.png",
       "neutral.png",  "neutral.png",
       "ghost.png",  "ghost.png",
       "grinning.png", "grinning.png",
@@ -67,7 +70,7 @@ function luoTaulukko() {
 // Valmiiksi annettu funktio, joka sekoittaa pakan.
 function sekoita(taulukko)
 {
-    taulukko.sort(function(a, b){return 0.5 - Math.random()});
+    taulukko.sort(function(a, b){return 1.0 - Math.random()});
     return taulukko;
 }
 // Funktio, joka laitetaan jokaisen kortin onclick-toiminnoksi
