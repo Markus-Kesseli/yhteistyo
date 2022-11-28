@@ -106,12 +106,17 @@ function nayta(numero)
     odota(tunnus);
   }
 }
-// funktio, joka pysÃ¤yttÃ¤Ã¤ ohjelman suorituksen 1000-millisekunniksi
+// funktio, joka pysÃ¤yttÃ¤Ã¤ ohjelman suorituksen 1500-millisekunniksi
 function odota(joku) {
   // varsinainen pysÃ¤ytys funktio
   setTimeout(function(){
       // pysÃ¤ytyksen jÃ¤lkeen tyhjennetÃ¤Ã¤n nykyisen kortin tiedot
      joku.innerHTML = '';
-     // PysÃ¤ytyksen pituus 1000 ms = 1 sekunti
-   }, 2000);
+     // PysÃ¤ytyksen pituus 1500 ms = 1,5 sekunti
+   }, 1500);
+}
+if (merkit == vanha) {
+  //if both cards match add matched class so these cards would beignored next time
+  merkit.classList.add("matched");
+  vanha.classList.add("matched");
 }
