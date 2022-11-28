@@ -24,7 +24,7 @@ for(i = 1; i <= yhteensa; i++)
 }
 
 //Aseta oikeat vastaukset
-var vastaukset = ["b", "a", "d", "b", "d"];
+var vastaukset = ["a", "c", "b", "a", "d"];
 
 //Tarkasta oikeat vastaukset
 for(i = 1; i <= yhteensa; i++)
