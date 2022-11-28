@@ -11,7 +11,7 @@ var merkit =  [
       "poop.png",  "poop.png",
       "neutral.png",  "neutral.png",
       "ghost.png",  "ghost.png",
-      "grinning.png", "grinning.png",
+      "monkey.png", "monkey.png",
   ];
 // luodaan laskurimuuttuja
 var smerkki = 0;
@@ -70,7 +70,7 @@ function luoTaulukko() {
 // Valmiiksi annettu funktio, joka sekoittaa pakan.
 function sekoita(taulukko)
 {
-    taulukko.sort(function(a, b){return 1.0 - Math.random()});
+    taulukko.sort(function(a, b){return 0.5 - Math.random()});
     return taulukko;
 }
 // Funktio, joka laitetaan jokaisen kortin onclick-toiminnoksi
