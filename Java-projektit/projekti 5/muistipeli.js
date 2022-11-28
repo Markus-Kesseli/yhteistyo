@@ -2,7 +2,7 @@
 var merkit =  [
     "disguised.png", "disguised.png",  "smiling.png",  "smiling.png",  "sleeping.png", "sleeping.png",  "pouting.png",  "pouting.png",
      "screaming.png","screaming.png",
-     "cold.png",  "cold.png",
+     "cold.png", "cold.png",
       "medicalmask.png", "medicalmask.png",
       "nerd.png",  "nerd.png",
       "thinking.png",  "thinking.png",
