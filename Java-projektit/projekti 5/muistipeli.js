@@ -1,17 +1,14 @@
 // Luodaan kortit
 var merkit =  [
-    "image/disguised.png",  "image/disguised.png",
-      "image/smiling.png",  "image/smiling.png",
-      "image/sleeping.png", "image/sleeping.png",
-      "image/pouting.png",  "image/pouting.png",
-     "image/screaming.png","image/screaming.png",
-     "image/cold.png",  "image/cold.png",
-      "image/medicalmask.png", "image/medicalmask.png",
-      "image/nerd.png",  "image/nerd.png",
-      "image/thinking.png",  "image/thinking.png",
-      "image/neutral.png",  "image/neutral.png",
-      "image/ghost.png",  "image/ghost.png",
-      "image/grinning.png", "image/grinning.png",
+    "disguised.png", "disguised.png",  "smiling.png",  "smiling.png",  "sleeping.png", "sleeping.png",  "pouting.png",  "pouting.png",
+     "screaming.png","screaming.png",
+     "cold.png",  "cold.png",
+      "medicalmask.png", "medicalmask.png",
+      "nerd.png",  "nerd.png",
+      "thinking.png",  "thinking.png",
+      "neutral.png",  "neutral.png",
+      "ghost.png",  "ghost.png",
+      "grinning.png", "grinning.png",
   ];
 // luodaan laskurimuuttuja
 var smerkki = 0;
@@ -92,15 +89,15 @@ function nayta(numero)
   }
 
   // syÃ¶tetÃ¤Ã¤n napautetun taustan tilalle valitun kortin kuva
-  tunnus.innerHTML = '<img src="webkuvat/'+altti+'">';
+  tunnus.innerHTML = '<img src="image/'+altti+'">';
   // tarkastetaan, onko edellinen kortti ja nykyinen kortti samoja (altit)
   if(altti == valtti){
     // mikÃ¤li ovat, haetaan nykyisen kortin alt-muuttuja
     var altti = tunnus.getAttribute('alt');
     // nÃ¤ytetÃ¤Ã¤n vanhakortti
-    vanha.innerHTML = '<img src="webkuvat/'+altti+'">';
+    vanha.innerHTML = '<img src="image/'+altti+'">';
     // nÃ¤ytetÃ¤Ã¤n uusi kokrtti
-    tunnus.innerHTML = '<img src="webkuvat/'+altti+'">';
+    tunnus.innerHTML = '<img src="image/'+altti+'">';
   }
   else{
     // muussa tapauksessa tehdÃ¤Ã¤n nykyisestÃ¤ kortista vanha
@@ -116,5 +113,5 @@ function odota(joku) {
       // pysÃ¤ytyksen jÃ¤lkeen tyhjennetÃ¤Ã¤n nykyisen kortin tiedot
      joku.innerHTML = '';
      // PysÃ¤ytyksen pituus 1000 ms = 1 sekunti
-   }, 1000);
+   }, 2000);
 }
