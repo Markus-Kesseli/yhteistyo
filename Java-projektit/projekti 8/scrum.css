@@ -27,6 +27,7 @@ header {
   overflow-x: scroll;
 }
 .list {
+  color: #cccc00;
   font-size: 20px;
   text-align: center;
   font-family: 'Nerko One', cursive;
