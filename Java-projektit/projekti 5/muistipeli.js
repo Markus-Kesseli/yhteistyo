@@ -78,7 +78,7 @@ function nayta(numero)
     valtti = vanha;
   }
 
-  // syÃ¶tetÃ¤Ã¤n napautetun taustan tilalle valitun kortin kuva
+  // syötetään napautetun taustan tilalle valitun kortin kuva
   tunnus.innerHTML = '<img src="image/'+altti+'">';
   // tarkastetaan, onko edellinen kortti ja nykyinen kortti samoja (altit)
   if(altti == valtti){
@@ -96,7 +96,7 @@ function nayta(numero)
     odota(tunnus);
   }
 }
-// funktio, joka pysÃ¤yttÃ¤Ã¤ ohjelman suorituksen 1500-millisekunniksi
+// funktio, joka pysäyttää ohjelman suorituksen 1500-millisekunniksi
 function odota(joku) {
   // varsinainen pysÃ¤ytys funktio
   setTimeout(function(){
@@ -110,3 +110,38 @@ if (merkit == vanha) {
   merkit.classList.add("matched");
   vanha.classList.add("matched");
 }
+var minute = 0;
+var second = 0;
+var hour = 0;
+var timer = document.querySelector(".ajastin");
+var interval;
+
+function startTimer() {
+  interval = setInterval(function() {
+    timer.innerHTML = hour + " hr " + minute + " mins " + second + " secs";
+    if (second >= 60) {
+      minute += 1;
+      second = 0;
+
+      if (minute >= 60) {
+        hour += 1;
+            minute = 0;
+      }
+    }
+
+    second++;
+  }, 1000);
+}
+
+//Initial moves and win count
+let movesCount = 0,
+  winCount = 0;
+
+//reset timer
+second = 0;
+minute = 0;
+hour = 0;
+var timer = document.querySelector(".ajastin");
+timer.innerHTML = "0 hr 0 mins 0 secs";
+clearInterval(interval);
+startTimer()
