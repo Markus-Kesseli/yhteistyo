@@ -32,8 +32,5 @@
   //Tyhjennetään paikallinen muisti
   function poista()
   {
-    if (confirm("Oletko varma?"))
-    {
       localStorage.clear();
-    }
   }
