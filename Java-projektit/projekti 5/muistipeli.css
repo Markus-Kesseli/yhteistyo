@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit&display=swap');
+
 /* MÃ¤Ã¤ritetÃ¤Ã¤n sarakkeen ominaisuudet */
 td{
   background-color: #c4abab;
@@ -13,4 +16,55 @@ td{
 img{
   height: 140px;
   margin-bottom: -20px;
+}
+
+body
+{
+    background-color: #f4c531;
+}
+
+#pelialue
+{
+
+  margin-left: 20px;
+}
+
+.palkki
+{
+  border-radius: 15px;
+  background-color: white;
+}
+
+.otsikko
+{
+float: left;
+font-family: 'Bebas Neue', cursive;
+margin-left: 20px;
+}
+
+h2
+{
+  font-family: 'Kanit', sans-serif;
+  margin-left: 20px;
+  
+}
+
+.valikko
+{
+float: right;
+display: block;
+font-family: 'Kanit', sans-serif;
+font-size: 25px;
+margin-top: 20px;
+margin-right: 20px;
+}
+
+#peli
+{
+  border-radius: 15px;
+  background-color: white;
+  height: 850px;
+  width: 900px;
+  margin-top: 20px;
+  padding-right: 35px;
 }

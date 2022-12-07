@@ -6,11 +6,25 @@
     <title></title>
   </head>
   <body>
-    <body onload="luoTaulukko()">
+    <fieldset class="palkki" >
+      <header class="otsikko">
+        <h1 id="teksti">JS pelisivusto</h1>
+      </header>
+      <div class="valikko">
+        <a href="kotisivu.html">Koti</a>
+        <a href="muistipeli.html">Muistipeli</a>
+      </div>
+    </fieldset>
+      <fieldset id="peli">
+        <div class="">
+          <h2 id="aika">Aika: </h2>
+          <h2 id="siirrot">Siirrot: </h2>
+        </div>
+        <body onload="luoTaulukko()">
      <!-- Luodaan peliä varten paikka -->
-     <div id="pelialue">
-     </div>
+        <div id="pelialue">
+        </div>
     <script src="muistipeli.js"></script>
-
+  </fieldset>
   </body>
 </html>
