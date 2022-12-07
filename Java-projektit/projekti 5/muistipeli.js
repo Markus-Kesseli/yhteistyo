@@ -1,3 +1,5 @@
+
+
 // Luodaan kortit
 var merkit = ['cold.png','disguised.png','ghost.png','grinning.png','medicalmask.png','monkey.png','nerd.png','neutral.png','cold.png','disguised.png','ghost.png','grinning.png','medicalmask.png','monkey.png','nerd.png','neutral.png'];
 // luodaan laskurimuuttuja
@@ -109,6 +111,7 @@ if (merkit == vanha) {
   //if both cards match add matched class so these cards would beignored next time
   merkit.classList.add("matched");
   vanha.classList.add("matched");
+
 }
 var minute = 0;
 var second = 0;
@@ -133,15 +136,13 @@ function startTimer() {
   }, 1000);
 }
 
-//Initial moves and win count
-let movesCount = 0,
-  winCount = 0;
+
 
 //reset timer
 second = 0;
 minute = 0;
 hour = 0;
-var timer = document.querySelector(".ajastin");
+var ajastin = document.querySelector(".ajastin");
 timer.innerHTML = "0 hr 0 mins 0 secs";
 clearInterval(interval);
 startTimer()
