@@ -25,8 +25,9 @@ body
 
 #pelialue
 {
-
-  margin-left: 20px;
+  height: 800px;
+  width: 800px;
+  margin: auto;
 }
 
 .palkki
@@ -69,7 +70,7 @@ margin-right: 20px;
 {
   border-radius: 15px;
   background-color: white;
-  height: 850px;
+  height: 860px;
   width: 900px;
   margin-top: 20px;
   padding-right: 35px;
