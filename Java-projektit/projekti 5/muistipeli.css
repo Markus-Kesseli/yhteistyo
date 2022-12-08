@@ -23,6 +23,12 @@ body
     background-color: #f4c531;
 }
 
+p
+{
+  font-family: 'Kanit', sans-serif;
+  margin: auto;
+}
+
 #pelialue
 {
   height: 800px;
@@ -77,9 +83,11 @@ margin-right: 20px;
 }
 
 .ohjeet {
-  font-family: 'Kanit', sans-serif;
+
   border-radius: 10px;
-  width: 230px;
+  width: 240px;
+  height: 52px;
+  padding-left: 10px;
   float: right;
   margin-top: -900px;
   background-color: red;
