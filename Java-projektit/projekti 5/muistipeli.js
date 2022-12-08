@@ -1,5 +1,4 @@
 
-
 // Luodaan kortit
 var merkit = ['cold.png','disguised.png','ghost.png','grinning.png','medicalmask.png','monkey.png','nerd.png','neutral.png','cold.png','disguised.png','ghost.png','grinning.png','medicalmask.png','monkey.png','nerd.png','neutral.png'];
 // luodaan laskurimuuttuja
@@ -139,7 +138,9 @@ function startTimer() {
   }, 1000);
 }
 
+function resetoi() {
 
+}
 //reset timer
 second = 0;
 minute = 0;
