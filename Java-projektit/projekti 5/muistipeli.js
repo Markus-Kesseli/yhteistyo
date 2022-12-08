@@ -10,6 +10,7 @@ var vanha = -1;
 // luodaan vanhan kortin alt-ominaisuutta varten muuttuja
 var valtti;
 // varsinaisen taulukon luonti-funktio, jota kutsutaan HTML:n onload-komennolla
+var siirrot = 0;
 function luoTaulukko() {
   // Sekoitetaan alkuperÃ¤inen taulukko
    sekoitetut = sekoita(merkit);
@@ -65,6 +66,8 @@ function sekoita(taulukko)
 // Funktio, joka laitetaan jokaisen kortin onclick-toiminnoksi
 function nayta(numero)
 {
+  siirrot++;
+  document.getElementById('siirrot').innerHTML = Math.floor(siirrot/2);
   // haetaan napautettu kortti
   var tunnus = document.getElementById('solu'+numero);
   // haetaan napautetun kortin alt-muuttuja
@@ -135,7 +138,6 @@ function startTimer() {
     second++;
   }, 1000);
 }
-
 
 
 //reset timer
