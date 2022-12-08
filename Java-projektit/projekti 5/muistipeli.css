@@ -42,11 +42,17 @@ font-family: 'Bebas Neue', cursive;
 margin-left: 20px;
 }
 
-h2
+h2, .ajastin
 {
   font-family: 'Kanit', sans-serif;
   margin-left: 20px;
-  
+  display: inline-block;
+}
+
+.ajastin
+{
+  font-size: 20px;
+  font-weight: bolder;
 }
 
 .valikko
