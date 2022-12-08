@@ -138,9 +138,6 @@ function startTimer() {
   }, 1000);
 }
 
-function resetoi() {
-
-}
 //reset timer
 second = 0;
 minute = 0;
