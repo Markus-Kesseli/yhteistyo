@@ -99,11 +99,11 @@ function nayta(numero)
     vanha = tunnus;
     // pysÃ¤ytetÃ¤Ã¤n ohjelman suoritus hetkeksi
     odota(tunnus);
-  }
-  kaikki++;
-  console.log(kaikki);
-  if (kaikki >= 8) {
-    clearInterval(interval)
+    kaikki++;
+    console.log(kaikki);
+    if (kaikki >= 8) {
+      clearInterval(interval)
+    }
   }
 }
 // funktio, joka pysäyttää ohjelman suorituksen 1500-millisekunniksi
