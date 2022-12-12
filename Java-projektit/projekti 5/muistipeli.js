@@ -94,26 +94,25 @@ function sekoita(taulukko)
     tunnus.innerHTML = '<img src="image/'+altti+'">';
   }
   else{
-    // Muussa tapauksessa tehdÃ¤Ã¤n nykyisestÃ¤ kortista vanha
+    // Muussa tapauksessa tehdään nykyisestä kortista vanha
     vanha = tunnus;
     // Pysäytetään ohjelman suoritus hetkeksi
     odota(tunnus);
     kaikki++;
     console.log(kaikki);
     if (kaikki >= 8) {
-      clearInterval(interval)
+      clearInterval(interval);
+      }
     }
-  }
 }
 
-// funktio, joka pysäyttää ohjelman suorituksen 1500-millisekunniksi
   function odota(joku) {
   // varsinainen pysÃ¤ytys funktio
     setTimeout(function(){
       // pysÃ¤ytyksen jÃ¤lkeen tyhjennetÃ¤Ã¤n nykyisen kortin tiedot
      joku.innerHTML = '';
-     // Pysäytetään pituus 1500 ms = 1,5 sekunti
-   }, 1500);
+     // Pysäytetään pituus 500 ms = 0,5 sekunti
+   }, 500);
 }
 
   if (merkit == vanha) {
