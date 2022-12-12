@@ -10,6 +10,7 @@ var vanha = -1;
 var valtti;
 // varsinaisen taulukon luonti-funktio, jota kutsutaan HTML:n onload-komennolla
 var siirrot = 0;
+var kaikki = 0;
 function luoTaulukko() {
   // Sekoitetaan alkuperÃ¤inen taulukko
    sekoitetut = sekoita(merkit);
@@ -99,6 +100,11 @@ function nayta(numero)
     // pysÃ¤ytetÃ¤Ã¤n ohjelman suoritus hetkeksi
     odota(tunnus);
   }
+  kaikki++;
+  console.log(kaikki);
+  if (kaikki >= 8) {
+    clearInterval(interval)
+  }
 }
 // funktio, joka pysäyttää ohjelman suorituksen 1500-millisekunniksi
 function odota(joku) {
@@ -109,12 +115,15 @@ function odota(joku) {
      // PysÃ¤ytyksen pituus 1500 ms = 1,5 sekunti
    }, 1500);
 }
+
 if (merkit == vanha) {
   //if both cards match add matched class so these cards would beignored next time
   merkit.classList.add("matched");
   vanha.classList.add("matched");
 
+
 }
+
 var minute = 0;
 var second = 0;
 var hour = 0;
@@ -136,7 +145,11 @@ function startTimer() {
 
     second++;
   }, 1000);
+
 }
+
+
+
 
 //reset timer
 second = 0;
