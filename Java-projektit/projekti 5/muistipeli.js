@@ -1,4 +1,3 @@
-
 // Luodaan kortit
 var merkit = ['cold.png','disguised.png','ghost.png','grinning.png','medicalmask.png','monkey.png','nerd.png','neutral.png','cold.png','disguised.png','ghost.png','grinning.png','medicalmask.png','monkey.png','nerd.png','neutral.png'];
 // luodaan laskurimuuttuja
@@ -18,7 +17,7 @@ function luoTaulukko() {
    var paikka = document.getElementById('pelialue');
    // Luodaan peliÃ¤ varten taulukkoelementti
    var taulukko = document.createElement('table');
-   // Luodaan peliÃ¤ varten taulukon sisÃ¤ltÃ¶ elementti
+   // Luodaan peliä varten taulukon sisältö elementti
   var taulukonSisus = document.createElement('tbody');
   // Itse taulukon luominen, ulompi for tekee rivit ja sisempi sarakkeet
   for(var i = 0; i < 4; i++)
@@ -32,29 +31,29 @@ function luoTaulukko() {
       var solu = document.createElement('td');
       // luodaan elementti, johon kortti asetetaan
       var sisus = document.createTextNode('');
-      // MÃ¤Ã¤ritetÃ¤Ã¤n kortin alt-muuttuja, 0 - 15, eli jokaisella kortilla omansa
+      // Määritetään kortin alt-muuttuja, 0 - 15, eli jokaisella kortilla omansa
       solu.setAttribute('alt', sekoitetut[(smerkki)]);
-      // MÃ¤Ã¤ritetÃ¤Ã¤n kortin id-muuttuja: solu+numero, esim. solu12
+      // Määritetään kortin id-muuttuja: solu+numero, esim. solu12
       solu.setAttribute('id', 'solu' + smerkki);
-      // MÃ¤Ã¤ritetÃ¤Ã¤n kortin name-muuttuja 0 - 15, jokaisella omansa
+      // Määritetään kortin name-muuttuja 0 - 15, jokaisella omansa
       solu.setAttribute('name', smerkki);
-      // MÃ¤Ã¤ritetÃ¤Ã¤n kortille onclick -toiminta, kutsutaan nayta-funktiota
+      // Määritetään kortille onclick -toiminta, kutsutaan nayta-funktiota
       solu.setAttribute('onclick', 'nayta('+smerkki+');');
-      // kasvatetaan laskuria yhhdellÃ¤
+      // Kasvatetaan laskuria yhhdellÃ¤
       smerkki += 1;
-      // syÃ¶tetÃ¤Ã¤n yllÃ¤olevat muutoksen kortin-tietoihin
+      // Syötetään yllÃ¤olevat muutoksen kortin-tietoihin
       solu.appendChild(sisus);
-      // syÃ¶tetÃ¤Ã¤n yllÃ¤olavat muutokset rivin tietoihin
+      // Syötetään yllÃ¤olavat muutokset rivin tietoihin
       rivi.appendChild(solu);
     }
-    // syÃ¶tetÃ¤Ã¤n rivit taulukon tbody-elementtiin
+    // Syötetään rivit taulukon tbody-elementtiin
     taulukonSisus.appendChild(rivi);
   }
-  // syÃ¶tetÃ¤Ã¤n lopuksi taulukon tbody-elementti taulukkoon
+  // Syötetään lopuksi taulukon tbody-elementti taulukkoon
   taulukko.appendChild(taulukonSisus);
   // Ja aivan viimeiseksi syÃ¶tetÃ¤Ã¤n taulukko sille varattuun paikkaan
   paikka.appendChild(taulukko);
-  // MÃ¤Ã¤ritetÃ¤Ã¤n taulukolle CSS-arvo border, joka on 2px
+  // Määritetään taulukolle CSS-arvo border, joka on 2px
   taulukko.setAttribute('border', '2');
 }
 // Valmiiksi annettu funktio, joka sekoittaa pakan.
@@ -64,8 +63,8 @@ function sekoita(taulukko)
     return taulukko;
 }
 // Funktio, joka laitetaan jokaisen kortin onclick-toiminnoksi
-function nayta(numero)
-{
+  function nayta(numero)
+  {
   siirrot++;
   document.getElementById('siirrot').innerHTML = Math.floor(siirrot/2);
   // haetaan napautettu kortti
@@ -83,21 +82,21 @@ function nayta(numero)
     valtti = vanha;
   }
 
-  // syötetään napautetun taustan tilalle valitun kortin kuva
+  // Syötetään napautetun taustan tilalle valitun kortin kuva
   tunnus.innerHTML = '<img src="image/'+altti+'">';
   // tarkastetaan, onko edellinen kortti ja nykyinen kortti samoja (altit)
   if(altti == valtti){
-    // mikÃ¤li ovat, haetaan nykyisen kortin alt-muuttuja
+    // Mikäli ovat, haetaan nykyisen kortin alt-muuttuja
     var altti = tunnus.getAttribute('alt');
-    // nÃ¤ytetÃ¤Ã¤n vanhakortti
+    // Näytetään vanhakortti
     vanha.innerHTML = '<img src="image/'+altti+'">';
-    // nÃ¤ytetÃ¤Ã¤n uusi kokrtti
+    // Näytetään uusi kokrtti
     tunnus.innerHTML = '<img src="image/'+altti+'">';
   }
   else{
-    // muussa tapauksessa tehdÃ¤Ã¤n nykyisestÃ¤ kortista vanha
+    // Muussa tapauksessa tehdÃ¤Ã¤n nykyisestÃ¤ kortista vanha
     vanha = tunnus;
-    // pysÃ¤ytetÃ¤Ã¤n ohjelman suoritus hetkeksi
+    // Pysäytetään ohjelman suoritus hetkeksi
     odota(tunnus);
     kaikki++;
     console.log(kaikki);
@@ -106,22 +105,21 @@ function nayta(numero)
     }
   }
 }
+
 // funktio, joka pysäyttää ohjelman suorituksen 1500-millisekunniksi
-function odota(joku) {
+  function odota(joku) {
   // varsinainen pysÃ¤ytys funktio
-  setTimeout(function(){
+    setTimeout(function(){
       // pysÃ¤ytyksen jÃ¤lkeen tyhjennetÃ¤Ã¤n nykyisen kortin tiedot
      joku.innerHTML = '';
-     // PysÃ¤ytyksen pituus 1500 ms = 1,5 sekunti
+     // Pysäytetään pituus 1500 ms = 1,5 sekunti
    }, 1500);
 }
 
-if (merkit == vanha) {
-  //if both cards match add matched class so these cards would beignored next time
+  if (merkit == vanha) {
+  //Jos molemmat kortit ovat parit, lisätään add matched class -ominaisuudet, jotta nämä kortit jätetään huomioitta seraavalla kerralla
   merkit.classList.add("matched");
   vanha.classList.add("matched");
-
-
 }
 
 var minute = 0;
@@ -130,28 +128,24 @@ var hour = 0;
 var timer = document.querySelector(".ajastin");
 var interval;
 
-function startTimer() {
-  interval = setInterval(function() {
-    timer.innerHTML = hour + " hr " + minute + " mins " + second + " secs";
-    if (second >= 60) {
+  function startTimer() {
+    interval = setInterval(function() {
+      timer.innerHTML = hour + " hr " + minute + " mins " + second + " secs";
+    if (second >= 59) {
       minute += 1;
       second = 0;
 
-      if (minute >= 60) {
-        hour += 1;
-            minute = 0;
+    if (minute >= 60) {
+      hour += 1;
+        minute = 0;
       }
     }
 
     second++;
   }, 1000);
-
 }
 
-
-
-
-//reset timer
+//Ajan nollaus
 second = 0;
 minute = 0;
 hour = 0;
