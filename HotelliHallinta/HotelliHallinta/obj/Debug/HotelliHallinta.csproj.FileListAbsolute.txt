@@ -1,0 +1,11 @@
+C:\Users\marku\source\repos\yhteistyo\HotelliHallinta\HotelliHallinta\bin\Debug\HotelliHallinta.exe.config
+C:\Users\marku\source\repos\yhteistyo\HotelliHallinta\HotelliHallinta\bin\Debug\HotelliHallinta.exe
+C:\Users\marku\source\repos\yhteistyo\HotelliHallinta\HotelliHallinta\bin\Debug\HotelliHallinta.pdb
+C:\Users\marku\source\repos\yhteistyo\HotelliHallinta\HotelliHallinta\obj\Debug\HotelliHallinta.csproj.AssemblyReference.cache
+C:\Users\marku\source\repos\yhteistyo\HotelliHallinta\HotelliHallinta\obj\Debug\HotelliHallinta.csproj.SuggestedBindingRedirects.cache
+C:\Users\marku\source\repos\yhteistyo\HotelliHallinta\HotelliHallinta\obj\Debug\HotelliHallinta.Form1.resources
+C:\Users\marku\source\repos\yhteistyo\HotelliHallinta\HotelliHallinta\obj\Debug\HotelliHallinta.Properties.Resources.resources
+C:\Users\marku\source\repos\yhteistyo\HotelliHallinta\HotelliHallinta\obj\Debug\HotelliHallinta.csproj.GenerateResource.cache
+C:\Users\marku\source\repos\yhteistyo\HotelliHallinta\HotelliHallinta\obj\Debug\HotelliHallinta.csproj.CoreCompileInputs.cache
+C:\Users\marku\source\repos\yhteistyo\HotelliHallinta\HotelliHallinta\obj\Debug\HotelliHallinta.exe
+C:\Users\marku\source\repos\yhteistyo\HotelliHallinta\HotelliHallinta\obj\Debug\HotelliHallinta.pdb
