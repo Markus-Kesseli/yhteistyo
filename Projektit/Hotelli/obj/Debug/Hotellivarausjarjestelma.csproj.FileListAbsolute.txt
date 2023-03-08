@@ -1,0 +1,8 @@
+C:\Users\marku\source\repos\yhteistyo\Projektit\Hotelli\obj\Debug\Hotellivarausjarjestelma.csproj.AssemblyReference.cache
+C:\Users\marku\source\repos\yhteistyo\Projektit\Hotelli\obj\Debug\Hotellivarausjarjestelma.csproj.SuggestedBindingRedirects.cache
+C:\Users\marku\source\repos\yhteistyo\Projektit\Hotelli\obj\Debug\Hotelli.Kirjautumisikkuna.resources
+C:\Users\marku\source\repos\yhteistyo\Projektit\Hotelli\obj\Debug\Hotelli.Paaikkuna.resources
+C:\Users\marku\source\repos\yhteistyo\Projektit\Hotelli\obj\Debug\Hotelli.Properties.Resources.resources
+C:\Users\marku\source\repos\yhteistyo\Projektit\Hotelli\obj\Debug\Hotellivarausjarjestelma.csproj.GenerateResource.cache
+C:\Users\marku\source\repos\yhteistyo\Projektit\Hotelli\obj\Debug\Hotellivarausjarjestelma.csproj.CoreCompileInputs.cache
+C:\Users\marku\source\repos\yhteistyo\Projektit\Hotelli\obj\Debug\Hotelli.exe.config
