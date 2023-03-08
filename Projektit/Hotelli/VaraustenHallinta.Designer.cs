@@ -38,13 +38,13 @@
             this.VarausMuokkaaBT = new System.Windows.Forms.Button();
             this.VarausTallennaBT = new System.Windows.Forms.Button();
             this.VarausTyhjennaBT = new System.Windows.Forms.Button();
-            this.varausnroTB = new System.Windows.Forms.TextBox();
-            this.asiakasnroTB = new System.Windows.Forms.TextBox();
-            this.huonetyyppiTB = new System.Windows.Forms.TextBox();
-            this.huonenroTB = new System.Windows.Forms.TextBox();
-            this.sisaanTB = new System.Windows.Forms.TextBox();
-            this.ulosTB = new System.Windows.Forms.TextBox();
+            this.VarausNroTB = new System.Windows.Forms.TextBox();
+            this.VarausSisaanTB = new System.Windows.Forms.TextBox();
+            this.VarausUlosTB = new System.Windows.Forms.TextBox();
             this.VaraustenHallintaDG = new System.Windows.Forms.DataGridView();
+            this.VarausAsiakasNroCB = new System.Windows.Forms.ComboBox();
+            this.VarausHuonetyyppiCB = new System.Windows.Forms.ComboBox();
+            this.VarausHuoneNroCB = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.VaraustenHallintaDG)).BeginInit();
             this.SuspendLayout();
             // 
@@ -138,47 +138,26 @@
             this.VarausTyhjennaBT.Text = "Tyhjennä";
             this.VarausTyhjennaBT.UseVisualStyleBackColor = true;
             // 
-            // varausnroTB
+            // VarausNroTB
             // 
-            this.varausnroTB.Location = new System.Drawing.Point(121, 36);
-            this.varausnroTB.Name = "varausnroTB";
-            this.varausnroTB.Size = new System.Drawing.Size(125, 20);
-            this.varausnroTB.TabIndex = 10;
+            this.VarausNroTB.Location = new System.Drawing.Point(121, 36);
+            this.VarausNroTB.Name = "VarausNroTB";
+            this.VarausNroTB.Size = new System.Drawing.Size(125, 20);
+            this.VarausNroTB.TabIndex = 10;
             // 
-            // asiakasnroTB
+            // VarausSisaanTB
             // 
-            this.asiakasnroTB.Location = new System.Drawing.Point(121, 63);
-            this.asiakasnroTB.Name = "asiakasnroTB";
-            this.asiakasnroTB.Size = new System.Drawing.Size(125, 20);
-            this.asiakasnroTB.TabIndex = 11;
+            this.VarausSisaanTB.Location = new System.Drawing.Point(121, 144);
+            this.VarausSisaanTB.Name = "VarausSisaanTB";
+            this.VarausSisaanTB.Size = new System.Drawing.Size(125, 20);
+            this.VarausSisaanTB.TabIndex = 14;
             // 
-            // huonetyyppiTB
+            // VarausUlosTB
             // 
-            this.huonetyyppiTB.Location = new System.Drawing.Point(121, 90);
-            this.huonetyyppiTB.Name = "huonetyyppiTB";
-            this.huonetyyppiTB.Size = new System.Drawing.Size(125, 20);
-            this.huonetyyppiTB.TabIndex = 12;
-            // 
-            // huonenroTB
-            // 
-            this.huonenroTB.Location = new System.Drawing.Point(121, 117);
-            this.huonenroTB.Name = "huonenroTB";
-            this.huonenroTB.Size = new System.Drawing.Size(125, 20);
-            this.huonenroTB.TabIndex = 13;
-            // 
-            // sisaanTB
-            // 
-            this.sisaanTB.Location = new System.Drawing.Point(121, 144);
-            this.sisaanTB.Name = "sisaanTB";
-            this.sisaanTB.Size = new System.Drawing.Size(125, 20);
-            this.sisaanTB.TabIndex = 14;
-            // 
-            // ulosTB
-            // 
-            this.ulosTB.Location = new System.Drawing.Point(121, 171);
-            this.ulosTB.Name = "ulosTB";
-            this.ulosTB.Size = new System.Drawing.Size(125, 20);
-            this.ulosTB.TabIndex = 15;
+            this.VarausUlosTB.Location = new System.Drawing.Point(121, 171);
+            this.VarausUlosTB.Name = "VarausUlosTB";
+            this.VarausUlosTB.Size = new System.Drawing.Size(125, 20);
+            this.VarausUlosTB.TabIndex = 15;
             // 
             // VaraustenHallintaDG
             // 
@@ -188,18 +167,42 @@
             this.VaraustenHallintaDG.Size = new System.Drawing.Size(502, 274);
             this.VaraustenHallintaDG.TabIndex = 16;
             // 
+            // VarausAsiakasNroCB
+            // 
+            this.VarausAsiakasNroCB.FormattingEnabled = true;
+            this.VarausAsiakasNroCB.Location = new System.Drawing.Point(121, 63);
+            this.VarausAsiakasNroCB.Name = "VarausAsiakasNroCB";
+            this.VarausAsiakasNroCB.Size = new System.Drawing.Size(125, 21);
+            this.VarausAsiakasNroCB.TabIndex = 17;
+            // 
+            // VarausHuonetyyppiCB
+            // 
+            this.VarausHuonetyyppiCB.FormattingEnabled = true;
+            this.VarausHuonetyyppiCB.Location = new System.Drawing.Point(121, 90);
+            this.VarausHuonetyyppiCB.Name = "VarausHuonetyyppiCB";
+            this.VarausHuonetyyppiCB.Size = new System.Drawing.Size(125, 21);
+            this.VarausHuonetyyppiCB.TabIndex = 18;
+            // 
+            // VarausHuoneNroCB
+            // 
+            this.VarausHuoneNroCB.FormattingEnabled = true;
+            this.VarausHuoneNroCB.Location = new System.Drawing.Point(121, 117);
+            this.VarausHuoneNroCB.Name = "VarausHuoneNroCB";
+            this.VarausHuoneNroCB.Size = new System.Drawing.Size(125, 21);
+            this.VarausHuoneNroCB.TabIndex = 19;
+            // 
             // VaraustenHallinta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 298);
+            this.Controls.Add(this.VarausHuoneNroCB);
+            this.Controls.Add(this.VarausHuonetyyppiCB);
+            this.Controls.Add(this.VarausAsiakasNroCB);
             this.Controls.Add(this.VaraustenHallintaDG);
-            this.Controls.Add(this.ulosTB);
-            this.Controls.Add(this.sisaanTB);
-            this.Controls.Add(this.huonenroTB);
-            this.Controls.Add(this.huonetyyppiTB);
-            this.Controls.Add(this.asiakasnroTB);
-            this.Controls.Add(this.varausnroTB);
+            this.Controls.Add(this.VarausUlosTB);
+            this.Controls.Add(this.VarausSisaanTB);
+            this.Controls.Add(this.VarausNroTB);
             this.Controls.Add(this.VarausTyhjennaBT);
             this.Controls.Add(this.VarausTallennaBT);
             this.Controls.Add(this.VarausMuokkaaBT);
@@ -230,12 +233,12 @@
         private System.Windows.Forms.Button VarausMuokkaaBT;
         private System.Windows.Forms.Button VarausTallennaBT;
         private System.Windows.Forms.Button VarausTyhjennaBT;
-        private System.Windows.Forms.TextBox varausnroTB;
-        private System.Windows.Forms.TextBox asiakasnroTB;
-        private System.Windows.Forms.TextBox huonetyyppiTB;
-        private System.Windows.Forms.TextBox huonenroTB;
-        private System.Windows.Forms.TextBox sisaanTB;
-        private System.Windows.Forms.TextBox ulosTB;
+        private System.Windows.Forms.TextBox VarausNroTB;
+        private System.Windows.Forms.TextBox VarausSisaanTB;
+        private System.Windows.Forms.TextBox VarausUlosTB;
         private System.Windows.Forms.DataGridView VaraustenHallintaDG;
+        private System.Windows.Forms.ComboBox VarausAsiakasNroCB;
+        private System.Windows.Forms.ComboBox VarausHuonetyyppiCB;
+        private System.Windows.Forms.ComboBox VarausHuoneNroCB;
     }
 }

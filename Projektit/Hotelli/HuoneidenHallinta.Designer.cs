@@ -69,7 +69,7 @@
             // 
             // HuoneTyhjennaBT
             // 
-            this.HuoneTyhjennaBT.Location = new System.Drawing.Point(115, 187);
+            this.HuoneTyhjennaBT.Location = new System.Drawing.Point(115, 208);
             this.HuoneTyhjennaBT.Name = "HuoneTyhjennaBT";
             this.HuoneTyhjennaBT.Size = new System.Drawing.Size(75, 23);
             this.HuoneTyhjennaBT.TabIndex = 26;
@@ -78,7 +78,7 @@
             // 
             // HuoneTallennaBT
             // 
-            this.HuoneTallennaBT.Location = new System.Drawing.Point(34, 187);
+            this.HuoneTallennaBT.Location = new System.Drawing.Point(34, 208);
             this.HuoneTallennaBT.Name = "HuoneTallennaBT";
             this.HuoneTallennaBT.Size = new System.Drawing.Size(75, 23);
             this.HuoneTallennaBT.TabIndex = 25;
@@ -87,7 +87,7 @@
             // 
             // HuoneMuokkaaBT
             // 
-            this.HuoneMuokkaaBT.Location = new System.Drawing.Point(115, 158);
+            this.HuoneMuokkaaBT.Location = new System.Drawing.Point(115, 179);
             this.HuoneMuokkaaBT.Name = "HuoneMuokkaaBT";
             this.HuoneMuokkaaBT.Size = new System.Drawing.Size(75, 23);
             this.HuoneMuokkaaBT.TabIndex = 24;
@@ -96,7 +96,7 @@
             // 
             // HuoneLisaaBT
             // 
-            this.HuoneLisaaBT.Location = new System.Drawing.Point(34, 158);
+            this.HuoneLisaaBT.Location = new System.Drawing.Point(34, 179);
             this.HuoneLisaaBT.Name = "HuoneLisaaBT";
             this.HuoneLisaaBT.Size = new System.Drawing.Size(75, 23);
             this.HuoneLisaaBT.TabIndex = 23;
