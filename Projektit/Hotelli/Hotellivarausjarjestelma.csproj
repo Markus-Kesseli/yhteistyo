@@ -53,6 +53,12 @@
     <Compile Include="AsiakkaidenHallinta.Designer.cs">
       <DependentUpon>AsiakkaidenHallinta.cs</DependentUpon>
     </Compile>
+    <Compile Include="HuoneidenHallinta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HuoneidenHallinta.Designer.cs">
+      <DependentUpon>HuoneidenHallinta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Kirjautumisikkuna.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,9 +73,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VaraustenHallinta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VaraustenHallinta.Designer.cs">
+      <DependentUpon>VaraustenHallinta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Yhdista.cs" />
     <EmbeddedResource Include="AsiakkaidenHallinta.resx">
       <DependentUpon>AsiakkaidenHallinta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HuoneidenHallinta.resx">
+      <DependentUpon>HuoneidenHallinta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Kirjautumisikkuna.resx">
       <DependentUpon>Kirjautumisikkuna.cs</DependentUpon>
@@ -87,6 +102,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="VaraustenHallinta.resx">
+      <DependentUpon>VaraustenHallinta.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
