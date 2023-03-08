@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.AsiakkaatDG = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -37,7 +37,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.LisaaUusiAsiakasBT = new System.Windows.Forms.Button();
-            this.MuokkaaBT = new System.Windows.Forms.Button();
+            this.AsiakasMuokkaaBT = new System.Windows.Forms.Button();
             this.PoistaBT = new System.Windows.Forms.Button();
             this.TyhjennaKentatBT = new System.Windows.Forms.Button();
             this.EtunimiTB = new System.Windows.Forms.TextBox();
@@ -47,18 +47,19 @@
             this.PostitoimipaikkaTB = new System.Windows.Forms.TextBox();
             this.KayttajatunnusTB = new System.Windows.Forms.TextBox();
             this.SalasanaTB = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AsiakkaatDG)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // AsiakkaatDG
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(323, 72);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(465, 338);
-            this.dataGridView1.TabIndex = 0;
+            this.AsiakkaatDG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.AsiakkaatDG.Location = new System.Drawing.Point(323, 72);
+            this.AsiakkaatDG.Name = "AsiakkaatDG";
+            this.AsiakkaatDG.RowHeadersWidth = 51;
+            this.AsiakkaatDG.RowTemplate.Height = 24;
+            this.AsiakkaatDG.Size = new System.Drawing.Size(465, 338);
+            this.AsiakkaatDG.TabIndex = 0;
+            this.AsiakkaatDG.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.AsiakkaatDG_CellContentClick);
             // 
             // label1
             // 
@@ -68,7 +69,6 @@
             this.label1.Size = new System.Drawing.Size(53, 16);
             this.label1.TabIndex = 1;
             this.label1.Text = "Etunimi:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -132,15 +132,17 @@
             this.LisaaUusiAsiakasBT.TabIndex = 8;
             this.LisaaUusiAsiakasBT.Text = "Lisää uusi asiakas";
             this.LisaaUusiAsiakasBT.UseVisualStyleBackColor = true;
+            this.LisaaUusiAsiakasBT.Click += new System.EventHandler(this.LisaaUusiAsiakasBT_Click);
             // 
-            // MuokkaaBT
+            // AsiakasMuokkaaBT
             // 
-            this.MuokkaaBT.Location = new System.Drawing.Point(213, 334);
-            this.MuokkaaBT.Name = "MuokkaaBT";
-            this.MuokkaaBT.Size = new System.Drawing.Size(95, 28);
-            this.MuokkaaBT.TabIndex = 9;
-            this.MuokkaaBT.Text = "Muokkaa";
-            this.MuokkaaBT.UseVisualStyleBackColor = true;
+            this.AsiakasMuokkaaBT.Location = new System.Drawing.Point(213, 334);
+            this.AsiakasMuokkaaBT.Name = "AsiakasMuokkaaBT";
+            this.AsiakasMuokkaaBT.Size = new System.Drawing.Size(95, 28);
+            this.AsiakasMuokkaaBT.TabIndex = 9;
+            this.AsiakasMuokkaaBT.Text = "Muokkaa";
+            this.AsiakasMuokkaaBT.UseVisualStyleBackColor = true;
+            this.AsiakasMuokkaaBT.Click += new System.EventHandler(this.AsiakasMuokkaaBT_Click);
             // 
             // PoistaBT
             // 
@@ -150,6 +152,7 @@
             this.PoistaBT.TabIndex = 10;
             this.PoistaBT.Text = "Poista";
             this.PoistaBT.UseVisualStyleBackColor = true;
+            this.PoistaBT.Click += new System.EventHandler(this.PoistaBT_Click);
             // 
             // TyhjennaKentatBT
             // 
@@ -159,6 +162,7 @@
             this.TyhjennaKentatBT.TabIndex = 11;
             this.TyhjennaKentatBT.Text = "Tyhjennä kentät";
             this.TyhjennaKentatBT.UseVisualStyleBackColor = true;
+            this.TyhjennaKentatBT.Click += new System.EventHandler(this.TyhjennaKentatBT_Click);
             // 
             // EtunimiTB
             // 
@@ -231,7 +235,7 @@
             this.Controls.Add(this.EtunimiTB);
             this.Controls.Add(this.TyhjennaKentatBT);
             this.Controls.Add(this.PoistaBT);
-            this.Controls.Add(this.MuokkaaBT);
+            this.Controls.Add(this.AsiakasMuokkaaBT);
             this.Controls.Add(this.LisaaUusiAsiakasBT);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -240,10 +244,11 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.AsiakkaatDG);
             this.Name = "AsiakkaidenHallinta";
             this.Text = "AsiakkaidenHallinta";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.AsiakkaidenHallinta_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.AsiakkaatDG)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -251,7 +256,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView AsiakkaatDG;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -260,7 +265,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button LisaaUusiAsiakasBT;
-        private System.Windows.Forms.Button MuokkaaBT;
+        private System.Windows.Forms.Button AsiakasMuokkaaBT;
         private System.Windows.Forms.Button PoistaBT;
         private System.Windows.Forms.Button TyhjennaKentatBT;
         private System.Windows.Forms.TextBox EtunimiTB;
