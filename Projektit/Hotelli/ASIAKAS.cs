@@ -30,7 +30,7 @@ namespace Hotelli
             komento.Connection = yhteys.otaYhteys();
             //@ktu, @enm, @snm, @pno, @ptp, @ssa
             komento.Parameters.Add("@enm", MySqlDbType.VarChar).Value = enimi;
-            komento.Parameters.Add("@snm", MySqlDbType.VarChar).Value = snimi,;
+            komento.Parameters.Add("@snm", MySqlDbType.VarChar).Value = snimi;
             komento.Parameters.Add("@oso", MySqlDbType.VarChar).Value = osoite;
             komento.Parameters.Add("@pno", MySqlDbType.VarChar).Value = ppnro;
             komento.Parameters.Add("@ptp", MySqlDbType.VarChar).Value = ppaikka;
@@ -52,6 +52,18 @@ namespace Hotelli
             {
                 komento.Parameters.Add("@ktu", MySqlDbType.VarChar).Value = "xcxcT6!2@";
             }
+
+            yhteys.avaaYhteys();
+            if (komento.ExecuteNonQuery() == 1)
+            {
+                yhteys.suljeYhteys();
+                return true;
+            }
+            else
+            {
+                yhteys.suljeYhteys();
+                return false;
+            }
         }
         //Luodaan funktio kaikkien asiakastietojen hakemiseksi
         public DataTable haeAsiakkaat()
@@ -62,10 +74,8 @@ namespace Hotelli
 
             adapteri.SelectCommand = komento;
             adapteri.Fill(taulu);
-
+            return taulu;
         }
-
-
 
         public bool muokkaaAsiakasta(String enimi, String snimi, String osoite, String ppnro, String ppaikka, String ktunnus)
         {
@@ -78,12 +88,44 @@ namespace Hotelli
             komento.Connection = yhteys.otaYhteys();
             //@ktu, @enm, @snm, @oso, @pno, @ptp, @ssa
             komento.Parameters.Add("@enm", MySqlDbType.VarChar).Value = enimi;
-            komento.Parameters.Add("@snm", MySqlDbType.VarChar).Value = snimi,;
+            komento.Parameters.Add("@snm", MySqlDbType.VarChar).Value = snimi;
             komento.Parameters.Add("@oso", MySqlDbType.VarChar).Value = osoite;
             komento.Parameters.Add("@pno", MySqlDbType.VarChar).Value = ppnro;
             komento.Parameters.Add("@ptp", MySqlDbType.VarChar).Value = ppaikka;
             komento.Parameters.Add("@ktu", MySqlDbType.VarChar).Value = ktunnus;
 
+            yhteys.avaaYhteys();
+            if (komento.ExecuteNonQuery() == 1)
+            {
+                yhteys.suljeYhteys();
+                return true;
+            }
+            else
+            {
+                yhteys.suljeYhteys();
+                return false;
+            }
+        }
+        public bool poistaAsiakas(String ktunnus)
+        {
+            MySqlCommand komento = new MySqlCommand();
+            String poistakysely = "DELETE FROM asiakkaat WHERE kayttajanimi = @ktu";
+            komento.CommandText = poistakysely;
+            komento.Connection = yhteys.otaYhteys();
+            //@ktu
+            komento.Parameters.Add("@ktu", MySqlDbType.VarChar).Value = ktunnus;
+
+            yhteys.avaaYhteys();
+            if (komento.ExecuteNonQuery() == 1)
+            {
+                yhteys.suljeYhteys();
+                return true;
+            }
+            else
+            {
+                yhteys.suljeYhteys();
+                return false;
+            }
         }
     }
 }
