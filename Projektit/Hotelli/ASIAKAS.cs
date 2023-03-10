@@ -4,7 +4,10 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Eramake;
 using MySql.Data.MySqlClient;
+using Eramake;
+using System.Windows.Forms;
 
 namespace Hotelli
 {
@@ -46,11 +49,12 @@ namespace Hotelli
             }
             if (ssana != "")
             {
-                komento.Parameters.Add("@ktu", MySqlDbType.VarChar).Value = ssana.ToLower();
+                komento.Parameters.Add("@ssa", MySqlDbType.VarChar).Value = eCryptography.Encrypt(ssana);
             }
             else
             {
-                komento.Parameters.Add("@ktu", MySqlDbType.VarChar).Value = "xcxcT6!2@";
+                komento.Parameters.Add("@ssa", MySqlDbType.VarChar).Value = eCryptography.Encrypt(luoSalasana());
+                MessageBox.Show(luoSalasana());
             }
 
             yhteys.avaaYhteys();
@@ -65,6 +69,23 @@ namespace Hotelli
                 return false;
             }
         }
+
+        
+        //Luodaan salasana
+        public String luoSalasana()
+        {
+            char[] alpha = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!#€?0123456789".ToCharArray();
+            Random satunnaisluku = new Random();
+            String salasana = "";
+            for (int i = 0; i < 12; i++)
+            {
+                int indeksi = satunnaisluku.Next(alpha.Length);
+                salasana += alpha[indeksi];
+            }
+            return salasana;
+        }
+
+
         //Luodaan funktio kaikkien asiakastietojen hakemiseksi
         public DataTable haeAsiakkaat()
         {
