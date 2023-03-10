@@ -32,13 +32,13 @@
             this.HuoneHallintaPuhelinTB = new System.Windows.Forms.TextBox();
             this.HuoneHallintaNroTB = new System.Windows.Forms.TextBox();
             this.HuoneTyhjennaBT = new System.Windows.Forms.Button();
-            this.HuoneTallennaBT = new System.Windows.Forms.Button();
+            this.HuonePoistaBT = new System.Windows.Forms.Button();
             this.HuoneMuokkaaBT = new System.Windows.Forms.Button();
             this.HuoneLisaaBT = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.HuoneHallintaTyyppiTB = new System.Windows.Forms.ComboBox();
+            this.HuonetyyppiCB = new System.Windows.Forms.ComboBox();
             this.HuoneVapaaRB = new System.Windows.Forms.RadioButton();
             this.HuoneeiRB = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
@@ -52,6 +52,8 @@
             this.HuoneHallintaDG.Name = "HuoneHallintaDG";
             this.HuoneHallintaDG.Size = new System.Drawing.Size(514, 219);
             this.HuoneHallintaDG.TabIndex = 33;
+            this.HuoneHallintaDG.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.HuoneHallintaDG_CellClick);
+            this.HuoneHallintaDG.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.HuoneHallintaDG_CellContentClick);
             // 
             // HuoneHallintaPuhelinTB
             // 
@@ -66,6 +68,7 @@
             this.HuoneHallintaNroTB.Name = "HuoneHallintaNroTB";
             this.HuoneHallintaNroTB.Size = new System.Drawing.Size(125, 20);
             this.HuoneHallintaNroTB.TabIndex = 30;
+            this.HuoneHallintaNroTB.TextChanged += new System.EventHandler(this.HuoneHallintaNroTB_TextChanged);
             // 
             // HuoneTyhjennaBT
             // 
@@ -75,15 +78,17 @@
             this.HuoneTyhjennaBT.TabIndex = 26;
             this.HuoneTyhjennaBT.Text = "Tyhjennä";
             this.HuoneTyhjennaBT.UseVisualStyleBackColor = true;
+            this.HuoneTyhjennaBT.Click += new System.EventHandler(this.HuoneTyhjennaBT_Click);
             // 
-            // HuoneTallennaBT
+            // HuonePoistaBT
             // 
-            this.HuoneTallennaBT.Location = new System.Drawing.Point(34, 208);
-            this.HuoneTallennaBT.Name = "HuoneTallennaBT";
-            this.HuoneTallennaBT.Size = new System.Drawing.Size(75, 23);
-            this.HuoneTallennaBT.TabIndex = 25;
-            this.HuoneTallennaBT.Text = "Tallenna";
-            this.HuoneTallennaBT.UseVisualStyleBackColor = true;
+            this.HuonePoistaBT.Location = new System.Drawing.Point(34, 208);
+            this.HuonePoistaBT.Name = "HuonePoistaBT";
+            this.HuonePoistaBT.Size = new System.Drawing.Size(75, 23);
+            this.HuonePoistaBT.TabIndex = 25;
+            this.HuonePoistaBT.Text = "Poista";
+            this.HuonePoistaBT.UseVisualStyleBackColor = true;
+            this.HuonePoistaBT.Click += new System.EventHandler(this.HuonePoistaBT_Click);
             // 
             // HuoneMuokkaaBT
             // 
@@ -93,6 +98,7 @@
             this.HuoneMuokkaaBT.TabIndex = 24;
             this.HuoneMuokkaaBT.Text = "Muokkaa";
             this.HuoneMuokkaaBT.UseVisualStyleBackColor = true;
+            this.HuoneMuokkaaBT.Click += new System.EventHandler(this.HuoneMuokkaaBT_Click);
             // 
             // HuoneLisaaBT
             // 
@@ -102,6 +108,7 @@
             this.HuoneLisaaBT.TabIndex = 23;
             this.HuoneLisaaBT.Text = "Lisää";
             this.HuoneLisaaBT.UseVisualStyleBackColor = true;
+            this.HuoneLisaaBT.Click += new System.EventHandler(this.HuoneLisaaBT_Click);
             // 
             // label6
             // 
@@ -130,17 +137,18 @@
             this.label4.TabIndex = 20;
             this.label4.Text = "Huoneen nro:";
             // 
-            // HuoneHallintaTyyppiTB
+            // HuonetyyppiCB
             // 
-            this.HuoneHallintaTyyppiTB.FormattingEnabled = true;
-            this.HuoneHallintaTyyppiTB.Items.AddRange(new object[] {
+            this.HuonetyyppiCB.FormattingEnabled = true;
+            this.HuonetyyppiCB.Items.AddRange(new object[] {
             "Comfort double",
             "Comfort twin",
             "Deluxe"});
-            this.HuoneHallintaTyyppiTB.Location = new System.Drawing.Point(115, 57);
-            this.HuoneHallintaTyyppiTB.Name = "HuoneHallintaTyyppiTB";
-            this.HuoneHallintaTyyppiTB.Size = new System.Drawing.Size(125, 21);
-            this.HuoneHallintaTyyppiTB.TabIndex = 34;
+            this.HuonetyyppiCB.Location = new System.Drawing.Point(115, 57);
+            this.HuonetyyppiCB.Name = "HuonetyyppiCB";
+            this.HuonetyyppiCB.Size = new System.Drawing.Size(125, 21);
+            this.HuonetyyppiCB.TabIndex = 34;
+            this.HuonetyyppiCB.SelectedIndexChanged += new System.EventHandler(this.HuonetyyppiCB_SelectedIndexChanged);
             // 
             // HuoneVapaaRB
             // 
@@ -181,12 +189,12 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.HuoneeiRB);
             this.Controls.Add(this.HuoneVapaaRB);
-            this.Controls.Add(this.HuoneHallintaTyyppiTB);
+            this.Controls.Add(this.HuonetyyppiCB);
             this.Controls.Add(this.HuoneHallintaDG);
             this.Controls.Add(this.HuoneHallintaPuhelinTB);
             this.Controls.Add(this.HuoneHallintaNroTB);
             this.Controls.Add(this.HuoneTyhjennaBT);
-            this.Controls.Add(this.HuoneTallennaBT);
+            this.Controls.Add(this.HuonePoistaBT);
             this.Controls.Add(this.HuoneMuokkaaBT);
             this.Controls.Add(this.HuoneLisaaBT);
             this.Controls.Add(this.label6);
@@ -194,6 +202,7 @@
             this.Controls.Add(this.label4);
             this.Name = "HuoneidenHallinta";
             this.Text = "HuoneidenHallinta";
+            this.Load += new System.EventHandler(this.HuoneidenHallinta_Load);
             ((System.ComponentModel.ISupportInitialize)(this.HuoneHallintaDG)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -206,13 +215,13 @@
         private System.Windows.Forms.TextBox HuoneHallintaPuhelinTB;
         private System.Windows.Forms.TextBox HuoneHallintaNroTB;
         private System.Windows.Forms.Button HuoneTyhjennaBT;
-        private System.Windows.Forms.Button HuoneTallennaBT;
+        private System.Windows.Forms.Button HuonePoistaBT;
         private System.Windows.Forms.Button HuoneMuokkaaBT;
         private System.Windows.Forms.Button HuoneLisaaBT;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox HuoneHallintaTyyppiTB;
+        private System.Windows.Forms.ComboBox HuonetyyppiCB;
         private System.Windows.Forms.RadioButton HuoneVapaaRB;
         private System.Windows.Forms.RadioButton HuoneeiRB;
         private System.Windows.Forms.Label label1;

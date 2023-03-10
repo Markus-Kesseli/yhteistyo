@@ -54,6 +54,7 @@
     <Compile Include="AsiakkaidenHallinta.Designer.cs">
       <DependentUpon>AsiakkaidenHallinta.cs</DependentUpon>
     </Compile>
+    <Compile Include="HUONE.cs" />
     <Compile Include="HuoneidenHallinta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +75,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VARAUS.cs" />
     <Compile Include="VaraustenHallinta.cs">
       <SubType>Form</SubType>
     </Compile>

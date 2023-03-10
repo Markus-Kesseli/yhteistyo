@@ -17,3 +17,6 @@ C:\Users\janik\source\repos\yhteistyo\Projektit\Hotelli\obj\Debug\Hotelli.Proper
 C:\Users\janik\source\repos\yhteistyo\Projektit\Hotelli\obj\Debug\Hotelli.VaraustenHallinta.resources
 C:\Users\janik\source\repos\yhteistyo\Projektit\Hotelli\obj\Debug\Hotellivarausjarjestelma.csproj.GenerateResource.cache
 C:\Users\janik\source\repos\yhteistyo\Projektit\Hotelli\obj\Debug\Hotellivarausjarjestelma.csproj.CoreCompileInputs.cache
+C:\Users\marku\Source\Repos\yhteistyo\Projektit\Hotelli\obj\Debug\Hotelli.AsiakkaidenHallinta.resources
+C:\Users\marku\Source\Repos\yhteistyo\Projektit\Hotelli\obj\Debug\Hotelli.HuoneidenHallinta.resources
+C:\Users\marku\Source\Repos\yhteistyo\Projektit\Hotelli\obj\Debug\Hotelli.VaraustenHallinta.resources
