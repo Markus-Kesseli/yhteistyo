@@ -45,7 +45,7 @@ namespace Hotelli
             }
             else
             {
-                Boolean lisaaAsiakas = asiakas.lisaaAsiakas(enimi, snimi, pnro, ppaikka,kayttaja, salasana);
+                Boolean lisaaAsiakas = asiakas.lisaaAsiakas(enimi, snimi, pnro, ppaikka, kayttaja, salasana);
                 if (lisaaAsiakas)
                 {
                     MessageBox.Show("Uusi asiakas lisätty onnistueesti", "Asiakkaan lisäys", MessageBoxButtons.OK, MessageBoxIcon.Information);

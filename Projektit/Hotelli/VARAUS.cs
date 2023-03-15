@@ -128,14 +128,14 @@ namespace Hotelli
             bool onValissa = true;
             MySqlCommand komento = new MySqlCommand();
             String kysely = "SELECT * FROM varaukset WHERE HuoneenNro = @hno";
+            komento.CommandText = kysely;
+            komento.Connection = yhteys.otaYhteys();
 
-            using (MySqlConnection connection = new MySqlConnection(yhteys.otaYhteys()))
-            using (MySqlCommand command = new MySqlCommand(kysely, connection)) 
+            komento.Parameters.Add("@hno", MySqlDbType.Int32).Value = huone;
+            yhteys.avaaYhteys();
             {
-                command.Parameters.Add("@hno", MySqlDbType.Int32).Value = huone;
-                connection.Open();
 
-                using (MySqlDataReader reader = command.ExecuteReader())
+                using (MySqlDataReader reader = komento.ExecuteReader())
                 {
                     if (reader.HasRows)
                     {
