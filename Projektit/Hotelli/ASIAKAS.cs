@@ -71,7 +71,7 @@ namespace Hotelli
             }
         }
 
-        
+
         //Luodaan salasana
         public String luoSalasana()
         {
@@ -90,7 +90,7 @@ namespace Hotelli
         //Luodaan funktio kaikkien asiakastietojen hakemiseksi
         public DataTable haeAsiakkaat()
         {
-            MySqlCommand komento = new MySqlCommand("SELECT Etunimi, Sukunimi, Lahiosoite, Postinumero, Postitoimipaikka, Ktunnus FROM asiakkaat" ,yhteys.otaYhteys());
+            MySqlCommand komento = new MySqlCommand("SELECT Etunimi, Sukunimi, Lahiosoite, Postinumero, Postitoimipaikka, Ktunnus FROM asiakkaat", yhteys.otaYhteys());
             MySqlDataAdapter adapteri = new MySqlDataAdapter();
             DataTable taulu = new DataTable();
 
@@ -150,13 +150,18 @@ namespace Hotelli
             }
         }
 
-        internal bool muokkaaAsiakasta(string enimi, string snimi, string pnro, string ppaikka, string ktunnus)
+        internal bool muokkaaAsiakasta(String enimi, String snimi, String pnro, String ppaikka, String ktunnus)
         {
-            throw new NotImplementedException();
+          {
+             throw new NotImplementedException();
+
+          }
         }
-        internal bool lisaaAsiakas(string enimi, string snimi, string pnro, string ppaikka, string kayttaja, string salasana)
+        internal bool lisaaAsiakas(String enimi, String snimi, String pnro, String ppaikka, String kayttaja, String salasana)
         {
-            throw new NotImplementedException();
+          {
+             throw new NotImplementedException();
+          }
         }
     }
 }
