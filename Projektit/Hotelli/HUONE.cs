@@ -32,7 +32,7 @@ namespace Hotelli
         {
             MySqlCommand komento = new MySqlCommand();
             String lisayskysely = "INSERT INTO huoneet " +
-                "(Huoneennro, Huonetyyppi, Puhelin, Vapaa) " +
+                "(HuoneenNro, Huoneentyyppi, Puhelin, Vapaa) " +
                 "VALUE (@hno, @hty, @puh, @vap); ";
 
             komento.CommandText = lisayskysely;
@@ -77,7 +77,7 @@ namespace Hotelli
         public bool muokkaaHuonetta(int hnro, int htyyppi, String puh, String vapaa)
         {
             MySqlCommand komento = new MySqlCommand();
-            String paivityskysely = "UPDATE `huoneet` SET `Huonetyypi` = @hty," +
+            String paivityskysely = "UPDATE `huoneet` SET `Huoneentyypi` = @hty," +
                 "`Puhelin` = @puh, `Vapaa` = @vap" + " WHERE HuoneenNro = @hno";
             komento.CommandText = paivityskysely;
             komento.Connection = yhteys.otaYhteys();
@@ -133,7 +133,7 @@ namespace Hotelli
         public DataTable tyypillisetHuoneet(int htype)
         {
             MySqlCommand komento = new MySqlCommand();
-            String lisayskysely = "SELECT * FROM huoneet WHERE Huonetyyppi = @hty";
+            String lisayskysely = "SELECT * FROM huoneet WHERE Huoneentyyppi = @hty";
             komento.CommandText = lisayskysely;
             komento.Connection = yhteys.otaYhteys();
 

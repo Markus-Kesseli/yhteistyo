@@ -27,7 +27,7 @@ namespace Hotelli
         {
             MySqlCommand komento = new MySqlCommand();
             String lisaakysely = "INSERT INTO asiakkaat " +
-                "(kayttajanimi, Etunimi, Sukunimi, Lahiosoite, Postinumero, Postitoimipaikka, Salasana) " +
+                "(Ktunnus, Etunimi, Sukunimi, Lahiosoite, Postinumero, Postitoimipaikka, Salasana) " +
                 "VALUES(@ktu, @enm, @snm, @pno, @ptp, @ssa); ";
             komento.CommandText = lisaakysely;
             komento.Connection = yhteys.otaYhteys();
@@ -37,9 +37,10 @@ namespace Hotelli
             komento.Parameters.Add("@oso", MySqlDbType.VarChar).Value = osoite;
             komento.Parameters.Add("@pno", MySqlDbType.VarChar).Value = ppnro;
             komento.Parameters.Add("@ptp", MySqlDbType.VarChar).Value = ppaikka;
+            komento.Parameters.Add("@ktu", MySqlDbType.VarChar).Value = kayttaja;
 
 
-            if(kayttaja != "")
+            if (kayttaja != "")
             {
                 komento.Parameters.Add("@ktu", MySqlDbType.VarChar).Value = kayttaja.ToLower();
             }
@@ -89,7 +90,7 @@ namespace Hotelli
         //Luodaan funktio kaikkien asiakastietojen hakemiseksi
         public DataTable haeAsiakkaat()
         {
-            MySqlCommand komento = new MySqlCommand("SELECT Etunimi, Sukunimi, Lahiosoite, Postinumero, Postitoimipaikka, kayttajanimi FROM asiakkaat" ,yhteys.otaYhteys());
+            MySqlCommand komento = new MySqlCommand("SELECT Etunimi, Sukunimi, Lahiosoite, Postinumero, Postitoimipaikka, Ktunnus FROM asiakkaat" ,yhteys.otaYhteys());
             MySqlDataAdapter adapteri = new MySqlDataAdapter();
             DataTable taulu = new DataTable();
 
@@ -103,7 +104,7 @@ namespace Hotelli
             MySqlCommand komento = new MySqlCommand();
             String paivitakysely = "UPDATE `asiakkaat` SET `Etunimi` = @enm," +
                 "`Sukunimi`= @snm, `Lahiosoite` = @oso, `Postinumero` = @pno, `Postitoimipaikka` = @ptp" +
-                "WHERE kayttajanimi = @ktu";
+                "WHERE Ktunnus = @ktu";
 
             komento.CommandText = paivitakysely;
             komento.Connection = yhteys.otaYhteys();
@@ -130,7 +131,7 @@ namespace Hotelli
         public bool poistaAsiakas(String ktunnus)
         {
             MySqlCommand komento = new MySqlCommand();
-            String poistakysely = "DELETE FROM asiakkaat WHERE kayttajanimi = @ktu";
+            String poistakysely = "DELETE FROM asiakkaat WHERE Ktunnus = @ktu";
             komento.CommandText = poistakysely;
             komento.Connection = yhteys.otaYhteys();
             //@ktu
@@ -150,6 +151,10 @@ namespace Hotelli
         }
 
         internal bool muokkaaAsiakasta(string enimi, string snimi, string pnro, string ppaikka, string ktunnus)
+        {
+            throw new NotImplementedException();
+        }
+        internal bool lisaaAsiakas(string enimi, string snimi, string pnro, string ppaikka, string kayttaja, string salasana)
         {
             throw new NotImplementedException();
         }

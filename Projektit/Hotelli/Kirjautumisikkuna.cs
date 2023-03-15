@@ -17,20 +17,19 @@ namespace Hotelli
         {
             InitializeComponent();
         }
-
+        Yhdista yhdista = new Yhdista();
         private void KirjauduPainike_Click(object sender, EventArgs e)
         {
-            //HUOM! Käytetään itse luotua luokkaa "Yhdista".
-            Yhdista tietokantaan = new Yhdista();
+            
             //Luodaan muuttujia yhdistämistä varten
             DataTable taulu = new DataTable();
             MySqlDataAdapter adapteri = new MySqlDataAdapter();
             MySqlCommand komento = new MySqlCommand();
             //Tehdään kysely
-            String kysely = "SELECT kayttajanimi, salasana FROM asiakkaat WHERE Kayttajanimi = @kn AND Salasana = @ss";
+            String kysely = "SELECT Ktunnus, Salasana FROM asiakkaat WHERE Ktunnus = @kn AND Salasana = @ss";
 
             komento.CommandText = kysely;
-            komento.Connection = tietokantaan.otaYhteys();
+            komento.Connection = yhdista.otaYhteys();
 
             //Lisätään lomakkeelta muuttujiin kn ja @ss tiedot
             komento.Parameters.Add("@kn", MySqlDbType.VarChar).Value = KayttajaTB.Text;

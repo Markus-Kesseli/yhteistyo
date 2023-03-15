@@ -48,7 +48,7 @@ namespace Hotelli
             VarausHuonetyyppiCB.DisplayMember = "Huonetyyppi";
             VarausHuonetyyppiCB.ValueMember = "KategoriaId";
 
-            VarausAsiakasNroCB.DataSource = asiakas.asiakaslista();
+            VarausAsiakasNroCB.DataSource = asiakas.haeAsiakkaat();
             VarausAsiakasNroCB.DisplayMember = "Kokonimi";
             VarausAsiakasNroCB.ValueMember = "AsiakasId";
             VaraustenHallintaDG.DataSource = varaus.haeVaraukset();

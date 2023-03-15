@@ -19,7 +19,7 @@ namespace Hotelli
 
         private void Paaikkuna_Load(object sender, EventArgs e)
         {
-            Application.Exit();
+            
         }
         private void asiakkaidenHallintaToolStripMenuItem_Click(object sender, EventArgs e)
         {

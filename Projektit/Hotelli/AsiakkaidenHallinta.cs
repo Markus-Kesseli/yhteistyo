@@ -114,5 +114,10 @@ namespace Hotelli
             }
             TyhjennaKentatBT.PerformClick();
         }
+
+        private void EtunimiTB_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
