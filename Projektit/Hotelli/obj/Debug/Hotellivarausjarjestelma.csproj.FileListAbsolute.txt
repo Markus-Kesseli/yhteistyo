@@ -20,3 +20,4 @@ C:\Users\janik\source\repos\yhteistyo\Projektit\Hotelli\obj\Debug\Hotellivarausj
 C:\Users\marku\Source\Repos\yhteistyo\Projektit\Hotelli\obj\Debug\Hotelli.AsiakkaidenHallinta.resources
 C:\Users\marku\Source\Repos\yhteistyo\Projektit\Hotelli\obj\Debug\Hotelli.HuoneidenHallinta.resources
 C:\Users\marku\Source\Repos\yhteistyo\Projektit\Hotelli\obj\Debug\Hotelli.VaraustenHallinta.resources
+C:\Users\marku\source\repos\yhteistyo\Projektit\Hotelli\obj\Debug\Hotelli.Salasana.resources

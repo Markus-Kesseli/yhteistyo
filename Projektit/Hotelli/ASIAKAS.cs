@@ -148,5 +148,10 @@ namespace Hotelli
                 return false;
             }
         }
+
+        internal bool muokkaaAsiakasta(string enimi, string snimi, string pnro, string ppaikka, string ktunnus)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
