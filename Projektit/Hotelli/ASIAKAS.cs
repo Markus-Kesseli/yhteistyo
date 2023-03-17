@@ -28,16 +28,17 @@ namespace Hotelli
             MySqlCommand komento = new MySqlCommand();
             String lisaakysely = "INSERT INTO asiakkaat " +
                 "(Ktunnus, Etunimi, Sukunimi, Lahiosoite, Postinumero, Postitoimipaikka, Salasana) " +
-                "VALUES(@ktu, @enm, @snm, @pno, @ptp, @ssa); ";
+                "VALUES(@ktu, @enm, @snm, @oso, @pno, @ptp, @ssa); ";
             komento.CommandText = lisaakysely;
             komento.Connection = yhteys.otaYhteys();
-            //@ktu, @enm, @snm, @pno, @ptp, @ssa
+            //@ktu, @enm, @snm, @oso, @pno, @ptp, @ssa
             komento.Parameters.Add("@enm", MySqlDbType.VarChar).Value = enimi;
             komento.Parameters.Add("@snm", MySqlDbType.VarChar).Value = snimi;
             komento.Parameters.Add("@oso", MySqlDbType.VarChar).Value = osoite;
             komento.Parameters.Add("@pno", MySqlDbType.VarChar).Value = ppnro;
             komento.Parameters.Add("@ptp", MySqlDbType.VarChar).Value = ppaikka;
             komento.Parameters.Add("@ktu", MySqlDbType.VarChar).Value = kayttaja;
+            komento.Parameters.Add("@ssa", MySqlDbType.VarChar).Value = ssana;
 
 
             if (kayttaja != "")
