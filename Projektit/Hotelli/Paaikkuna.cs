@@ -4,10 +4,11 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Hotellivarausja;
+
 
 namespace Hotelli
 {
@@ -16,7 +17,7 @@ namespace Hotelli
         public Paaikkuna()
         {
             InitializeComponent();
-            Application.Exit();
+            label1.Parent = pictureBox1;
         }
 
         private void Paaikkuna_Load(object sender, EventArgs e)

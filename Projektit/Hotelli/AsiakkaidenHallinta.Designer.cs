@@ -1,4 +1,4 @@
-﻿namespace Hotellivarausja
+﻿namespace Hotelli
 {
     partial class AsiakkaidenHallinta
     {
@@ -62,9 +62,9 @@
             // 
             // muokkaaPainike
             // 
-            this.muokkaaPainike.Location = new System.Drawing.Point(107, 366);
+            this.muokkaaPainike.Location = new System.Drawing.Point(98, 366);
             this.muokkaaPainike.Name = "muokkaaPainike";
-            this.muokkaaPainike.Size = new System.Drawing.Size(131, 23);
+            this.muokkaaPainike.Size = new System.Drawing.Size(140, 35);
             this.muokkaaPainike.TabIndex = 1;
             this.muokkaaPainike.Text = "muokkaa asiakas";
             this.muokkaaPainike.UseVisualStyleBackColor = true;
@@ -73,18 +73,18 @@
             // 
             this.PoistaPainike.Location = new System.Drawing.Point(260, 366);
             this.PoistaPainike.Name = "PoistaPainike";
-            this.PoistaPainike.Size = new System.Drawing.Size(138, 23);
+            this.PoistaPainike.Size = new System.Drawing.Size(138, 35);
             this.PoistaPainike.TabIndex = 2;
             this.PoistaPainike.Text = "Poista";
             this.PoistaPainike.UseVisualStyleBackColor = true;
             // 
             // TyhjennaPainike
             // 
-            this.TyhjennaPainike.Location = new System.Drawing.Point(107, 327);
+            this.TyhjennaPainike.Location = new System.Drawing.Point(98, 321);
             this.TyhjennaPainike.Name = "TyhjennaPainike";
-            this.TyhjennaPainike.Size = new System.Drawing.Size(131, 23);
+            this.TyhjennaPainike.Size = new System.Drawing.Size(140, 29);
             this.TyhjennaPainike.TabIndex = 3;
-            this.TyhjennaPainike.Text = "button4";
+            this.TyhjennaPainike.Text = "Tyhjennä";
             this.TyhjennaPainike.UseVisualStyleBackColor = true;
             // 
             // AsiakkaatDG
@@ -243,6 +243,7 @@
             this.Controls.Add(this.UusiAsiakasPainike);
             this.Name = "AsiakkaidenHallinta";
             this.Text = "asiakkaidenHallinta";
+            this.Load += new System.EventHandler(this.AsiakkaidenHallinta_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.AsiakkaatDG)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

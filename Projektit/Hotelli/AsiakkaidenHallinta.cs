@@ -1,4 +1,4 @@
-﻿using Hotelli;
+﻿
 using System.Windows.Forms;
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,9 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-namespace Hotellivarausja
+
+
+namespace Hotelli
 {
     public partial class AsiakkaidenHallinta : Form
     {
@@ -43,7 +45,11 @@ namespace Hotellivarausja
             String kayttaja = KayttajaTB.Text;
             String ssana = SalasanaTB.Text;
 
-            if (enimi.Trim().Equals("") || snimi.Trim().Equals("") || osoite.Trim().Equals("") || pnro.Trim().Equals("") || ppaikka.Trim().Equals(""))
+            try
+            {
+                
+
+                if (enimi.Trim().Equals("") || snimi.Trim().Equals("") || osoite.Trim().Equals("") || pnro.Trim().Equals("") || ppaikka.Trim().Equals(""))
             {
                 MessageBox.Show("VIRHE - Vaaditut kentät - Etu- ja sukunimi, Osoite, Postinumero ja Postitoimipaikka", "Tyhjä kenttä", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -52,6 +58,7 @@ namespace Hotellivarausja
                 Boolean lisaaAsiakas = asiakas.lisaaAsiakas(enimi, snimi, osoite, pnro, ppaikka, kayttaja, ssana);
                 if (lisaaAsiakas)
                 {
+                    AsiakkaatDG.DataSource = asiakas.haeAsiakkaat();
                     MessageBox.Show("Uusi asiakas lisätty onnistuneesti", "Asiakkaan lisäys", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
@@ -59,6 +66,13 @@ namespace Hotellivarausja
                     MessageBox.Show("Uutta asiakasta ei pystytty lisäämään", "Asiakkaan lisäys", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+           }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "ID Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+
             AsiakkaatDG.DataSource = asiakas.haeAsiakkaat();
         }
 
@@ -86,6 +100,8 @@ namespace Hotellivarausja
                 Boolean muokkaaAsiakas = asiakas.muokkaaAsiakasta(enimi, snimi, osoite, pnro, ppaikka, ktunnus);
                 if (muokkaaAsiakas)
                 {
+                                        AsiakkaatDG.DataSource = asiakas.haeAsiakkaat();
+
                     MessageBox.Show("Uusi asiakas päivitetty onnistuneesti", "Asiakkaan muokkaus", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
@@ -93,6 +109,7 @@ namespace Hotellivarausja
                     MessageBox.Show("Uutta asiakasta ei pystytty päivittämään", "Asiakkaan muokkaus", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+
             AsiakkaatDG.DataSource = asiakas.haeAsiakkaat();
         }
 
@@ -122,5 +139,11 @@ namespace Hotellivarausja
             }
             TyhjennaPainike.PerformClick();
         }
+
+        private void AsiakkaidenHallinta_Load_1(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
     }
+    
 }
