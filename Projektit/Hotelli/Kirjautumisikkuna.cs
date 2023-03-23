@@ -66,5 +66,10 @@ namespace Hotelli
                 }
             }
         }
+
+        private void Kirjautumisikkuna_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

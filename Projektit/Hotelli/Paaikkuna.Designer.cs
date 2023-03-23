@@ -31,7 +31,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.asiakkaidenHallintaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hallitseVarauksiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.hAllitseHuoneitaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hallitseHuoneitaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -43,7 +43,7 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.asiakkaidenHallintaToolStripMenuItem,
             this.hallitseVarauksiaToolStripMenuItem,
-            this.hAllitseHuoneitaToolStripMenuItem});
+            this.hallitseHuoneitaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(730, 28);
@@ -64,12 +64,12 @@
             this.hallitseVarauksiaToolStripMenuItem.Text = "Hallitse varauksia";
             this.hallitseVarauksiaToolStripMenuItem.Click += new System.EventHandler(this.hallitseVarauksiaToolStripMenuItem_Click);
             // 
-            // hAllitseHuoneitaToolStripMenuItem
+            // hallitseHuoneitaToolStripMenuItem
             // 
-            this.hAllitseHuoneitaToolStripMenuItem.Name = "hAllitseHuoneitaToolStripMenuItem";
-            this.hAllitseHuoneitaToolStripMenuItem.Size = new System.Drawing.Size(135, 24);
-            this.hAllitseHuoneitaToolStripMenuItem.Text = "Hallitse huoneita";
-            this.hAllitseHuoneitaToolStripMenuItem.Click += new System.EventHandler(this.hAllitseHuoneitaToolStripMenuItem_Click);
+            this.hallitseHuoneitaToolStripMenuItem.Name = "hallitseHuoneitaToolStripMenuItem";
+            this.hallitseHuoneitaToolStripMenuItem.Size = new System.Drawing.Size(135, 24);
+            this.hallitseHuoneitaToolStripMenuItem.Text = "Hallitse huoneita";
+            this.hallitseHuoneitaToolStripMenuItem.Click += new System.EventHandler(this.hAllitseHuoneitaToolStripMenuItem_Click);
             // 
             // pictureBox1
             // 
@@ -104,7 +104,7 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem asiakkaidenHallintaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem hallitseVarauksiaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem hAllitseHuoneitaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem hallitseHuoneitaToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -32,11 +32,11 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.KirjautuminenLB = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.KayttajaTB = new System.Windows.Forms.TextBox();
-            this.SalasanaTB = new System.Windows.Forms.TextBox();
-            this.KayttajaLB = new System.Windows.Forms.Label();
-            this.SalasanaLB = new System.Windows.Forms.Label();
             this.KirjauduPainike = new System.Windows.Forms.Button();
+            this.SalasanaLB = new System.Windows.Forms.Label();
+            this.KayttajaLB = new System.Windows.Forms.Label();
+            this.SalasanaTB = new System.Windows.Forms.TextBox();
+            this.KayttajaTB = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.loginPictureBox)).BeginInit();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -85,42 +85,6 @@
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             // 
-            // KayttajaTB
-            // 
-            this.KayttajaTB.BackColor = System.Drawing.Color.Gold;
-            this.KayttajaTB.Location = new System.Drawing.Point(130, 19);
-            this.KayttajaTB.Name = "KayttajaTB";
-            this.KayttajaTB.Size = new System.Drawing.Size(173, 22);
-            this.KayttajaTB.TabIndex = 0;
-            // 
-            // SalasanaTB
-            // 
-            this.SalasanaTB.BackColor = System.Drawing.Color.Gold;
-            this.SalasanaTB.Location = new System.Drawing.Point(130, 57);
-            this.SalasanaTB.Name = "SalasanaTB";
-            this.SalasanaTB.Size = new System.Drawing.Size(173, 22);
-            this.SalasanaTB.TabIndex = 1;
-            // 
-            // KayttajaLB
-            // 
-            this.KayttajaLB.AutoSize = true;
-            this.KayttajaLB.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.KayttajaLB.Location = new System.Drawing.Point(21, 22);
-            this.KayttajaLB.Name = "KayttajaLB";
-            this.KayttajaLB.Size = new System.Drawing.Size(82, 16);
-            this.KayttajaLB.TabIndex = 2;
-            this.KayttajaLB.Text = "Käyttäjänimi:";
-            // 
-            // SalasanaLB
-            // 
-            this.SalasanaLB.AutoSize = true;
-            this.SalasanaLB.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.SalasanaLB.Location = new System.Drawing.Point(21, 60);
-            this.SalasanaLB.Name = "SalasanaLB";
-            this.SalasanaLB.Size = new System.Drawing.Size(68, 16);
-            this.SalasanaLB.TabIndex = 3;
-            this.SalasanaLB.Text = "Salasana:";
-            // 
             // KirjauduPainike
             // 
             this.KirjauduPainike.BackColor = System.Drawing.Color.DarkMagenta;
@@ -134,6 +98,42 @@
             this.KirjauduPainike.UseVisualStyleBackColor = false;
             this.KirjauduPainike.Click += new System.EventHandler(this.KirjauduPainike_Click);
             // 
+            // SalasanaLB
+            // 
+            this.SalasanaLB.AutoSize = true;
+            this.SalasanaLB.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.SalasanaLB.Location = new System.Drawing.Point(21, 60);
+            this.SalasanaLB.Name = "SalasanaLB";
+            this.SalasanaLB.Size = new System.Drawing.Size(68, 16);
+            this.SalasanaLB.TabIndex = 3;
+            this.SalasanaLB.Text = "Salasana:";
+            // 
+            // KayttajaLB
+            // 
+            this.KayttajaLB.AutoSize = true;
+            this.KayttajaLB.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.KayttajaLB.Location = new System.Drawing.Point(21, 22);
+            this.KayttajaLB.Name = "KayttajaLB";
+            this.KayttajaLB.Size = new System.Drawing.Size(82, 16);
+            this.KayttajaLB.TabIndex = 2;
+            this.KayttajaLB.Text = "Käyttäjänimi:";
+            // 
+            // SalasanaTB
+            // 
+            this.SalasanaTB.BackColor = System.Drawing.Color.Gold;
+            this.SalasanaTB.Location = new System.Drawing.Point(130, 57);
+            this.SalasanaTB.Name = "SalasanaTB";
+            this.SalasanaTB.Size = new System.Drawing.Size(173, 22);
+            this.SalasanaTB.TabIndex = 1;
+            // 
+            // KayttajaTB
+            // 
+            this.KayttajaTB.BackColor = System.Drawing.Color.Gold;
+            this.KayttajaTB.Location = new System.Drawing.Point(130, 19);
+            this.KayttajaTB.Name = "KayttajaTB";
+            this.KayttajaTB.Size = new System.Drawing.Size(173, 22);
+            this.KayttajaTB.TabIndex = 0;
+            // 
             // Kirjautumisikkuna
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -145,6 +145,7 @@
             this.Controls.Add(this.loginPictureBox);
             this.Name = "Kirjautumisikkuna";
             this.Text = "Kirjautumisikkuna";
+            this.Load += new System.EventHandler(this.Kirjautumisikkuna_Load);
             ((System.ComponentModel.ISupportInitialize)(this.loginPictureBox)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

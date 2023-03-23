@@ -1,4 +1,4 @@
-﻿namespace Hotelli
+﻿namespace Hotellivarausja
 {
     partial class AsiakkaidenHallinta
     {
@@ -28,247 +28,221 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.UusiAsiakasPainike = new System.Windows.Forms.Button();
+            this.muokkaaPainike = new System.Windows.Forms.Button();
+            this.PoistaPainike = new System.Windows.Forms.Button();
+            this.TyhjennaPainike = new System.Windows.Forms.Button();
             this.AsiakkaatDG = new System.Windows.Forms.DataGridView();
+            this.SukunimiTB = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.OsoiteTB = new System.Windows.Forms.TextBox();
+            this.EtunimiTB = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.PostinumeroTB = new System.Windows.Forms.Label();
+            this.PostitoimiTB = new System.Windows.Forms.Label();
+            this.KayttajaTB = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.LisaaUusiAsiakasBT = new System.Windows.Forms.Button();
-            this.AsiakasMuokkaaBT = new System.Windows.Forms.Button();
-            this.PoistaBT = new System.Windows.Forms.Button();
-            this.TyhjennaKentatBT = new System.Windows.Forms.Button();
-            this.EtunimiTB = new System.Windows.Forms.TextBox();
-            this.SukunimiTB = new System.Windows.Forms.TextBox();
-            this.LahiosoiteTB = new System.Windows.Forms.TextBox();
-            this.PostinumeroTB = new System.Windows.Forms.TextBox();
-            this.PostitoimipaikkaTB = new System.Windows.Forms.TextBox();
-            this.KayttajatunnusTB = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
             this.SalasanaTB = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.AsiakkaatDG)).BeginInit();
             this.SuspendLayout();
             // 
+            // UusiAsiakasPainike
+            // 
+            this.UusiAsiakasPainike.Location = new System.Drawing.Point(260, 327);
+            this.UusiAsiakasPainike.Name = "UusiAsiakasPainike";
+            this.UusiAsiakasPainike.Size = new System.Drawing.Size(138, 23);
+            this.UusiAsiakasPainike.TabIndex = 0;
+            this.UusiAsiakasPainike.Text = "Lisää uusi asiakas";
+            this.UusiAsiakasPainike.UseVisualStyleBackColor = true;
+            // 
+            // muokkaaPainike
+            // 
+            this.muokkaaPainike.Location = new System.Drawing.Point(107, 366);
+            this.muokkaaPainike.Name = "muokkaaPainike";
+            this.muokkaaPainike.Size = new System.Drawing.Size(131, 23);
+            this.muokkaaPainike.TabIndex = 1;
+            this.muokkaaPainike.Text = "muokkaa asiakas";
+            this.muokkaaPainike.UseVisualStyleBackColor = true;
+            // 
+            // PoistaPainike
+            // 
+            this.PoistaPainike.Location = new System.Drawing.Point(260, 366);
+            this.PoistaPainike.Name = "PoistaPainike";
+            this.PoistaPainike.Size = new System.Drawing.Size(138, 23);
+            this.PoistaPainike.TabIndex = 2;
+            this.PoistaPainike.Text = "Poista";
+            this.PoistaPainike.UseVisualStyleBackColor = true;
+            // 
+            // TyhjennaPainike
+            // 
+            this.TyhjennaPainike.Location = new System.Drawing.Point(107, 327);
+            this.TyhjennaPainike.Name = "TyhjennaPainike";
+            this.TyhjennaPainike.Size = new System.Drawing.Size(131, 23);
+            this.TyhjennaPainike.TabIndex = 3;
+            this.TyhjennaPainike.Text = "button4";
+            this.TyhjennaPainike.UseVisualStyleBackColor = true;
+            // 
             // AsiakkaatDG
             // 
             this.AsiakkaatDG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.AsiakkaatDG.Location = new System.Drawing.Point(242, 58);
-            this.AsiakkaatDG.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AsiakkaatDG.Location = new System.Drawing.Point(429, 30);
             this.AsiakkaatDG.Name = "AsiakkaatDG";
             this.AsiakkaatDG.RowHeadersWidth = 51;
             this.AsiakkaatDG.RowTemplate.Height = 24;
-            this.AsiakkaatDG.Size = new System.Drawing.Size(349, 275);
-            this.AsiakkaatDG.TabIndex = 0;
-            this.AsiakkaatDG.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.AsiakkaatDG_CellContentClick);
+            this.AsiakkaatDG.Size = new System.Drawing.Size(359, 339);
+            this.AsiakkaatDG.TabIndex = 4;
+            // 
+            // SukunimiTB
+            // 
+            this.SukunimiTB.Location = new System.Drawing.Point(177, 92);
+            this.SukunimiTB.Name = "SukunimiTB";
+            this.SukunimiTB.Size = new System.Drawing.Size(100, 22);
+            this.SukunimiTB.TabIndex = 5;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(177, 176);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 22);
+            this.textBox2.TabIndex = 6;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(177, 148);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 22);
+            this.textBox3.TabIndex = 7;
+            // 
+            // OsoiteTB
+            // 
+            this.OsoiteTB.Location = new System.Drawing.Point(177, 120);
+            this.OsoiteTB.Name = "OsoiteTB";
+            this.OsoiteTB.Size = new System.Drawing.Size(100, 22);
+            this.OsoiteTB.TabIndex = 8;
+            // 
+            // EtunimiTB
+            // 
+            this.EtunimiTB.Location = new System.Drawing.Point(177, 64);
+            this.EtunimiTB.Name = "EtunimiTB";
+            this.EtunimiTB.Size = new System.Drawing.Size(100, 22);
+            this.EtunimiTB.TabIndex = 9;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(32, 64);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(39, 64);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 13);
-            this.label1.TabIndex = 1;
+            this.label1.Size = new System.Drawing.Size(53, 16);
+            this.label1.TabIndex = 10;
             this.label1.Text = "Etunimi:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(32, 93);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(39, 92);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 13);
-            this.label2.TabIndex = 2;
+            this.label2.Size = new System.Drawing.Size(64, 16);
+            this.label2.TabIndex = 11;
             this.label2.Text = "Sukunimi:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(32, 124);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(39, 126);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 13);
-            this.label3.TabIndex = 3;
+            this.label3.Size = new System.Drawing.Size(72, 16);
+            this.label3.TabIndex = 12;
             this.label3.Text = "Lähiosoite:";
             // 
-            // label4
+            // PostinumeroTB
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(32, 150);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 13);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Postinumero:";
+            this.PostinumeroTB.AutoSize = true;
+            this.PostinumeroTB.Location = new System.Drawing.Point(39, 154);
+            this.PostinumeroTB.Name = "PostinumeroTB";
+            this.PostinumeroTB.Size = new System.Drawing.Size(85, 16);
+            this.PostinumeroTB.TabIndex = 13;
+            this.PostinumeroTB.Text = "Postinumero:";
             // 
-            // label5
+            // PostitoimiTB
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(32, 179);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(86, 13);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Postitoimipaikka:";
+            this.PostitoimiTB.AutoSize = true;
+            this.PostitoimiTB.Location = new System.Drawing.Point(39, 182);
+            this.PostitoimiTB.Name = "PostitoimiTB";
+            this.PostitoimiTB.Size = new System.Drawing.Size(109, 16);
+            this.PostitoimiTB.TabIndex = 14;
+            this.PostitoimiTB.Text = "Postitoimipaikka:";
             // 
-            // label6
+            // KayttajaTB
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(32, 208);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(80, 13);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "Käyttäjätunnus:";
+            this.KayttajaTB.AutoSize = true;
+            this.KayttajaTB.Location = new System.Drawing.Point(39, 215);
+            this.KayttajaTB.Name = "KayttajaTB";
+            this.KayttajaTB.Size = new System.Drawing.Size(96, 16);
+            this.KayttajaTB.TabIndex = 15;
+            this.KayttajaTB.Text = "Käyttäjätunnus:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(32, 236);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(39, 254);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(54, 13);
-            this.label7.TabIndex = 7;
+            this.label7.Size = new System.Drawing.Size(68, 16);
+            this.label7.TabIndex = 16;
             this.label7.Text = "Salasana:";
             // 
-            // LisaaUusiAsiakasBT
+            // textBox6
             // 
-            this.LisaaUusiAsiakasBT.Location = new System.Drawing.Point(29, 268);
-            this.LisaaUusiAsiakasBT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.LisaaUusiAsiakasBT.Name = "LisaaUusiAsiakasBT";
-            this.LisaaUusiAsiakasBT.Size = new System.Drawing.Size(116, 26);
-            this.LisaaUusiAsiakasBT.TabIndex = 8;
-            this.LisaaUusiAsiakasBT.Text = "Lisää uusi asiakas";
-            this.LisaaUusiAsiakasBT.UseVisualStyleBackColor = true;
-            this.LisaaUusiAsiakasBT.Click += new System.EventHandler(this.LisaaUusiAsiakasBT_Click);
+            this.textBox6.Location = new System.Drawing.Point(177, 204);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(100, 22);
+            this.textBox6.TabIndex = 17;
             // 
-            // AsiakasMuokkaaBT
+            // textBox7
             // 
-            this.AsiakasMuokkaaBT.Location = new System.Drawing.Point(160, 271);
-            this.AsiakasMuokkaaBT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.AsiakasMuokkaaBT.Name = "AsiakasMuokkaaBT";
-            this.AsiakasMuokkaaBT.Size = new System.Drawing.Size(71, 23);
-            this.AsiakasMuokkaaBT.TabIndex = 9;
-            this.AsiakasMuokkaaBT.Text = "Muokkaa";
-            this.AsiakasMuokkaaBT.UseVisualStyleBackColor = true;
-            this.AsiakasMuokkaaBT.Click += new System.EventHandler(this.AsiakasMuokkaaBT_Click);
-            // 
-            // PoistaBT
-            // 
-            this.PoistaBT.Location = new System.Drawing.Point(160, 310);
-            this.PoistaBT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.PoistaBT.Name = "PoistaBT";
-            this.PoistaBT.Size = new System.Drawing.Size(78, 24);
-            this.PoistaBT.TabIndex = 10;
-            this.PoistaBT.Text = "Poista";
-            this.PoistaBT.UseVisualStyleBackColor = true;
-            this.PoistaBT.Click += new System.EventHandler(this.PoistaBT_Click);
-            // 
-            // TyhjennaKentatBT
-            // 
-            this.TyhjennaKentatBT.Location = new System.Drawing.Point(29, 310);
-            this.TyhjennaKentatBT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.TyhjennaKentatBT.Name = "TyhjennaKentatBT";
-            this.TyhjennaKentatBT.Size = new System.Drawing.Size(111, 24);
-            this.TyhjennaKentatBT.TabIndex = 11;
-            this.TyhjennaKentatBT.Text = "Tyhjennä kentät";
-            this.TyhjennaKentatBT.UseVisualStyleBackColor = true;
-            this.TyhjennaKentatBT.Click += new System.EventHandler(this.TyhjennaKentatBT_Click);
-            // 
-            // EtunimiTB
-            // 
-            this.EtunimiTB.BackColor = System.Drawing.Color.Gold;
-            this.EtunimiTB.Location = new System.Drawing.Point(118, 64);
-            this.EtunimiTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.EtunimiTB.Name = "EtunimiTB";
-            this.EtunimiTB.Size = new System.Drawing.Size(96, 20);
-            this.EtunimiTB.TabIndex = 12;
-            this.EtunimiTB.TextChanged += new System.EventHandler(this.EtunimiTB_TextChanged);
-            // 
-            // SukunimiTB
-            // 
-            this.SukunimiTB.BackColor = System.Drawing.Color.Gold;
-            this.SukunimiTB.Location = new System.Drawing.Point(118, 93);
-            this.SukunimiTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.SukunimiTB.Name = "SukunimiTB";
-            this.SukunimiTB.Size = new System.Drawing.Size(96, 20);
-            this.SukunimiTB.TabIndex = 13;
-            // 
-            // LahiosoiteTB
-            // 
-            this.LahiosoiteTB.BackColor = System.Drawing.Color.Gold;
-            this.LahiosoiteTB.Location = new System.Drawing.Point(118, 122);
-            this.LahiosoiteTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.LahiosoiteTB.Name = "LahiosoiteTB";
-            this.LahiosoiteTB.Size = new System.Drawing.Size(96, 20);
-            this.LahiosoiteTB.TabIndex = 14;
-            // 
-            // PostinumeroTB
-            // 
-            this.PostinumeroTB.BackColor = System.Drawing.Color.Gold;
-            this.PostinumeroTB.Location = new System.Drawing.Point(118, 150);
-            this.PostinumeroTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.PostinumeroTB.Name = "PostinumeroTB";
-            this.PostinumeroTB.Size = new System.Drawing.Size(96, 20);
-            this.PostinumeroTB.TabIndex = 15;
-            // 
-            // PostitoimipaikkaTB
-            // 
-            this.PostitoimipaikkaTB.BackColor = System.Drawing.Color.Gold;
-            this.PostitoimipaikkaTB.Location = new System.Drawing.Point(118, 174);
-            this.PostitoimipaikkaTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.PostitoimipaikkaTB.Name = "PostitoimipaikkaTB";
-            this.PostitoimipaikkaTB.Size = new System.Drawing.Size(96, 20);
-            this.PostitoimipaikkaTB.TabIndex = 16;
-            // 
-            // KayttajatunnusTB
-            // 
-            this.KayttajatunnusTB.BackColor = System.Drawing.Color.Gold;
-            this.KayttajatunnusTB.Location = new System.Drawing.Point(118, 203);
-            this.KayttajatunnusTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.KayttajatunnusTB.Name = "KayttajatunnusTB";
-            this.KayttajatunnusTB.Size = new System.Drawing.Size(96, 20);
-            this.KayttajatunnusTB.TabIndex = 17;
+            this.textBox7.Location = new System.Drawing.Point(177, 226);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(100, 22);
+            this.textBox7.TabIndex = 18;
             // 
             // SalasanaTB
             // 
-            this.SalasanaTB.BackColor = System.Drawing.Color.Gold;
-            this.SalasanaTB.Location = new System.Drawing.Point(118, 231);
-            this.SalasanaTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SalasanaTB.Location = new System.Drawing.Point(177, 254);
             this.SalasanaTB.Name = "SalasanaTB";
-            this.SalasanaTB.Size = new System.Drawing.Size(96, 20);
-            this.SalasanaTB.TabIndex = 18;
+            this.SalasanaTB.Size = new System.Drawing.Size(100, 22);
+            this.SalasanaTB.TabIndex = 19;
             // 
             // AsiakkaidenHallinta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkOrchid;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.SalasanaTB);
-            this.Controls.Add(this.KayttajatunnusTB);
-            this.Controls.Add(this.PostitoimipaikkaTB);
-            this.Controls.Add(this.PostinumeroTB);
-            this.Controls.Add(this.LahiosoiteTB);
-            this.Controls.Add(this.SukunimiTB);
-            this.Controls.Add(this.EtunimiTB);
-            this.Controls.Add(this.TyhjennaKentatBT);
-            this.Controls.Add(this.PoistaBT);
-            this.Controls.Add(this.AsiakasMuokkaaBT);
-            this.Controls.Add(this.LisaaUusiAsiakasBT);
+            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.textBox6);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.KayttajaTB);
+            this.Controls.Add(this.PostitoimiTB);
+            this.Controls.Add(this.PostinumeroTB);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.EtunimiTB);
+            this.Controls.Add(this.OsoiteTB);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.SukunimiTB);
             this.Controls.Add(this.AsiakkaatDG);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Controls.Add(this.TyhjennaPainike);
+            this.Controls.Add(this.PoistaPainike);
+            this.Controls.Add(this.muokkaaPainike);
+            this.Controls.Add(this.UusiAsiakasPainike);
             this.Name = "AsiakkaidenHallinta";
-            this.Text = "AsiakkaidenHallinta";
-            this.Load += new System.EventHandler(this.AsiakkaidenHallinta_Load);
+            this.Text = "asiakkaidenHallinta";
             ((System.ComponentModel.ISupportInitialize)(this.AsiakkaatDG)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -277,24 +251,25 @@
 
         #endregion
 
+        private System.Windows.Forms.Button UusiAsiakasPainike;
+        private System.Windows.Forms.Button muokkaaPainike;
+        private System.Windows.Forms.Button PoistaPainike;
+        private System.Windows.Forms.Button TyhjennaPainike;
         private System.Windows.Forms.DataGridView AsiakkaatDG;
+        private System.Windows.Forms.TextBox SukunimiTB;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox OsoiteTB;
+        private System.Windows.Forms.TextBox EtunimiTB;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label PostinumeroTB;
+        private System.Windows.Forms.Label PostitoimiTB;
+        private System.Windows.Forms.Label KayttajaTB;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button LisaaUusiAsiakasBT;
-        private System.Windows.Forms.Button AsiakasMuokkaaBT;
-        private System.Windows.Forms.Button PoistaBT;
-        private System.Windows.Forms.Button TyhjennaKentatBT;
-        private System.Windows.Forms.TextBox EtunimiTB;
-        private System.Windows.Forms.TextBox SukunimiTB;
-        private System.Windows.Forms.TextBox LahiosoiteTB;
-        private System.Windows.Forms.TextBox PostinumeroTB;
-        private System.Windows.Forms.TextBox PostitoimipaikkaTB;
-        private System.Windows.Forms.TextBox KayttajatunnusTB;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox SalasanaTB;
     }
 }

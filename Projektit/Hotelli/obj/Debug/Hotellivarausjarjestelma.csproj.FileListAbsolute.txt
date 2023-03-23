@@ -60,3 +60,5 @@ C:\Users\janik\source\repos\yhteistyo\Projektit\Hotelli\obj\Debug\Hotelli.Salasa
 C:\Users\janik\source\repos\yhteistyo\Projektit\Hotelli\obj\Debug\Hotellivarausjarjestelma.csproj.CopyComplete
 C:\Users\janik\source\repos\yhteistyo\Projektit\Hotelli\obj\Debug\Hotelli.exe
 C:\Users\janik\source\repos\yhteistyo\Projektit\Hotelli\obj\Debug\Hotelli.pdb
+C:\Users\janik\source\repos\yhteistyo\Projektit\Hotelli\obj\Debug\Hotelli.VaraustenHallintaForm.resources
+C:\Users\janik\source\repos\yhteistyo\Projektit\Hotelli\obj\Debug\Hotellivarausja.AsiakkaidenHallinta.resources

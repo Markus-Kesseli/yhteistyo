@@ -6,7 +6,6 @@ using System.Text;
 using System.Threading.Tasks;
 using Eramake;
 using MySql.Data.MySqlClient;
-using Eramake;
 using System.Windows.Forms;
 
 namespace Hotelli
@@ -149,20 +148,6 @@ namespace Hotelli
                 yhteys.suljeYhteys();
                 return false;
             }
-        }
-
-        internal bool muokkaaAsiakasta(String enimi, String snimi, String pnro, String ppaikka, String ktunnus)
-        {
-          {
-             throw new NotImplementedException();
-
-          }
-        }
-        internal bool lisaaAsiakas(String enimi, String snimi, String pnro, String ppaikka, String kayttaja, String salasana)
-        {
-          {
-             throw new NotImplementedException();
-          }
         }
     }
 }

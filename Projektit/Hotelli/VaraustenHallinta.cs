@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Hotelli
 {
-    public partial class VaraustenHallinta : Form
+    public partial class VaraustenHallintaForm : Form
     {
-        public VaraustenHallinta()
+        public VaraustenHallintaForm()
         {
             InitializeComponent();
         }
