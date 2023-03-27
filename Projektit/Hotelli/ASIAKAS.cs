@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 using Eramake;
 using MySql.Data.MySqlClient;
 using System.Windows.Forms;
-using Eramake;
 namespace Hotelli
 {
     /*
