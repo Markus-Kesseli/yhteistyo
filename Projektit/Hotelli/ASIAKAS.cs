@@ -6,9 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Eramake;
 using MySql.Data.MySqlClient;
-using Eramake;
 using System.Windows.Forms;
-
 namespace Hotelli
 {
     /*
@@ -28,16 +26,17 @@ namespace Hotelli
             MySqlCommand komento = new MySqlCommand();
             String lisaakysely = "INSERT INTO asiakkaat " +
                 "(Ktunnus, Etunimi, Sukunimi, Lahiosoite, Postinumero, Postitoimipaikka, Salasana) " +
-                "VALUES(@ktu, @enm, @snm, @pno, @ptp, @ssa); ";
+                "VALUES(@ktu, @enm, @snm, @oso, @pno, @ptp, @ssa); ";
             komento.CommandText = lisaakysely;
             komento.Connection = yhteys.otaYhteys();
-            //@ktu, @enm, @snm, @pno, @ptp, @ssa
+            //@ktu, @enm, @snm, @oso, @pno, @ptp, @ssa
             komento.Parameters.Add("@enm", MySqlDbType.VarChar).Value = enimi;
             komento.Parameters.Add("@snm", MySqlDbType.VarChar).Value = snimi;
             komento.Parameters.Add("@oso", MySqlDbType.VarChar).Value = osoite;
             komento.Parameters.Add("@pno", MySqlDbType.VarChar).Value = ppnro;
             komento.Parameters.Add("@ptp", MySqlDbType.VarChar).Value = ppaikka;
             komento.Parameters.Add("@ktu", MySqlDbType.VarChar).Value = kayttaja;
+            komento.Parameters.Add("@ssa", MySqlDbType.VarChar).Value = ssana;
 
 
             if (kayttaja != "")
@@ -71,7 +70,7 @@ namespace Hotelli
             }
         }
 
-        
+
         //Luodaan salasana
         public String luoSalasana()
         {
@@ -90,7 +89,7 @@ namespace Hotelli
         //Luodaan funktio kaikkien asiakastietojen hakemiseksi
         public DataTable haeAsiakkaat()
         {
-            MySqlCommand komento = new MySqlCommand("SELECT Etunimi, Sukunimi, Lahiosoite, Postinumero, Postitoimipaikka, Ktunnus FROM asiakkaat" ,yhteys.otaYhteys());
+            MySqlCommand komento = new MySqlCommand("SELECT Etunimi, Sukunimi, Lahiosoite, Postinumero, Postitoimipaikka, Ktunnus FROM asiakkaat", yhteys.otaYhteys());
             MySqlDataAdapter adapteri = new MySqlDataAdapter();
             DataTable taulu = new DataTable();
 
@@ -148,15 +147,6 @@ namespace Hotelli
                 yhteys.suljeYhteys();
                 return false;
             }
-        }
-
-        internal bool muokkaaAsiakasta(string enimi, string snimi, string pnro, string ppaikka, string ktunnus)
-        {
-            throw new NotImplementedException();
-        }
-        internal bool lisaaAsiakas(string enimi, string snimi, string pnro, string ppaikka, string kayttaja, string salasana)
-        {
-            throw new NotImplementedException();
         }
     }
 }

@@ -17,7 +17,7 @@ namespace Hotelli
         public DataTable huonetyyppilista()
         {
             MySqlCommand komento = new MySqlCommand("SELECT * FROM huonekategoria", yhteys.otaYhteys());
-            MySqlDataAdapter adapteri= new MySqlDataAdapter();
+            MySqlDataAdapter adapteri = new MySqlDataAdapter();
             DataTable taulu = new DataTable();
 
             adapteri.SelectCommand = komento;
@@ -53,7 +53,7 @@ namespace Hotelli
             yhteys.avaaYhteys();
             try
             {
-                if(komento.ExecuteNonQuery() == 1)
+                if (komento.ExecuteNonQuery() == 1)
                 {
                     yhteys.suljeYhteys();
                     return true;
@@ -123,7 +123,7 @@ namespace Hotelli
         public bool tarkistaPaiva(DateTime sis, DateTime ulo, int huone)
         {
             List<DateTime> inside = new List<DateTime>();
-            List<DateTime> outside= new List<DateTime>();
+            List<DateTime> outside = new List<DateTime>();
 
             bool onValissa = true;
             MySqlCommand komento = new MySqlCommand();
@@ -139,7 +139,7 @@ namespace Hotelli
                 {
                     if (reader.HasRows)
                     {
-                        while(reader.Read())
+                        while (reader.Read())
                         {
                             inside.Add(reader.GetDateTime(3));
                             outside.Add(reader.GetDateTime(4));

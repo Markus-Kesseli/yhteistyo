@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Hotelli
 {
-    public partial class VaraustenHallinta : Form
+    public partial class VaraustenHallintaForm : Form
     {
-        public VaraustenHallinta()
+        public VaraustenHallintaForm()
         {
             InitializeComponent();
         }
@@ -115,7 +115,7 @@ namespace Hotelli
                 }
                 VarausTyhjennaBT.PerformClick();
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
                 MessageBox.Show("Virhe: " + ex.Message);
             }
@@ -139,7 +139,12 @@ namespace Hotelli
 
         private void VarausTyhjennaBT_Click(object sender, EventArgs e)
         {
-
+            VarausNroTB.Text = ""; 
+            VarausAsiakasNroCB.SelectedIndex = -1;
+            VarausHuonetyyppiCB.SelectedIndex = 0; 
+            VarausHuoneNroCB.SelectedIndex = 0; 
+            VarausSisaanDTB.Value = DateTime.Now; 
+            VarausUlosDTB.Value = DateTime.Now;
         }
     }
 }

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using Eramake;
 
 namespace Hotelli
 {
@@ -65,6 +66,11 @@ namespace Hotelli
                     MessageBox.Show("Käyttäjänimeä tai salasanaa ei löytynyt", "tietoja ei löydy", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void Kirjautumisikkuna_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

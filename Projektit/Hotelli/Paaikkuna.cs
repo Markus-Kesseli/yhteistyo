@@ -4,9 +4,11 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace Hotelli
 {
@@ -15,11 +17,12 @@ namespace Hotelli
         public Paaikkuna()
         {
             InitializeComponent();
+            label1.Parent = pictureBox1;
         }
 
         private void Paaikkuna_Load(object sender, EventArgs e)
         {
-            
+  
         }
         private void asiakkaidenHallintaToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -29,11 +32,11 @@ namespace Hotelli
 
         private void hallitseVarauksiaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            VaraustenHallinta vhlomake = new VaraustenHallinta();
+            VaraustenHallintaForm vhlomake = new VaraustenHallintaForm();
             vhlomake.ShowDialog();
         }
 
-        private void hAllitseHuoneitaToolStripMenuItem_Click(object sender, EventArgs e)
+        private void hallitseHuoneitaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             HuoneidenHallinta hhlomake = new HuoneidenHallinta();
             hhlomake.ShowDialog();

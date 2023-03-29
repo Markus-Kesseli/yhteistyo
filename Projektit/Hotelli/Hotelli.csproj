@@ -51,11 +51,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ASIAKAS.cs" />
-    <Compile Include="AsiakkaidenHallinta.cs">
+    <Compile Include="asiakkaidenHallinta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AsiakkaidenHallinta.Designer.cs">
-      <DependentUpon>AsiakkaidenHallinta.cs</DependentUpon>
+    <Compile Include="asiakkaidenHallinta.Designer.cs">
+      <DependentUpon>asiakkaidenHallinta.cs</DependentUpon>
     </Compile>
     <Compile Include="HUONE.cs" />
     <Compile Include="HuoneidenHallinta.cs">
@@ -92,8 +92,8 @@
       <DependentUpon>VaraustenHallinta.cs</DependentUpon>
     </Compile>
     <Compile Include="Yhdista.cs" />
-    <EmbeddedResource Include="AsiakkaidenHallinta.resx">
-      <DependentUpon>AsiakkaidenHallinta.cs</DependentUpon>
+    <EmbeddedResource Include="asiakkaidenHallinta.resx">
+      <DependentUpon>asiakkaidenHallinta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HuoneidenHallinta.resx">
       <DependentUpon>HuoneidenHallinta.cs</DependentUpon>
