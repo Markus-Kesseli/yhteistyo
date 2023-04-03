@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Eramake;
 
-namespace Hotelli
+namespace Hotel_System
 {
     public partial class Salasana : Form
     {
@@ -26,6 +26,11 @@ namespace Hotelli
         private void DecryptBT_Click(object sender, EventArgs e)
         {
             DecryptTB.Text = eCryptography.Decrypt(EncryptTB.Text);
+        }
+
+        private void Salasana_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -50,25 +50,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ASIAKAS.cs" />
-    <Compile Include="asiakkaidenHallinta.cs">
+    <Compile Include="Client.cs" />
+    <Compile Include="ManageClients.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="asiakkaidenHallinta.Designer.cs">
-      <DependentUpon>asiakkaidenHallinta.cs</DependentUpon>
-    </Compile>
-    <Compile Include="HUONE.cs" />
-    <Compile Include="HuoneidenHallinta.cs">
+    <Compile Include="ManageRoonsForm1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HuoneidenHallinta.Designer.cs">
-      <DependentUpon>HuoneidenHallinta.cs</DependentUpon>
+    <Compile Include="ManageRoonsForm1.Designer.cs">
+      <DependentUpon>ManageRoonsForm1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Kirjautumisikkuna.cs">
+    <Compile Include="ReservationForm.cs" />
+    <Compile Include="ReservationForm1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Kirjautumisikkuna.Designer.cs">
-      <DependentUpon>Kirjautumisikkuna.cs</DependentUpon>
+    <Compile Include="ReservationForm1.Designer.cs">
+      <DependentUpon>ReservationForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ROOM.cs" />
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageCLientsForm.cs" />
+    <Compile Include="ManageClientsForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageClientsForm1.Designer.cs">
+      <DependentUpon>ManageClientsForm1.cs</DependentUpon>
     </Compile>
     <Compile Include="Paaikkuna.cs">
       <SubType>Form</SubType>
@@ -84,22 +95,22 @@
     <Compile Include="Salasana.Designer.cs">
       <DependentUpon>Salasana.cs</DependentUpon>
     </Compile>
-    <Compile Include="VARAUS.cs" />
-    <Compile Include="VaraustenHallinta.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="VaraustenHallinta.Designer.cs">
-      <DependentUpon>VaraustenHallinta.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Yhdista.cs" />
-    <EmbeddedResource Include="asiakkaidenHallinta.resx">
-      <DependentUpon>asiakkaidenHallinta.cs</DependentUpon>
+    <Compile Include="Reservations.cs" />
+    <Compile Include="DBConnection.cs" />
+    <EmbeddedResource Include="ManageClients.resx">
+      <DependentUpon>ManageClients.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HuoneidenHallinta.resx">
-      <DependentUpon>HuoneidenHallinta.cs</DependentUpon>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Kirjautumisikkuna.resx">
-      <DependentUpon>Kirjautumisikkuna.cs</DependentUpon>
+    <EmbeddedResource Include="ManageCLientsForm.resx">
+      <DependentUpon>ManageCLientsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageClientsForm1.resx">
+      <DependentUpon>ManageClientsForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageRoonsForm1.resx">
+      <DependentUpon>ManageRoonsForm1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Paaikkuna.resx">
       <DependentUpon>Paaikkuna.cs</DependentUpon>
@@ -114,11 +125,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ReservationForm.resx">
+      <DependentUpon>ReservationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReservationForm1.resx">
+      <DependentUpon>ReservationForm1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Salasana.resx">
       <DependentUpon>Salasana.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="VaraustenHallinta.resx">
-      <DependentUpon>VaraustenHallinta.cs</DependentUpon>
+    <EmbeddedResource Include="Reservations.resx">
+      <DependentUpon>Reservations.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

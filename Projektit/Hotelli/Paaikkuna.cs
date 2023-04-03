@@ -32,7 +32,7 @@ namespace Hotelli
 
         private void hallitseVarauksiaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            VaraustenHallintaForm vhlomake = new VaraustenHallintaForm();
+            ReservationForm vhlomake = new ReservationForm();
             vhlomake.ShowDialog();
         }
 
