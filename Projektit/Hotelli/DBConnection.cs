@@ -13,7 +13,7 @@ namespace Hotel_System
      */
     class DBConnection
     {
-        private MySqlConnection _connection = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;database=hotel_system");
+        private MySqlConnection _connection = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;database=hotellivarausjarjestelma");
 
         //return connection
         public MySqlConnection GetConnection()
