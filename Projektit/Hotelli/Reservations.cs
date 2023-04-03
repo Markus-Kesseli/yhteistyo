@@ -28,7 +28,7 @@ namespace Hotel_System
         public bool MakeReservation(int number, int client, DateTime dateIn, DateTime dateOut)
         {
             MySqlCommand command = new MySqlCommand();
-            String queryInsert = "INSERT INTO `reservations`(`room_number`, `client_id`, `date_in`, `date_out`) VALUES (@number, @client, @dateIn, @dateOut)";
+            String queryInsert = "INSERT INTO `reservations`(`roomnumber`, `clientid`, `DateIN`, `DateOUT`) VALUES (@number, @client, @dateIn, @dateOut)";
             command.CommandText = queryInsert;
             command.Connection = conn.GetConnection();
 
