@@ -14,7 +14,7 @@ namespace Hotel_System
         //get all roomTypes
         public DataTable RoomTypeList()
         {
-            MySqlCommand command = new MySqlCommand("SELECT * FROM rooms_type", conn.GetConnection());
+            MySqlCommand command = new MySqlCommand("SELECT * FROM type", conn.GetConnection());
             MySqlDataAdapter adapter = new MySqlDataAdapter();
             DataTable table = new DataTable();
 
@@ -42,7 +42,7 @@ namespace Hotel_System
         //get room type id
         public int GetRoomType(int number)
         {
-            MySqlCommand command = new MySqlCommand("SELECT type FROM rooms WHERE number=@number", conn.GetConnection());
+            MySqlCommand command = new MySqlCommand("SELECT type FROM rooms WHERE roomNumber=@number", conn.GetConnection());
             MySqlDataAdapter adapter = new MySqlDataAdapter();
             DataTable table = new DataTable();
 
@@ -57,7 +57,7 @@ namespace Hotel_System
         //set free to NO/YES
         public bool SetRoomFree(int number, String isFree)
         {
-            MySqlCommand command = new MySqlCommand("UPDATE `rooms` SET `free`=@isFree' WHERE `number`=@number", conn.GetConnection());
+            MySqlCommand command = new MySqlCommand("UPDATE `rooms` SET `free`=@isFree' WHERE `roomNumber`=@number", conn.GetConnection());
             MySqlDataAdapter adapter = new MySqlDataAdapter();
             DataTable table = new DataTable();
 
@@ -81,7 +81,7 @@ namespace Hotel_System
         public bool InsertRoom(int number, int type, String phone, String free)
         {
             MySqlCommand command = new MySqlCommand();
-            String queryInsert = "INSERT INTO `rooms`(`number`, `type`, `phone`, `free`) VALUES (@number, @type, @phone, @free)";
+            String queryInsert = "INSERT INTO `rooms`(`roomNumber`, `type`, `phone`, `free`) VALUES (@number, @type, @phone, @free)";
             command.CommandText = queryInsert;
             command.Connection = conn.GetConnection();
 
@@ -121,7 +121,7 @@ namespace Hotel_System
         public bool EditRoom(int number, int type, String phone, String free)
         {
             MySqlCommand command = new MySqlCommand();
-            String queryUpdate = "UPDATE rooms SET type=@type, phone=@phone, free=@free WHERE number=@number";
+            String queryUpdate = "UPDATE rooms SET type=@type, phone=@phone, free=@free WHERE roomNumber=@number";
             command.CommandText = queryUpdate;
             command.Connection = conn.GetConnection();
 
@@ -147,7 +147,7 @@ namespace Hotel_System
         public bool RemoveRoom(int number)
         {
             MySqlCommand command = new MySqlCommand();
-            String queryDelete = "DELETE FROM rooms WHERE number=@number";
+            String queryDelete = "DELETE FROM rooms WHERE roomNumber=@number";
             command.CommandText = queryDelete;
             command.Connection = conn.GetConnection();
 

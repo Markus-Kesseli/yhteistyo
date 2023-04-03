@@ -220,6 +220,7 @@
             this.Controls.Add(this.label1);
             this.Name = "ManageReservationsForm1";
             this.Text = "ReservationForm1";
+            this.Load += new System.EventHandler(this.ManageReservationsForm1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvReservations)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -161,7 +161,7 @@ namespace Hotel_System
                 cbRoomNumber.DisplayMember = "number";
                 cbRoomNumber.ValueMember = "number";
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 //MessageBox.Show(ex.Message, "Room number error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -185,6 +185,11 @@ namespace Hotel_System
             dateTimePickerIN.Value = Convert.ToDateTime(dgvReservations.CurrentRow.Cells[3].Value.ToString());
             dateTimePickerOUT.Value = Convert.ToDateTime(dgvReservations.CurrentRow.Cells[4].Value.ToString());
 
+
+        }
+
+        private void ManageReservationsForm1_Load(object sender, EventArgs e)
+        {
 
         }
     }

@@ -13,29 +13,29 @@ namespace Hotel_System
      */
     class DBConnection
     {
-        private MySqlConnection _connection = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;database=hotellivarausjarjestelma");
+        private MySqlConnection conn = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;database=hotellivarausjarjestelma");
 
         //return connection
         public MySqlConnection GetConnection()
         {
-            return _connection;
+            return conn;
         }
 
         //open connection
         public void OpenConnection()
         {
-            if (_connection.State == ConnectionState.Closed)
+            if (conn.State == ConnectionState.Closed)
             {
-                _connection.Open();
+                conn.Open();
             }
         }
 
         //close connection
         public void CloseConnection()
         {
-            if (_connection.State == ConnectionState.Open)
+            if (conn.State == ConnectionState.Open)
             {
-                _connection.Close();
+                conn.Close();
             }
         }
     }

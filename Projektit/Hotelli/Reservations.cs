@@ -28,7 +28,7 @@ namespace Hotel_System
         public bool MakeReservation(int number, int client, DateTime dateIn, DateTime dateOut)
         {
             MySqlCommand command = new MySqlCommand();
-            String queryInsert = "INSERT INTO `reservations`(`roomnumber`, `clientid`, `DateIN`, `DateOUT`) VALUES (@number, @client, @dateIn, @dateOut)";
+            String queryInsert = "INSERT INTO `reservations`(`roomNumber`, `clientid`, `DateIN`, `DateOUT`) VALUES (@number, @client, @dateIn, @dateOut)";
             command.CommandText = queryInsert;
             command.Connection = conn.GetConnection();
 
@@ -54,7 +54,7 @@ namespace Hotel_System
         public bool EditReservation(int id, int number, int client, DateTime dateIn, DateTime dateOut)
         {
             MySqlCommand command = new MySqlCommand();
-            String queryUpdate = "UPDATE `reservations` SET `room_number`=@number,`client_id`=@client,`date_in`=@dateIn,`date_out`=@dateOut WHERE id=@id";
+            String queryUpdate = "UPDATE `reservations` SET `roomNumber`=@number,`clientid`=@client,`dateIn`=@dateIn,`dateOut`=@dateOut WHERE id=@id";
             command.CommandText = queryUpdate;
             command.Connection = conn.GetConnection();
 
