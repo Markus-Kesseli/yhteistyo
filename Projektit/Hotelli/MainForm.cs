@@ -10,16 +10,15 @@ using System.Windows.Forms;
 
 namespace Hotel_System
 {
-    public partial class MainForm : Form
+    public partial class MainFormClosing : Form
     {
-        public MainForm()
+        public MainFormClosing()
         {
             InitializeComponent();
         }
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
         }
 
         private void manageClientsToolStripMenuItem_Click(object sender, EventArgs e)

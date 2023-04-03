@@ -85,12 +85,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Salasana.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Salasana.Designer.cs">
-      <DependentUpon>Salasana.cs</DependentUpon>
-    </Compile>
     <Compile Include="Reservations.cs" />
     <Compile Include="DBConnection.cs" />
     <EmbeddedResource Include="LoginForm.resx">
@@ -120,9 +114,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ReservationForm1.resx">
       <DependentUpon>ReservationForm1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Salasana.resx">
-      <DependentUpon>Salasana.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reservations.resx">
       <DependentUpon>Reservations.cs</DependentUpon>

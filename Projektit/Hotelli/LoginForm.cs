@@ -42,7 +42,7 @@ namespace Hotel_System
                 {
                     //show the main form
                     this.Hide();
-                    MainForm mainForm = new MainForm();
+                    MainFormClosing mainForm = new MainFormClosing();
                     mainForm.Show();
                 }
                 else
@@ -65,6 +65,11 @@ namespace Hotel_System
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

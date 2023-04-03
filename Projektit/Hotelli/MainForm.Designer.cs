@@ -1,6 +1,6 @@
 ﻿namespace Hotel_System
 {
-    partial class MainForm
+    partial class MainFormClosing
     {
         /// <summary>
         /// Required designer variable.
@@ -44,14 +44,14 @@
             this.manageReservationsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 30);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // manageClientsToolStripMenuItem
             // 
             this.manageClientsToolStripMenuItem.Name = "manageClientsToolStripMenuItem";
-            this.manageClientsToolStripMenuItem.Size = new System.Drawing.Size(121, 24);
+            this.manageClientsToolStripMenuItem.Size = new System.Drawing.Size(121, 26);
             this.manageClientsToolStripMenuItem.Text = "ManageClients";
             // 
             // manageRoomsToolStripMenuItem
@@ -63,18 +63,18 @@
             // manageReservationsToolStripMenuItem
             // 
             this.manageReservationsToolStripMenuItem.Name = "manageReservationsToolStripMenuItem";
-            this.manageReservationsToolStripMenuItem.Size = new System.Drawing.Size(160, 24);
+            this.manageReservationsToolStripMenuItem.Size = new System.Drawing.Size(160, 26);
             this.manageReservationsToolStripMenuItem.Text = "ManageReservations";
             // 
-            // MainForm
+            // MainFormClosing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "MainForm";
-            this.Text = "MainForm";
+            this.Name = "MainFormClosing";
+            this.Text = "MainFormClosing";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

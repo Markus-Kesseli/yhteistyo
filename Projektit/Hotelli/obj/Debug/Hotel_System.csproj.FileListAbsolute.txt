@@ -33,3 +33,4 @@ C:\Users\janik\source\repos\yhteistyo\Projektit\Hotelli\bin\Debug\K4os.Hash.xxHa
 C:\Users\janik\source\repos\yhteistyo\Projektit\Hotelli\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\janik\source\repos\yhteistyo\Projektit\Hotelli\bin\Debug\MySql.Data.xml
 C:\Users\janik\source\repos\yhteistyo\Projektit\Hotelli\obj\Debug\Hotel_System.csproj.CopyComplete
+C:\Users\janik\source\repos\yhteistyo\Projektit\Hotelli\obj\Debug\Hotel_System.MainFormClosing.resources

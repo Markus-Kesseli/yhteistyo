@@ -164,6 +164,7 @@ namespace Hotel_System
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "LoginForm";
             this.Text = "Login Form";
+            this.Load += new System.EventHandler(this.LoginForm_Load);
             this.panel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
