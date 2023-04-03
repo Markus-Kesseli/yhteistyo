@@ -14,7 +14,7 @@ namespace Hotel_System
     {
         public MainForm()
         {
-            initializeComponent();
+            InitializeComponent();
         }
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -24,7 +24,7 @@ namespace Hotel_System
 
         private void manageClientsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ManageClientsForm manageCF = new ManageClientsForm();
+            ManageClientsForm1 manageCF = new ManageClientsForm1();
             manageCF.ShowDialog();
         }
 

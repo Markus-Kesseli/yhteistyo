@@ -65,12 +65,6 @@ namespace Hotel_System
             {
                 MessageBox.Show(ex.Message);
             }
-
-
-
-
         }
-
-
     }
 }

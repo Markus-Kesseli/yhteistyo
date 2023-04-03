@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Hotel_System;
 
 namespace Hotelli
 {
@@ -16,7 +17,7 @@ namespace Hotelli
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Kirjautumisikkuna());
+            Application.Run(new LoginForm());
         }
     }
 }

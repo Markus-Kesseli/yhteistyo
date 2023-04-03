@@ -57,9 +57,6 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManageClients.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="ManageRoonsForm1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,18 +77,11 @@
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManageCLientsForm.cs" />
     <Compile Include="ManageClientsForm1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ManageClientsForm1.Designer.cs">
       <DependentUpon>ManageClientsForm1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Paaikkuna.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Paaikkuna.Designer.cs">
-      <DependentUpon>Paaikkuna.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -103,26 +93,17 @@
     </Compile>
     <Compile Include="Reservations.cs" />
     <Compile Include="DBConnection.cs" />
-    <EmbeddedResource Include="MainForm.resx">
-      <DependentUpon>MainForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ManageClients.resx">
-      <DependentUpon>ManageClients.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ManageCLientsForm.resx">
-      <DependentUpon>ManageCLientsForm.cs</DependentUpon>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManageClientsForm1.resx">
       <DependentUpon>ManageClientsForm1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManageRoonsForm1.resx">
       <DependentUpon>ManageRoonsForm1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Paaikkuna.resx">
-      <DependentUpon>Paaikkuna.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
