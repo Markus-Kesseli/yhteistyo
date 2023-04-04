@@ -19,7 +19,7 @@ namespace Hotel_System
 
         ROOM room = new ROOM();
         Reservation reservation = new Reservation();
-        private void ManageReservationsForm_Load(object sender, EventArgs e)
+        private void ManageReservationsForm1_Load(object sender, EventArgs e)
         {
             //display room's type
             tbClientID.DataSource = room.RoomTypeList();
@@ -185,11 +185,6 @@ namespace Hotel_System
             dateTimePickerIN.Value = Convert.ToDateTime(dgvReservations.CurrentRow.Cells[3].Value.ToString());
             dateTimePickerOUT.Value = Convert.ToDateTime(dgvReservations.CurrentRow.Cells[4].Value.ToString());
 
-
-        }
-
-        private void ManageReservationsForm1_Load(object sender, EventArgs e)
-        {
 
         }
     }
