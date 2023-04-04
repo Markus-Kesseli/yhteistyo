@@ -8,18 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
 namespace Hotel_System
 {
-    public partial class MainFormClosing : Form
+    public partial class MainForm : Form
     {
-        public MainFormClosing()
+        public MainForm()
         {
             InitializeComponent();
         }
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
+            Application.Exit();
         }
 
         private void manageClientsToolStripMenuItem_Click(object sender, EventArgs e)

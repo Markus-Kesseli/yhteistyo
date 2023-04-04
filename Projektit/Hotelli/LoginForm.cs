@@ -42,7 +42,7 @@ namespace Hotel_System
                 {
                     //show the main form
                     this.Hide();
-                    MainFormClosing mainForm = new MainFormClosing();
+                    MainForm mainForm = new MainForm();
                     mainForm.Show();
                 }
                 else
