@@ -184,8 +184,7 @@ namespace Hotel_System
 
             dateTimePickerIN.Value = Convert.ToDateTime(dgvReservations.CurrentRow.Cells[3].Value.ToString());
             dateTimePickerOUT.Value = Convert.ToDateTime(dgvReservations.CurrentRow.Cells[4].Value.ToString());
-
-
         }
+
     }
 }

@@ -53,11 +53,9 @@ namespace Hotel_System
                     MessageBox.Show("ERROR - Client not inserted!", "Client Add", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-
-
         }
 
-        private void ManageClientsForm_Load(object sender, EventArgs e)
+        private void ManageClientsForm1_Load(object sender, EventArgs e)
         {
             dgvClients.DataSource = client.GetAllClients();
         }

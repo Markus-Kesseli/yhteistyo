@@ -623,7 +623,7 @@ namespace WindowsFormsApplication3
                 string money = textBox19.Text;
                 char[] dollars = { '$' };
                 string paymoney = money.TrimStart(dollars);
-                double paymentDue = Convert.ToDouble(money);
+                double paymentDue = Convert.ToDouble(paymoney);
                 double amountPaid = Convert.ToDouble(textBox20.Text);
                 double change = 0;
                 change = amountPaid - paymentDue;

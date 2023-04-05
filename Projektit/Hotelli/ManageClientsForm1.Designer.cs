@@ -199,6 +199,7 @@
             this.Controls.Add(this.btnAdd);
             this.Name = "ManageClientsForm1";
             this.Text = "ManageClientsForm1";
+            this.Load += new System.EventHandler(this.ManageClientsForm1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvClients)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
