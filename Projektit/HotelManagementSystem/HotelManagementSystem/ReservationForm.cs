@@ -65,11 +65,11 @@ namespace HotelManagementSystem
 
                 if (dIn < DateTime.Today)
                 {
-                    MessageBox.Show("Reservation Date In must be today or after", "Invalid date", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Varauspäivän tulee olla tänään tai sen jälkeen", "Virheellinen päivämäärä", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else if (dOut < dIn)
                 {
-                    MessageBox.Show("Reservation Date out must be same date in and after", "Invalid date", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Varauspäivämäärän tulee olla sama päivämäärä ja sen jälkeen", "Invalid date", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
@@ -144,11 +144,11 @@ namespace HotelManagementSystem
 
                 if (dIn < DateTime.Today)
                 {
-                    MessageBox.Show("Reservation Date In must be today or after", "Invalid date", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Varauspäivän tulee olla tänään tai sen jälkeen", "Virheellinen päivämäärä", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else if (dOut < dIn)
                 {
-                    MessageBox.Show("Reservation Date out must be same date in and after", "Invalid date", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Varauspäivämäärän tulee olla sama päivämäärä ja sen jälkeen", "Virheellinen päivämäärä", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {

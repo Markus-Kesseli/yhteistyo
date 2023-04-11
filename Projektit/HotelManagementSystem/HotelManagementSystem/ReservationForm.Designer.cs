@@ -93,6 +93,7 @@
             this.varauksetDG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.varauksetDG.Location = new System.Drawing.Point(297, 11);
             this.varauksetDG.Name = "varauksetDG";
+            this.varauksetDG.RowHeadersWidth = 51;
             this.varauksetDG.Size = new System.Drawing.Size(496, 359);
             this.varauksetDG.TabIndex = 25;
             this.varauksetDG.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.varauksetDG_CellClick);
@@ -101,14 +102,14 @@
             // 
             this.asiakasID.Location = new System.Drawing.Point(154, 78);
             this.asiakasID.Name = "asiakasID";
-            this.asiakasID.Size = new System.Drawing.Size(100, 26);
+            this.asiakasID.Size = new System.Drawing.Size(100, 31);
             this.asiakasID.TabIndex = 21;
             // 
             // varausID
             // 
             this.varausID.Location = new System.Drawing.Point(154, 30);
             this.varausID.Name = "varausID";
-            this.varausID.Size = new System.Drawing.Size(100, 26);
+            this.varausID.Size = new System.Drawing.Size(100, 31);
             this.varausID.TabIndex = 20;
             // 
             // label5
@@ -116,7 +117,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(12, 273);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(78, 16);
+            this.label5.Size = new System.Drawing.Size(101, 21);
             this.label5.TabIndex = 19;
             this.label5.Text = "Lähtöpäivä";
             // 
@@ -126,7 +127,7 @@
             this.label4.Location = new System.Drawing.Point(12, 225);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(71, 16);
+            this.label4.Size = new System.Drawing.Size(92, 21);
             this.label4.TabIndex = 18;
             this.label4.Text = "Tulopäivä";
             // 
@@ -136,7 +137,7 @@
             this.Label3.Location = new System.Drawing.Point(12, 129);
             this.Label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label3.Name = "Label3";
-            this.Label3.Size = new System.Drawing.Size(90, 16);
+            this.Label3.Size = new System.Drawing.Size(115, 21);
             this.Label3.TabIndex = 17;
             this.Label3.Text = "Huonetyyppi";
             // 
@@ -146,7 +147,7 @@
             this.Label2.Location = new System.Drawing.Point(12, 81);
             this.Label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(99, 16);
+            this.Label2.Size = new System.Drawing.Size(128, 21);
             this.Label2.TabIndex = 16;
             this.Label2.Text = "Asiakastunnus";
             // 
@@ -156,7 +157,7 @@
             this.label1.Location = new System.Drawing.Point(12, 33);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 16);
+            this.label1.Size = new System.Drawing.Size(121, 21);
             this.label1.TabIndex = 15;
             this.label1.Text = "Varaustunnus";
             // 
@@ -165,7 +166,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(12, 177);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(75, 16);
+            this.label6.Size = new System.Drawing.Size(95, 21);
             this.label6.TabIndex = 30;
             this.label6.Text = "Huone nro";
             // 
@@ -174,7 +175,7 @@
             this.huonenroCB.FormattingEnabled = true;
             this.huonenroCB.Location = new System.Drawing.Point(154, 172);
             this.huonenroCB.Name = "huonenroCB";
-            this.huonenroCB.Size = new System.Drawing.Size(100, 24);
+            this.huonenroCB.Size = new System.Drawing.Size(100, 29);
             this.huonenroCB.TabIndex = 31;
             // 
             // huonetypeCB
@@ -182,7 +183,7 @@
             this.huonetypeCB.FormattingEnabled = true;
             this.huonetypeCB.Location = new System.Drawing.Point(154, 126);
             this.huonetypeCB.Name = "huonetypeCB";
-            this.huonetypeCB.Size = new System.Drawing.Size(100, 24);
+            this.huonetypeCB.Size = new System.Drawing.Size(100, 29);
             this.huonetypeCB.TabIndex = 32;
             this.huonetypeCB.SelectedIndexChanged += new System.EventHandler(this.huonetypeCB_SelectedIndexChanged);
             // 
@@ -192,7 +193,7 @@
             this.datein.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.datein.Location = new System.Drawing.Point(154, 218);
             this.datein.Name = "datein";
-            this.datein.Size = new System.Drawing.Size(100, 26);
+            this.datein.Size = new System.Drawing.Size(100, 31);
             this.datein.TabIndex = 33;
             // 
             // dateout
@@ -201,13 +202,14 @@
             this.dateout.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateout.Location = new System.Drawing.Point(154, 266);
             this.dateout.Name = "dateout";
-            this.dateout.Size = new System.Drawing.Size(100, 26);
+            this.dateout.Size = new System.Drawing.Size(100, 31);
             this.dateout.TabIndex = 34;
             // 
             // ReservationForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightCoral;
             this.ClientSize = new System.Drawing.Size(805, 383);
             this.Controls.Add(this.dateout);
             this.Controls.Add(this.datein);
