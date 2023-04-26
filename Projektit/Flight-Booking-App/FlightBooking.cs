@@ -36,9 +36,11 @@ namespace FlightBookingProject
             dtpDocIssueDate.Visible = true;
             dtpDocExpiryDate.Visible = true;
         }
+
+        //Tuodaan  näkyville Passport-radiobuttonia klikkaamalla "Passport No" -texbox sekä "Passport Issue Date" ja "Passport Expiry Date" -datetimepickerit 
+
         private void rbPassport_CheckedChanged(object sender, EventArgs e)
         {
-
             makingVisible();
 
             lblDocNo.Text = "Passport No";
@@ -46,10 +48,9 @@ namespace FlightBookingProject
             lblDocExpiryDate.Text = "Passport Expiry Date";
 
         }
-
+        //Tuodaan näkyville identification card-radiobuttonia klikkaamalla "ID Card No" -texbox sekä "ID Card Issue Date" ja "ID Card Expiry Date" -datetimepickerit  
         private void rbIdentify_CheckedChanged(object sender, EventArgs e)
         {
-
             makingVisible();
 
             lblDocNo.Text = "ID Card No";
@@ -58,12 +59,14 @@ namespace FlightBookingProject
             
         }
 
+        //Tuodaan radiobuttonia klikkaamalla "ID Card No", "ID Card Issue Date"  ja "ID Card Expiry Date datetimepickerit näkyville 
         private void btnBook_Click(object sender, EventArgs e)
         {
             if (txtDeparture.Text == "" | txtDestination.Text == "" || txtFirstName.Text == "" || txtLastName.Text == "" || txtDocNo.Text == "")
             {
                 MessageBox.Show("Enter Appropriate Values", "Missing Values");
             }
+            //Ottaa käyttäjän syöttämät arvot sekä tunnistaa live-päivämäärän ja avaa varaustiedot ikkunan sulkien varausikkuna
             else {
                 fullName = txtFirstName.Text + " " + txtLastName.Text;
                 departure = txtDeparture.Text;

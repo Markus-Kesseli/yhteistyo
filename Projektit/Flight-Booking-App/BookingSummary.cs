@@ -18,6 +18,7 @@ namespace FlightBookingProject
         }
 
         private void BookingSummary_Load(object sender, EventArgs e)
+        //Lataa käyttäjän varaustiedot varauksen jälkeen näytölle
         {
             lblFullName.Text = FlightBooking.fullName;
             lblDepart.Text = FlightBooking.departure;
@@ -30,6 +31,7 @@ namespace FlightBookingProject
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //Sulkee varaustenteidot ikkunan ja avaa uuden tyhjän varausikkunan, josta voi tehdä uuden varauksen
             Hide();
             FlightBooking obj = new FlightBooking();
             obj.Show();
