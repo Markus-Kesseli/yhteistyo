@@ -474,7 +474,9 @@ namespace WindowsFormsApplication3
             }
             catch (Exception)
             {
+               
 
+                tabControl1.SelectTab("tabPage2");
             }
          
         }
@@ -643,18 +645,11 @@ namespace WindowsFormsApplication3
                         MessageBox.Show("Please pay your balance");
 
                     }
-
-                    else
-                    {
-                        button8.Enabled = true;
-                    }
-
-
                 }
             }
             catch (Exception)
             {
-
+                button8.Enabled = true;
             }
             
         }
@@ -665,9 +660,10 @@ namespace WindowsFormsApplication3
 
            if (dialog == DialogResult.Yes)
            {
+                
 
-               //Clearing all data
-               checkBox1.Checked = false;
+                //Clearing all data
+                checkBox1.Checked = false;
                checkBox2.Checked = false;
                checkBox3.Checked = false;
                checkBox4.Checked = false;
