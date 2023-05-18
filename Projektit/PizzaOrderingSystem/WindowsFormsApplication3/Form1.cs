@@ -450,9 +450,9 @@ namespace WindowsFormsApplication3
 
             try
             {
-                double total = 0;
-                double hst = 0;
-                double totaldue = 0;
+                double total = 00.00;
+                double hst = 00.00;
+                double totaldue = 00.00;
 
                 foreach (ListViewItem item in listView1.Items)
                 {
