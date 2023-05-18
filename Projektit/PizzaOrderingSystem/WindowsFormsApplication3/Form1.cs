@@ -472,9 +472,9 @@ namespace WindowsFormsApplication3
 
                 tabControl1.SelectTab("tabPage2");
             }
-            catch
+            catch (Exception)
             {
-                
+
             }
          
         }
@@ -624,31 +624,39 @@ namespace WindowsFormsApplication3
             {
                 MessageBox.Show("Please fill in required fields");
             }
-    
-            else
+
+            try
             {
-                string money = textBox19.Text;
-                char[] dollars = { '$' };
-                string paymoney = money.TrimStart(dollars);
-                double paymentDue = Convert.ToDouble(paymoney);
-                double amountPaid = Convert.ToDouble(textBox20.Text);
-                double change = 0;
-                change = amountPaid - paymentDue;
-                textBox21.Text = change.ToString("c2");
-
-                if (change < 0)
+                
                 {
-                    MessageBox.Show("Please pay your balance");
+                    string money = textBox19.Text;
+                    char[] dollars = { '$' };
+                    string paymoney = money.TrimStart(dollars);
+                    double paymentDue = Convert.ToDouble(paymoney);
+                    double amountPaid = Convert.ToDouble(textBox20.Text);
+                    double change = 0;
+                    change = amountPaid - paymentDue;
+                    textBox21.Text = change.ToString("c2");
+
+                    if (change < 0)
+                    {
+                        MessageBox.Show("Please pay your balance");
+
+                    }
+
+                    else
+                    {
+                        button8.Enabled = true;
+                    }
+
 
                 }
-
-                else
-                {
-                    button8.Enabled = true;
-                }
-                  
+            }
+            catch (Exception)
+            {
 
             }
+            
         }
 
         private void button8_Click(object sender, EventArgs e)
