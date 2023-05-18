@@ -1,0 +1,11 @@
+C:\Users\janik\source\repos\yhteistyo\Projektit\PizzaOrderingSystem\WindowsFormsApplication3\bin\Debug\WindowsFormsApplication3.exe.config
+C:\Users\janik\source\repos\yhteistyo\Projektit\PizzaOrderingSystem\WindowsFormsApplication3\bin\Debug\WindowsFormsApplication3.exe
+C:\Users\janik\source\repos\yhteistyo\Projektit\PizzaOrderingSystem\WindowsFormsApplication3\bin\Debug\WindowsFormsApplication3.pdb
+C:\Users\janik\source\repos\yhteistyo\Projektit\PizzaOrderingSystem\WindowsFormsApplication3\obj\Debug\pizzaOrder.csproj.AssemblyReference.cache
+C:\Users\janik\source\repos\yhteistyo\Projektit\PizzaOrderingSystem\WindowsFormsApplication3\obj\Debug\pizzaOrder.csproj.SuggestedBindingRedirects.cache
+C:\Users\janik\source\repos\yhteistyo\Projektit\PizzaOrderingSystem\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.Form1.resources
+C:\Users\janik\source\repos\yhteistyo\Projektit\PizzaOrderingSystem\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.Properties.Resources.resources
+C:\Users\janik\source\repos\yhteistyo\Projektit\PizzaOrderingSystem\WindowsFormsApplication3\obj\Debug\pizzaOrder.csproj.GenerateResource.cache
+C:\Users\janik\source\repos\yhteistyo\Projektit\PizzaOrderingSystem\WindowsFormsApplication3\obj\Debug\pizzaOrder.csproj.CoreCompileInputs.cache
+C:\Users\janik\source\repos\yhteistyo\Projektit\PizzaOrderingSystem\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.exe
+C:\Users\janik\source\repos\yhteistyo\Projektit\PizzaOrderingSystem\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.pdb
