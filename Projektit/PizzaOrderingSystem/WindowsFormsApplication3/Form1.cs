@@ -456,7 +456,7 @@ namespace WindowsFormsApplication3
 
                 foreach (ListViewItem item in listView1.Items)
                 {
-                    total += Convert.ToDouble(item.SubItems[2].Text);
+                    
                 }
 
                 hst = total * 0.13;
@@ -749,6 +749,21 @@ namespace WindowsFormsApplication3
         }
 
         private void tabPage2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox8_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox9_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox10_TextChanged(object sender, EventArgs e)
         {
 
         }
