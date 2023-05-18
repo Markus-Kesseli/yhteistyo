@@ -20,7 +20,7 @@ namespace WindowsFormsApplication3
       
         private void button1_Click_1(object sender, EventArgs e)
         {
-            //Pizza Type Selection Fn1353
+            //Pizzatyypin valinta
 
             if (radioButton1.Checked == true)
             {
@@ -136,7 +136,7 @@ namespace WindowsFormsApplication3
             }
 
 
-            //Pizza Topping Selection
+            //Pizza täytteiden valinta
 
             if (checkBox1.Checked == true)
             {
@@ -265,7 +265,7 @@ namespace WindowsFormsApplication3
         
             }
 
-            //Drink Selection
+            //Juoma valinnat
 
             if (checkBox15.Checked == true)
             {
@@ -382,7 +382,7 @@ namespace WindowsFormsApplication3
                 textBox7.Text = "";
             }
 
-            //Other Items Selection
+            //Muut tuotteet
 
             if (checkBox22.Checked == true)
             {
@@ -494,6 +494,7 @@ namespace WindowsFormsApplication3
             textBox19.Text = textBox10.Text;
         }
 
+        //Lataa formin näytölle
         private void Form1_Load(object sender, EventArgs e)
         {
             radioButton1.Checked = true;
@@ -673,7 +674,7 @@ namespace WindowsFormsApplication3
            {
                 
 
-                //Clearing all data
+                //Poistaa kaiken datan
                 checkBox1.Checked = false;
                checkBox2.Checked = false;
                checkBox3.Checked = false;
@@ -780,4 +781,4 @@ namespace WindowsFormsApplication3
         }
     }
 } 
-//cpfn
+
