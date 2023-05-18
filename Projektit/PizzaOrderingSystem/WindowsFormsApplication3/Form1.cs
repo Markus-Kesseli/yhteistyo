@@ -456,9 +456,11 @@ namespace WindowsFormsApplication3
 
                 foreach (ListViewItem item in listView1.Items)
                 {
-                    
+
+                    total += item.SubItems.Count;
                 }
 
+              
                 hst = total * 0.13;
                 totaldue = hst + total;
 
@@ -501,16 +503,25 @@ namespace WindowsFormsApplication3
             textBox10.Enabled = false;
             textBox19.Enabled = false;
             textBox21.Enabled = false;
-            
-            comboBox1.Items.Add("Alberta");
-            comboBox1.Items.Add("British Columbia");
-            comboBox1.Items.Add("Manitoba");
-            comboBox1.Items.Add("New Brunswick");
-            comboBox1.Items.Add("Newfoundland and Labrador");
-            comboBox1.Items.Add("Ontario");
-            comboBox1.Items.Add("Prince Edward Island");
-            comboBox1.Items.Add("Quebec");
-            comboBox1.Items.Add("Saskatchewan");
+            comboBox1.Items.Add("Ahvenanmaa");
+            comboBox1.Items.Add("Uusimaa");
+            comboBox1.Items.Add("Varsinais-Suomi");
+            comboBox1.Items.Add("Keski-Suomi");
+            comboBox1.Items.Add("Satakunta");
+            comboBox1.Items.Add("Kanta-Häme");
+            comboBox1.Items.Add("Pirkanmaa");
+            comboBox1.Items.Add("Päijät-Häme");
+            comboBox1.Items.Add("Kymenlaakso");
+            comboBox1.Items.Add("Pohjois-Savo");
+            comboBox1.Items.Add("Etelä-Savo");
+            comboBox1.Items.Add("Etelä-Karjala");
+            comboBox1.Items.Add("Pohjois-Karjala");
+            comboBox1.Items.Add("Etelä-Pohjanmaa");
+            comboBox1.Items.Add("Keski-Pohjanmaa");
+            comboBox1.Items.Add("Pohjanmaa");
+            comboBox1.Items.Add("Pohjois-Pohjanmaa");
+            comboBox1.Items.Add("Kainuu");
+            comboBox1.Items.Add("Lappi");
 
             comboBox2.Items.Add("Cash");
             comboBox2.Items.Add("Credit Card");
