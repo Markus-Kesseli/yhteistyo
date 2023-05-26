@@ -10,43 +10,46 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication3
 {
-    public partial class Form1 : Form
+    public partial class Item : Form
     {
-        public Form1()
+        public Item(string nimi, int maara, double hinta)
+
         {
+            this.Nimi = nimi;
+            this.Maara = maara;
+            this.Hinta = hinta;
             InitializeComponent();
         }
 
-      
+        public Item()
+        {
+        }
+
+        public string Nimi { get; set; }
+        public int Maara { get; set; }
+        public double Hinta { get; set; }
+
         private void button1_Click_1(object sender, EventArgs e)
         {
             //Pizzatyypin valinta
-
+            List<Item> ostokset = new List<Item>();
             if (radioButton1.Checked == true)
             {
                 if (radioButton5.Checked == true)
                 {
-                    ListViewItem item = new ListViewItem("Normal Crust Small Pizza");
-                    item.SubItems.Add("1");
-                    item.SubItems.Add("4.00");
-                    listView1.Items.Add(item);
-         
+                    ostokset.Add(new Item("Normal Crust Small Pizza", 1, 4.00));
+
+
                 }
                 else if (radioButton6.Checked == true)
                 {
-                    ListViewItem item = new ListViewItem("Cheesy Crust Small Pizza");
-                    item.SubItems.Add("1");
-                    item.SubItems.Add("4.00");
-                    listView1.Items.Add(item);
-               
+                    ostokset.Add(new Item("Cheesy Crust Small Pizza", 1, 4.00));
+
                 }
                 else if (radioButton7.Checked == true)
                 {
-                    ListViewItem item = new ListViewItem("Sausage Crust Small Pizza");
-                    item.SubItems.Add("1");
-                    item.SubItems.Add("4.00");
-                    listView1.Items.Add(item);
-             
+                    ostokset.Add(new Item("Sausage Crust Small Pizza", 1, 4.00));
+
                 }
 
             }
@@ -55,27 +58,18 @@ namespace WindowsFormsApplication3
             {
                 if (radioButton5.Checked == true)
                 {
-                    ListViewItem item = new ListViewItem("Normal Crust Medium Pizza");
-                    item.SubItems.Add("1");
-                    item.SubItems.Add("7.00");
-                    listView1.Items.Add(item);
-              
+                    ostokset.Add(new Item("Normal Crust medium Pizza", 1, 7.00));
+
                 }
                 else if (radioButton6.Checked == true)
                 {
-                    ListViewItem item = new ListViewItem("Cheesy Crust Medium Pizza");
-                    item.SubItems.Add("1");
-                    item.SubItems.Add("7.00");
-                    listView1.Items.Add(item);
-             
+                    ostokset.Add(new Item("Cheesy Crust Medium Pizza", 1, 7.00));
+
                 }
                 else if (radioButton7.Checked == true)
                 {
-                    ListViewItem item = new ListViewItem("Sausage Crust Medium Pizza");
-                    item.SubItems.Add("1");
-                    item.SubItems.Add("7.00");
-                    listView1.Items.Add(item);
-                
+                    ostokset.Add(new Item("Sausage Crust Medium Pizza", 1, 7.00));
+
                 }
             }
 
@@ -83,27 +77,18 @@ namespace WindowsFormsApplication3
             {
                 if (radioButton5.Checked == true)
                 {
-                    ListViewItem item = new ListViewItem("Normal Crust Large Pizza");
-                    item.SubItems.Add("1");
-                    item.SubItems.Add("10.00");
-                    listView1.Items.Add(item);
-              
+                    ostokset.Add(new Item("Normal Crust Large Pizza", 1, 10.00));
+
                 }
                 else if (radioButton6.Checked == true)
                 {
-                    ListViewItem item = new ListViewItem("Cheesy Crust Large Pizza");
-                    item.SubItems.Add("1");
-                    item.SubItems.Add("10.00");
-                    listView1.Items.Add(item);
-              
+                    ostokset.Add(new Item("Cheesy Crust Large Pizza", 1, 10.00));
+
                 }
                 else if (radioButton7.Checked == true)
                 {
-                    ListViewItem item = new ListViewItem("Sausage Crust Large Pizza");
-                    item.SubItems.Add("1");
-                    item.SubItems.Add("10.00");
-                    listView1.Items.Add(item);
-            
+                    ostokset.Add(new Item("Sausage Crust Large Pizza", 1, 10.00));
+
                 }
             }
 
@@ -111,27 +96,20 @@ namespace WindowsFormsApplication3
             {
                 if (radioButton5.Checked == true)
                 {
-                    ListViewItem item = new ListViewItem("Normal Crust Extra Large Pizza");
-                    item.SubItems.Add("1");
-                    item.SubItems.Add("13.00");
-                    listView1.Items.Add(item);
-            
+                    ostokset.Add(new Item("Normal Crust Extra Large Pizza", 1, 13.00));
+
                 }
                 else if (radioButton6.Checked == true)
                 {
-                    ListViewItem item = new ListViewItem("Cheesy Crust Extra Large Pizza");
-                    item.SubItems.Add("1");
-                    item.SubItems.Add("13.00");
-                    listView1.Items.Add(item);
-               
+                    ostokset.Add(new Item("Cheesy Crust Extra Large Pizza", 1, 13.00));
+
+
                 }
                 else if (radioButton7.Checked == true)
                 {
-                    ListViewItem item = new ListViewItem("Sausage Crust Extra Large Pizza");
-                    item.SubItems.Add("1");
-                    item.SubItems.Add("13.00");
-                    listView1.Items.Add(item);
-              
+                    ostokset.Add(new Item("Sausage Crust Extra Large Pizza", 1, 13.00));
+
+
                 }
             }
 
@@ -144,16 +122,17 @@ namespace WindowsFormsApplication3
                 item.SubItems.Add("");
                 item.SubItems.Add("0.75");
                 listView1.Items.Add(item);
-           
+
+
+
             }
-            
+
             if (checkBox2.Checked == true)
             {
                 ListViewItem item = new ListViewItem("  Extra Cheese Toppings");
                 item.SubItems.Add("");
                 item.SubItems.Add("0.75");
                 listView1.Items.Add(item);
-          
             }
 
             if (checkBox3.Checked == true)
@@ -162,7 +141,7 @@ namespace WindowsFormsApplication3
                 item.SubItems.Add("");
                 item.SubItems.Add("0.75");
                 listView1.Items.Add(item);
-         
+
             }
 
             if (checkBox4.Checked == true)
@@ -171,7 +150,7 @@ namespace WindowsFormsApplication3
                 item.SubItems.Add("");
                 item.SubItems.Add("0.75");
                 listView1.Items.Add(item);
-             
+
             }
 
             if (checkBox5.Checked == true)
@@ -180,7 +159,7 @@ namespace WindowsFormsApplication3
                 item.SubItems.Add("");
                 item.SubItems.Add("0.75");
                 listView1.Items.Add(item);
-            
+
             }
 
             if (checkBox6.Checked == true)
@@ -189,7 +168,7 @@ namespace WindowsFormsApplication3
                 item.SubItems.Add("");
                 item.SubItems.Add("0.75");
                 listView1.Items.Add(item);
-          
+
             }
 
             if (checkBox7.Checked == true)
@@ -198,7 +177,7 @@ namespace WindowsFormsApplication3
                 item.SubItems.Add("");
                 item.SubItems.Add("0.75");
                 listView1.Items.Add(item);
-            
+
             }
 
             if (checkBox8.Checked == true)
@@ -207,7 +186,7 @@ namespace WindowsFormsApplication3
                 item.SubItems.Add("");
                 item.SubItems.Add("0.75");
                 listView1.Items.Add(item);
-       
+
             }
 
             if (checkBox9.Checked == true)
@@ -216,7 +195,7 @@ namespace WindowsFormsApplication3
                 item.SubItems.Add("");
                 item.SubItems.Add("0.75");
                 listView1.Items.Add(item);
-            
+
             }
 
             if (checkBox10.Checked == true)
@@ -225,7 +204,7 @@ namespace WindowsFormsApplication3
                 item.SubItems.Add("");
                 item.SubItems.Add("0.75");
                 listView1.Items.Add(item);
-        
+
             }
 
             if (checkBox11.Checked == true)
@@ -234,7 +213,7 @@ namespace WindowsFormsApplication3
                 item.SubItems.Add("");
                 item.SubItems.Add("0.75");
                 listView1.Items.Add(item);
-              
+
             }
 
             if (checkBox12.Checked == true)
@@ -243,7 +222,7 @@ namespace WindowsFormsApplication3
                 item.SubItems.Add("");
                 item.SubItems.Add("0.75");
                 listView1.Items.Add(item);
-       
+
             }
 
 
@@ -253,7 +232,7 @@ namespace WindowsFormsApplication3
                 item.SubItems.Add("");
                 item.SubItems.Add("0.75");
                 listView1.Items.Add(item);
-           
+
             }
 
             if (checkBox14.Checked == true)
@@ -262,7 +241,7 @@ namespace WindowsFormsApplication3
                 item.SubItems.Add("");
                 item.SubItems.Add("0.75");
                 listView1.Items.Add(item);
-        
+
             }
 
             //Juoma valinnat
@@ -276,7 +255,7 @@ namespace WindowsFormsApplication3
                 string dCost = cost.ToString();
                 item.SubItems.Add(dCost);
                 listView1.Items.Add(item);
-          
+
             }
 
             else
@@ -293,7 +272,7 @@ namespace WindowsFormsApplication3
                 string dCost = cost.ToString();
                 item.SubItems.Add(dCost);
                 listView1.Items.Add(item);
-             
+
             }
 
             else
@@ -310,7 +289,7 @@ namespace WindowsFormsApplication3
                 string dCost = cost.ToString();
                 item.SubItems.Add(dCost);
                 listView1.Items.Add(item);
-              
+
             }
 
             else
@@ -390,7 +369,7 @@ namespace WindowsFormsApplication3
                 item.SubItems.Add("");
                 item.SubItems.Add("3.00");
                 listView1.Items.Add(item);
-          
+
             }
 
             if (checkBox23.Checked == true)
@@ -399,7 +378,7 @@ namespace WindowsFormsApplication3
                 item.SubItems.Add("");
                 item.SubItems.Add("3.00");
                 listView1.Items.Add(item);
-             
+
             }
 
             if (checkBox24.Checked == true)
@@ -408,7 +387,7 @@ namespace WindowsFormsApplication3
                 item.SubItems.Add("");
                 item.SubItems.Add("3.00");
                 listView1.Items.Add(item);
-               
+
             }
 
             if (checkBox25.Checked == true)
@@ -417,7 +396,7 @@ namespace WindowsFormsApplication3
                 item.SubItems.Add("");
                 item.SubItems.Add("3.00");
                 listView1.Items.Add(item);
-          
+
             }
 
             if (checkBox26.Checked == true)
@@ -426,7 +405,7 @@ namespace WindowsFormsApplication3
                 item.SubItems.Add("");
                 item.SubItems.Add("0.00");
                 listView1.Items.Add(item);
-          
+
             }
 
 
@@ -436,7 +415,7 @@ namespace WindowsFormsApplication3
                 item.SubItems.Add("");
                 item.SubItems.Add("0.00");
                 listView1.Items.Add(item);
-              
+
             }
 
             if (checkBox28.Checked == true)
@@ -445,7 +424,7 @@ namespace WindowsFormsApplication3
                 item.SubItems.Add("");
                 item.SubItems.Add("0.00");
                 listView1.Items.Add(item);
-             
+
             }
 
             try
@@ -454,13 +433,13 @@ namespace WindowsFormsApplication3
                 double hst = 00.00;
                 double totaldue = 00.00;
 
-                foreach (ListViewItem item in listView1.Items)
+                foreach (var ostos  in ostokset)
                 {
 
-                    total += item.SubItems.Count;
+                    total += ostos.Hinta;
                 }
 
-              
+
                 hst = total * 0.13;
                 totaldue = hst + total;
 
@@ -476,11 +455,11 @@ namespace WindowsFormsApplication3
             }
             catch (Exception)
             {
-               
+
 
                 tabControl1.SelectTab("tabPage2");
             }
-         
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -533,7 +512,7 @@ namespace WindowsFormsApplication3
 
         }
 
-      
+
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
             char q = e.KeyChar;
@@ -599,7 +578,7 @@ namespace WindowsFormsApplication3
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -641,7 +620,7 @@ namespace WindowsFormsApplication3
 
             try
             {
-                
+
                 {
                     string money = textBox19.Text;
                     char[] dollars = { '$' };
@@ -663,83 +642,83 @@ namespace WindowsFormsApplication3
             {
                 button8.Enabled = true;
             }
-            
+
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-           DialogResult dialog = MessageBox.Show("Thanks for ordering at Pizza Express. Your ordered items will be ready and delivered in 30 minutes. Do you want to order some more?", "Exit", MessageBoxButtons.YesNo);
+            DialogResult dialog = MessageBox.Show("Thanks for ordering at Pizza Express. Your ordered items will be ready and delivered in 30 minutes. Do you want to order some more?", "Exit", MessageBoxButtons.YesNo);
 
-           if (dialog == DialogResult.Yes)
-           {
-                
+            if (dialog == DialogResult.Yes)
+            {
+
 
                 //Poistaa kaiken datan
                 checkBox1.Checked = false;
-               checkBox2.Checked = false;
-               checkBox3.Checked = false;
-               checkBox4.Checked = false;
-               checkBox5.Checked = false;
-               checkBox6.Checked = false;
-               checkBox7.Checked = false;
-               checkBox8.Checked = false;
-               checkBox9.Checked = false;
-               checkBox10.Checked = false;
-               checkBox11.Checked = false;
-               checkBox12.Checked = false;
-               checkBox13.Checked = false;
-               checkBox14.Checked = false;
-               checkBox15.Checked = false;
-               checkBox16.Checked = false;
-               checkBox17.Checked = false;
-               checkBox18.Checked = false;
-               checkBox19.Checked = false;
-               checkBox20.Checked = false;
-               checkBox21.Checked = false;
-               checkBox22.Checked = false;
-               checkBox23.Checked = false;
-               checkBox24.Checked = false;
-               checkBox25.Checked = false;
-               checkBox26.Checked = false;
-               checkBox27.Checked = false;
-               checkBox28.Checked = false;
+                checkBox2.Checked = false;
+                checkBox3.Checked = false;
+                checkBox4.Checked = false;
+                checkBox5.Checked = false;
+                checkBox6.Checked = false;
+                checkBox7.Checked = false;
+                checkBox8.Checked = false;
+                checkBox9.Checked = false;
+                checkBox10.Checked = false;
+                checkBox11.Checked = false;
+                checkBox12.Checked = false;
+                checkBox13.Checked = false;
+                checkBox14.Checked = false;
+                checkBox15.Checked = false;
+                checkBox16.Checked = false;
+                checkBox17.Checked = false;
+                checkBox18.Checked = false;
+                checkBox19.Checked = false;
+                checkBox20.Checked = false;
+                checkBox21.Checked = false;
+                checkBox22.Checked = false;
+                checkBox23.Checked = false;
+                checkBox24.Checked = false;
+                checkBox25.Checked = false;
+                checkBox26.Checked = false;
+                checkBox27.Checked = false;
+                checkBox28.Checked = false;
 
-               textBox1.Text = "";
-               textBox2.Text = "";
-               textBox3.Text = "";
-               textBox4.Text = "";
-               textBox5.Text = "";
-               textBox6.Text = "";
-               textBox7.Text = "";
+                textBox1.Text = "";
+                textBox2.Text = "";
+                textBox3.Text = "";
+                textBox4.Text = "";
+                textBox5.Text = "";
+                textBox6.Text = "";
+                textBox7.Text = "";
 
-               listView1.Items.Clear();
-               textBox8.Text = "";
-               textBox9.Text = "";
-               textBox10.Text = "";
+                listView1.Items.Clear();
+                textBox8.Text = "";
+                textBox9.Text = "";
+                textBox10.Text = "";
 
-               textBox11.Text = "";
-               textBox12.Text = "";
-               textBox13.Text = "";
-               textBox14.Text = "";
-               textBox15.Text = "";
-               textBox16.Text = "";
-               textBox17.Text = "";
-               textBox18.Text = "";
-               textBox19.Text = "";
-               textBox20.Text = "";
-               textBox21.Text = "";
-               comboBox1.Text = "";
-               comboBox2.Text = "";
+                textBox11.Text = "";
+                textBox12.Text = "";
+                textBox13.Text = "";
+                textBox14.Text = "";
+                textBox15.Text = "";
+                textBox16.Text = "";
+                textBox17.Text = "";
+                textBox18.Text = "";
+                textBox19.Text = "";
+                textBox20.Text = "";
+                textBox21.Text = "";
+                comboBox1.Text = "";
+                comboBox2.Text = "";
 
-               tabControl1.SelectTab("tabPage1");
-           }
+                tabControl1.SelectTab("tabPage1");
+            }
 
-           else if(dialog == DialogResult.No)
-           {
-               this.Close();
-           }
-        
-        
+            else if (dialog == DialogResult.No)
+            {
+                this.Close();
+            }
+
+
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
@@ -780,5 +759,4 @@ namespace WindowsFormsApplication3
 
         }
     }
-} 
-
+}
