@@ -20,6 +20,11 @@ namespace WindowsFormsApplication3
             this.Hinta = hinta;
         }
 
+        public Item()
+        {
+            InitializeComponent();
+        }
+
         public string Nimi { get; set; }
         public int Maara { get; set; }
         public double Hinta { get; set; }
@@ -28,12 +33,13 @@ namespace WindowsFormsApplication3
         {
             //Pizzatyypin valinta
             List<Item> ostokset = new List<Item>();
+            
+
             if (radioButton1.Checked == true)
             {
                 if (radioButton5.Checked == true)
                 {
                     ostokset.Add(new Item("Normal Crust Small Pizza", 1, 4.00));
-
 
                 }
                 else if (radioButton6.Checked == true)
@@ -74,6 +80,7 @@ namespace WindowsFormsApplication3
                 {
                     ostokset.Add(new Item("Normal Crust Large Pizza", 1, 10.00));
 
+
                 }
                 else if (radioButton6.Checked == true)
                 {
@@ -92,6 +99,7 @@ namespace WindowsFormsApplication3
                 if (radioButton5.Checked == true)
                 {
                     ostokset.Add(new Item("Normal Crust Extra Large Pizza", 1, 13.00));
+                    
 
                 }
                 else if (radioButton6.Checked == true)
@@ -113,313 +121,160 @@ namespace WindowsFormsApplication3
 
             if (checkBox1.Checked == true)
             {
-                ListViewItem item = new ListViewItem("  Pepperoni Toppings");
-                item.SubItems.Add("");
-                item.SubItems.Add("0.75");
-                listView1.Items.Add(item);
 
-
+                ostokset.Add(new Item("Pepperoni Toppings", 1, 0.75));
 
             }
 
             if (checkBox2.Checked == true)
             {
-                ListViewItem item = new ListViewItem("  Extra Cheese Toppings");
-                item.SubItems.Add("");
-                item.SubItems.Add("0.75");
-                listView1.Items.Add(item);
+                ostokset.Add(new Item("Extra Cheese Toppings", 1, 0.75));
             }
 
             if (checkBox3.Checked == true)
             {
-                ListViewItem item = new ListViewItem("  Mushroom Toppings");
-                item.SubItems.Add("");
-                item.SubItems.Add("0.75");
-                listView1.Items.Add(item);
-
+                ostokset.Add(new Item("Mushroom Toppings", 1, 0.75));
             }
 
             if (checkBox4.Checked == true)
             {
-                ListViewItem item = new ListViewItem("  Ham Toppings");
-                item.SubItems.Add("");
-                item.SubItems.Add("0.75");
-                listView1.Items.Add(item);
-
+                ostokset.Add(new Item("Ham Toppings", 1, 0.75));
             }
 
             if (checkBox5.Checked == true)
             {
-                ListViewItem item = new ListViewItem("  Bacon Toppings");
-                item.SubItems.Add("");
-                item.SubItems.Add("0.75");
-                listView1.Items.Add(item);
-
+                ostokset.Add(new Item("Bacon Toppings", 1, 0.75));
             }
 
             if (checkBox6.Checked == true)
             {
-                ListViewItem item = new ListViewItem("  Ground Beef Toppings");
-                item.SubItems.Add("");
-                item.SubItems.Add("0.75");
-                listView1.Items.Add(item);
-
+                ostokset.Add(new Item("Ground Beef Toppings", 1, 0.75));
             }
 
             if (checkBox7.Checked == true)
             {
-                ListViewItem item = new ListViewItem("  Jalapeno Toppings");
-                item.SubItems.Add("");
-                item.SubItems.Add("0.75");
-                listView1.Items.Add(item);
-
+                ostokset.Add(new Item("Jalapeno Toppings", 1, 0.75));
             }
 
             if (checkBox8.Checked == true)
             {
-                ListViewItem item = new ListViewItem("  Pineapple Toppings");
-                item.SubItems.Add("");
-                item.SubItems.Add("0.75");
-                listView1.Items.Add(item);
+                ostokset.Add(new Item("Pineapple Toppings", 1, 0.75));
 
             }
 
             if (checkBox9.Checked == true)
             {
-                ListViewItem item = new ListViewItem("  Dried Shrimps Toppings");
-                item.SubItems.Add("");
-                item.SubItems.Add("0.75");
-                listView1.Items.Add(item);
-
+                ostokset.Add(new Item("Dried Shrimps Toppings", 1, 0.75));
             }
 
             if (checkBox10.Checked == true)
             {
-                ListViewItem item = new ListViewItem("  Anchovies Toppings");
-                item.SubItems.Add("");
-                item.SubItems.Add("0.75");
-                listView1.Items.Add(item);
-
+                ostokset.Add(new Item("Anchovies Toppings", 1, 0.75));
             }
 
             if (checkBox11.Checked == true)
             {
-                ListViewItem item = new ListViewItem("  Sun Dried Tomatoes Toppings");
-                item.SubItems.Add("");
-                item.SubItems.Add("0.75");
-                listView1.Items.Add(item);
-
+                ostokset.Add(new Item("Sun Dried Tomatoes Toppings", 1, 0.75));
             }
 
             if (checkBox12.Checked == true)
             {
-                ListViewItem item = new ListViewItem("  Spinach Toppings");
-                item.SubItems.Add("");
-                item.SubItems.Add("0.75");
-                listView1.Items.Add(item);
-
+                ostokset.Add(new Item("Spinach Toppings", 1, 0.75));
             }
 
 
             if (checkBox13.Checked == true)
             {
-                ListViewItem item = new ListViewItem("  Roasted Garlic Toppings");
-                item.SubItems.Add("");
-                item.SubItems.Add("0.75");
-                listView1.Items.Add(item);
-
+                ostokset.Add(new Item("Roasted Garlic Toppings", 1, 0.75));
             }
 
             if (checkBox14.Checked == true)
             {
-                ListViewItem item = new ListViewItem("  Shredded Chicken Toppings");
-                item.SubItems.Add("");
-                item.SubItems.Add("0.75");
-                listView1.Items.Add(item);
-
+                ostokset.Add(new Item("Shredded Chicken Toppings", 1, 0.75));
             }
 
             //Juoma valinnat
 
             if (checkBox15.Checked == true)
             {
-                ListViewItem item = new ListViewItem("Coke - Can");
-                item.SubItems.Add(textBox1.Text);
-                int qty = Convert.ToInt32(textBox1.Text);
-                double cost = qty * 1.45;
-                string dCost = cost.ToString();
-                item.SubItems.Add(dCost);
-                listView1.Items.Add(item);
-
-            }
-
-            else
-            {
-                textBox1.Text = "";
+                ostokset.Add(new Item("Coke - Can", 1, 1.45));
             }
 
             if (checkBox16.Checked == true)
             {
-                ListViewItem item = new ListViewItem("Diet Coke - Can");
-                item.SubItems.Add(textBox2.Text);
-                int qty = Convert.ToInt32(textBox2.Text);
-                double cost = qty * 1.45;
-                string dCost = cost.ToString();
-                item.SubItems.Add(dCost);
-                listView1.Items.Add(item);
-
-            }
-
-            else
-            {
-                textBox2.Text = "";
+                ostokset.Add(new Item("Diet Coke - Can", 1, 1.45));
             }
 
             if (checkBox17.Checked == true)
             {
-                ListViewItem item = new ListViewItem("Iced Tea - Can");
-                item.SubItems.Add(textBox3.Text);
-                int qty = Convert.ToInt32(textBox3.Text);
-                double cost = qty * 1.45;
-                string dCost = cost.ToString();
-                item.SubItems.Add(dCost);
-                listView1.Items.Add(item);
+                ostokset.Add(new Item("Iced Tea - Can", 1, 1.45));
 
-            }
-
-            else
-            {
-                textBox3.Text = "";
             }
 
             if (checkBox18.Checked == true)
             {
-                ListViewItem item = new ListViewItem("Ginger Ale - Can");
-                item.SubItems.Add(textBox4.Text);
-                int qty = Convert.ToInt32(textBox4.Text);
-                double cost = qty * 1.45;
-                string dCost = cost.ToString();
-                item.SubItems.Add(dCost);
-                listView1.Items.Add(item);
+                ostokset.Add(new Item("Ginger Ale - Can", 1, 1.45));
             }
 
-            else
-            {
-                textBox4.Text = "";
-            }
 
             if (checkBox19.Checked == true)
             {
-                ListViewItem item = new ListViewItem("Sprite - Can");
-                item.SubItems.Add(textBox5.Text);
-                int qty = Convert.ToInt32(textBox5.Text);
-                double cost = qty * 1.45;
-                string dCost = cost.ToString();
-                item.SubItems.Add(dCost);
-                listView1.Items.Add(item);
-            }
-
-            else
-            {
-                textBox5.Text = "";
+                ostokset.Add(new Item("Diet Coke - Can", 1, 1.45));
             }
 
             if (checkBox20.Checked == true)
             {
-                ListViewItem item = new ListViewItem("Root Beer - Can");
-                item.SubItems.Add(textBox6.Text);
-                int qty = Convert.ToInt32(textBox6.Text);
-                double cost = qty * 1.45;
-                string dCost = cost.ToString();
-                item.SubItems.Add(dCost);
-                listView1.Items.Add(item);
+                ostokset.Add(new Item("Sprite - Can", 1, 1.45));
             }
 
-            else
-            {
-                textBox6.Text = "";
-            }
 
             if (checkBox21.Checked == true)
             {
-                ListViewItem item = new ListViewItem("Bottled Water");
-                item.SubItems.Add(textBox7.Text);
-                int qty = Convert.ToInt32(textBox7.Text);
-                double cost = qty * 1.25;
-                string dCost = cost.ToString();
-                item.SubItems.Add(dCost);
-                listView1.Items.Add(item);
-            }
-
-            else
-            {
-                textBox7.Text = "";
+                ostokset.Add(new Item("Bottled Water", 1, 1.25));
             }
 
             //Muut tuotteet
 
             if (checkBox22.Checked == true)
             {
-                ListViewItem item = new ListViewItem("Chicken Wings");
-                item.SubItems.Add("");
-                item.SubItems.Add("3.00");
-                listView1.Items.Add(item);
+                ostokset.Add(new Item("Chicken Wings", 1, 3.00));
 
             }
 
             if (checkBox23.Checked == true)
             {
-                ListViewItem item = new ListViewItem("Poutine");
-                item.SubItems.Add("");
-                item.SubItems.Add("3.00");
-                listView1.Items.Add(item);
+                ostokset.Add(new Item("Poutine", 1, 3.00));
 
             }
 
             if (checkBox24.Checked == true)
             {
-                ListViewItem item = new ListViewItem("Onion Rings");
-                item.SubItems.Add("");
-                item.SubItems.Add("3.00");
-                listView1.Items.Add(item);
+                ostokset.Add(new Item("Onion Rings", 1, 3.00));
 
             }
 
             if (checkBox25.Checked == true)
             {
-                ListViewItem item = new ListViewItem("Cheesy Garlic Bread");
-                item.SubItems.Add("");
-                item.SubItems.Add("3.00");
-                listView1.Items.Add(item);
+                ostokset.Add(new Item("Cheesy Garlic Bread", 1, 3.00));
 
             }
 
             if (checkBox26.Checked == true)
             {
-                ListViewItem item = new ListViewItem("Garlic Dip");
-                item.SubItems.Add("");
-                item.SubItems.Add("0.00");
-                listView1.Items.Add(item);
+                ostokset.Add(new Item("Garlic Dip", 1, 0.00));
 
             }
 
 
             if (checkBox27.Checked == true)
             {
-                ListViewItem item = new ListViewItem("BBQ Dip");
-                item.SubItems.Add("");
-                item.SubItems.Add("0.00");
-                listView1.Items.Add(item);
+                ostokset.Add(new Item("BBQ Dip", 1, 0.00));
 
             }
 
             if (checkBox28.Checked == true)
             {
-                ListViewItem item = new ListViewItem("Sour Cream Dip");
-                item.SubItems.Add("");
-                item.SubItems.Add("0.00");
-                listView1.Items.Add(item);
-
+                ostokset.Add(new Item("Sour Cream Dip", 1, 0.00));
             }
 
             try
@@ -437,11 +292,13 @@ namespace WindowsFormsApplication3
 
                 hst = total * 0.13;
                 totaldue = hst + total;
+      
 
                 string hstDisplay = hst.ToString("c2");
                 string totalDisplay = totaldue.ToString("c2");
                 string amount = total.ToString("c2");
 
+                
                 textBox8.Text = amount;
                 textBox9.Text = hstDisplay;
                 textBox10.Text = totalDisplay;
@@ -678,13 +535,6 @@ namespace WindowsFormsApplication3
                 checkBox27.Checked = false;
                 checkBox28.Checked = false;
 
-                textBox1.Text = "";
-                textBox2.Text = "";
-                textBox3.Text = "";
-                textBox4.Text = "";
-                textBox5.Text = "";
-                textBox6.Text = "";
-                textBox7.Text = "";
 
                 listView1.Items.Clear();
                 textBox8.Text = "";
@@ -724,34 +574,5 @@ namespace WindowsFormsApplication3
             }
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPage3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPage2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox8_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox9_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox10_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
