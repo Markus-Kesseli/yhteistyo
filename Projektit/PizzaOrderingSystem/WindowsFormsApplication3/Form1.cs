@@ -18,11 +18,6 @@ namespace WindowsFormsApplication3
             this.Nimi = nimi;
             this.Maara = maara;
             this.Hinta = hinta;
-            InitializeComponent();
-        }
-
-        public Item()
-        {
         }
 
         public string Nimi { get; set; }
