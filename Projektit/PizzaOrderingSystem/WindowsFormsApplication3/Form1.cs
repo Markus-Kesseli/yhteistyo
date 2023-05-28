@@ -32,6 +32,7 @@ namespace WindowsFormsApplication3
         private void button1_Click_1(object sender, EventArgs e)
         {
             //Pizzatyypin valinta
+            //Radiobuttonien tarkistus
             List<Item> ostokset = new List<Item>();
             
 
@@ -118,6 +119,7 @@ namespace WindowsFormsApplication3
 
 
             //Pizza täytteiden valinta
+            //Radiobuttonien tarkistus
 
             if (checkBox1.Checked == true)
             {
@@ -194,6 +196,7 @@ namespace WindowsFormsApplication3
             }
 
             //Juoma valinnat
+            //Radiobuttonien tarkistus
 
             if (checkBox15.Checked == true)
             {
@@ -234,6 +237,7 @@ namespace WindowsFormsApplication3
             }
 
             //Muut tuotteet
+            //Radiobuttonien tarkistus
 
             if (checkBox22.Checked == true)
             {
@@ -279,6 +283,7 @@ namespace WindowsFormsApplication3
 
             try
             {
+                //Hinnan laskenta
                 double total = 00.00;
                 double hst = 00.00;
                 double totaldue = 00.00;
@@ -307,8 +312,6 @@ namespace WindowsFormsApplication3
             }
             catch (Exception)
             {
-
-
                 tabControl1.SelectTab("tabPage2");
             }
 
@@ -326,6 +329,7 @@ namespace WindowsFormsApplication3
         }
 
         //Lataa formin näytölle
+        //Maakuntien lisäys
         private void Form1_Load(object sender, EventArgs e)
         {
             radioButton1.Checked = true;
