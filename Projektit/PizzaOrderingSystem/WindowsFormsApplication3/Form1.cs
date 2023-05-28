@@ -34,24 +34,33 @@ namespace WindowsFormsApplication3
             //Pizzatyypin valinta
             //Radiobuttonien tarkistus
             List<Item> ostokset = new List<Item>();
-            
+
 
             if (radioButton1.Checked == true)
             {
                 if (radioButton5.Checked == true)
                 {
                     ostokset.Add(new Item("Normal Crust Small Pizza", 1, 4.00));
-
+                    ListViewItem item = new ListViewItem("Normal Crust Small Pizza");
+                    item.SubItems.Add("1");
+                    item.SubItems.Add("4.00");
+                    listView1.Items.Add(item);
                 }
                 else if (radioButton6.Checked == true)
                 {
                     ostokset.Add(new Item("Cheesy Crust Small Pizza", 1, 4.00));
-
+                    ListViewItem item = new ListViewItem("Cheesy Crust Small Pizza");
+                    item.SubItems.Add("1");
+                    item.SubItems.Add("4.00");
+                    listView1.Items.Add(item);
                 }
                 else if (radioButton7.Checked == true)
                 {
                     ostokset.Add(new Item("Sausage Crust Small Pizza", 1, 4.00));
-
+                    ListViewItem item = new ListViewItem("Sausage Crust Small Pizza");
+                    item.SubItems.Add("1");
+                    item.SubItems.Add("4.00");
+                    listView1.Items.Add(item);
                 }
 
             }
@@ -61,17 +70,26 @@ namespace WindowsFormsApplication3
                 if (radioButton5.Checked == true)
                 {
                     ostokset.Add(new Item("Normal Crust medium Pizza", 1, 7.00));
-
+                    ListViewItem item = new ListViewItem("Normal Crust Medium Pizza");
+                    item.SubItems.Add("1");
+                    item.SubItems.Add("7.00");
+                    listView1.Items.Add(item);
                 }
                 else if (radioButton6.Checked == true)
                 {
                     ostokset.Add(new Item("Cheesy Crust Medium Pizza", 1, 7.00));
-
+                    ListViewItem item = new ListViewItem("Cheesy Crust Medium Pizza");
+                    item.SubItems.Add("1");
+                    item.SubItems.Add("7.00");
+                    listView1.Items.Add(item);
                 }
                 else if (radioButton7.Checked == true)
                 {
                     ostokset.Add(new Item("Sausage Crust Medium Pizza", 1, 7.00));
-
+                    ListViewItem item = new ListViewItem("Sausage Crust Medium Pizza");
+                    item.SubItems.Add("1");
+                    item.SubItems.Add("7.00");
+                    listView1.Items.Add(item);
                 }
             }
 
@@ -80,18 +98,27 @@ namespace WindowsFormsApplication3
                 if (radioButton5.Checked == true)
                 {
                     ostokset.Add(new Item("Normal Crust Large Pizza", 1, 10.00));
-
+                    ListViewItem item = new ListViewItem("Normal Crust Large Pizza");
+                    item.SubItems.Add("1");
+                    item.SubItems.Add("10.00");
+                    listView1.Items.Add(item);
 
                 }
                 else if (radioButton6.Checked == true)
                 {
                     ostokset.Add(new Item("Cheesy Crust Large Pizza", 1, 10.00));
-
+                    ListViewItem item = new ListViewItem("Cheesy Crust Large Pizza");
+                    item.SubItems.Add("1");
+                    item.SubItems.Add("10.00");
+                    listView1.Items.Add(item);
                 }
                 else if (radioButton7.Checked == true)
                 {
                     ostokset.Add(new Item("Sausage Crust Large Pizza", 1, 10.00));
-
+                    ListViewItem item = new ListViewItem("Sausage Crust Large Pizza");
+                    item.SubItems.Add("1");
+                    item.SubItems.Add("10.00");
+                    listView1.Items.Add(item);
                 }
             }
 
@@ -100,19 +127,28 @@ namespace WindowsFormsApplication3
                 if (radioButton5.Checked == true)
                 {
                     ostokset.Add(new Item("Normal Crust Extra Large Pizza", 1, 13.00));
-                    
+                    ListViewItem item = new ListViewItem("Normal Crust Extra Large Pizza");
+                    item.SubItems.Add("1");
+                    item.SubItems.Add("13.00");
+                    listView1.Items.Add(item);
 
                 }
                 else if (radioButton6.Checked == true)
                 {
                     ostokset.Add(new Item("Cheesy Crust Extra Large Pizza", 1, 13.00));
-
+                    ListViewItem item = new ListViewItem("Cheesy Crust Extra Large Pizza");
+                    item.SubItems.Add("1");
+                    item.SubItems.Add("13.00");
+                    listView1.Items.Add(item);
 
                 }
                 else if (radioButton7.Checked == true)
                 {
                     ostokset.Add(new Item("Sausage Crust Extra Large Pizza", 1, 13.00));
-
+                    ListViewItem item = new ListViewItem("Sausage Crust Extra Large Pizza");
+                    item.SubItems.Add("1");
+                    item.SubItems.Add("13.00");
+                    listView1.Items.Add(item);
 
                 }
             }
@@ -125,74 +161,128 @@ namespace WindowsFormsApplication3
             {
 
                 ostokset.Add(new Item("Pepperoni Toppings", 1, 0.75));
-
+                ListViewItem item = new ListViewItem("  Pepperoni Toppings");
+                item.SubItems.Add("");
+                item.SubItems.Add("0.75");
+                listView1.Items.Add(item);
             }
 
             if (checkBox2.Checked == true)
             {
                 ostokset.Add(new Item("Extra Cheese Toppings", 1, 0.75));
+                ListViewItem item = new ListViewItem("  Extra Cheese Toppings");
+                item.SubItems.Add("");
+                item.SubItems.Add("0.75");
+                listView1.Items.Add(item);
             }
 
             if (checkBox3.Checked == true)
             {
                 ostokset.Add(new Item("Mushroom Toppings", 1, 0.75));
+                ListViewItem item = new ListViewItem("  Mushroom Toppings");
+                item.SubItems.Add("");
+                item.SubItems.Add("0.75");
+                listView1.Items.Add(item);
             }
 
             if (checkBox4.Checked == true)
             {
                 ostokset.Add(new Item("Ham Toppings", 1, 0.75));
+                ListViewItem item = new ListViewItem("  Ham Toppings");
+                item.SubItems.Add("");
+                item.SubItems.Add("0.75");
+                listView1.Items.Add(item);
             }
 
             if (checkBox5.Checked == true)
             {
                 ostokset.Add(new Item("Bacon Toppings", 1, 0.75));
+                ListViewItem item = new ListViewItem("  Bacon Toppings");
+                item.SubItems.Add("");
+                item.SubItems.Add("0.75");
+                listView1.Items.Add(item);
             }
 
             if (checkBox6.Checked == true)
             {
                 ostokset.Add(new Item("Ground Beef Toppings", 1, 0.75));
+                ListViewItem item = new ListViewItem("  Ground Beef Toppings");
+                item.SubItems.Add("");
+                item.SubItems.Add("0.75");
+                listView1.Items.Add(item);
             }
 
             if (checkBox7.Checked == true)
             {
                 ostokset.Add(new Item("Jalapeno Toppings", 1, 0.75));
+                ListViewItem item = new ListViewItem("  Jalapeno Toppings");
+                item.SubItems.Add("");
+                item.SubItems.Add("0.75");
+                listView1.Items.Add(item);
             }
 
             if (checkBox8.Checked == true)
             {
                 ostokset.Add(new Item("Pineapple Toppings", 1, 0.75));
-
+                ListViewItem item = new ListViewItem("  Pineapple Toppings");
+                item.SubItems.Add("");
+                item.SubItems.Add("0.75");
+                listView1.Items.Add(item);
             }
 
             if (checkBox9.Checked == true)
             {
                 ostokset.Add(new Item("Dried Shrimps Toppings", 1, 0.75));
+                ListViewItem item = new ListViewItem("  Dried Shrimps Toppings");
+                item.SubItems.Add("");
+                item.SubItems.Add("0.75");
+                listView1.Items.Add(item);
             }
 
             if (checkBox10.Checked == true)
             {
                 ostokset.Add(new Item("Anchovies Toppings", 1, 0.75));
+                ListViewItem item = new ListViewItem("  Anchovies Toppings");
+                item.SubItems.Add("");
+                item.SubItems.Add("0.75");
+                listView1.Items.Add(item);
             }
 
             if (checkBox11.Checked == true)
             {
                 ostokset.Add(new Item("Sun Dried Tomatoes Toppings", 1, 0.75));
+                ListViewItem item = new ListViewItem("  Sun Dried Tomatoes Toppings");
+                item.SubItems.Add("");
+                item.SubItems.Add("0.75");
+                listView1.Items.Add(item);
             }
 
             if (checkBox12.Checked == true)
             {
                 ostokset.Add(new Item("Spinach Toppings", 1, 0.75));
+                ListViewItem item = new ListViewItem("  Spinach Toppings");
+                item.SubItems.Add("");
+                item.SubItems.Add("0.75");
+                listView1.Items.Add(item);
             }
 
 
             if (checkBox13.Checked == true)
             {
                 ostokset.Add(new Item("Roasted Garlic Toppings", 1, 0.75));
+                ListViewItem item = new ListViewItem("  Roasted Garlic Toppings");
+                item.SubItems.Add("");
+                item.SubItems.Add("0.75");
+                listView1.Items.Add(item);
             }
 
             if (checkBox14.Checked == true)
             {
                 ostokset.Add(new Item("Shredded Chicken Toppings", 1, 0.75));
+                ListViewItem item = new ListViewItem("  Shredded Chicken Toppings");
+                item.SubItems.Add("");
+                item.SubItems.Add("0.75");
+                listView1.Items.Add(item);
             }
 
             //Juoma valinnat
@@ -201,39 +291,66 @@ namespace WindowsFormsApplication3
             if (checkBox15.Checked == true)
             {
                 ostokset.Add(new Item("Coke - Can", 1, 1.45));
+                ListViewItem item = new ListViewItem("Coke - Can");
+                item.SubItems.Add("1");
+                item.SubItems.Add("1.45");
+                listView1.Items.Add(item);
             }
 
             if (checkBox16.Checked == true)
             {
                 ostokset.Add(new Item("Diet Coke - Can", 1, 1.45));
+                ListViewItem item = new ListViewItem("Diet Coke - Can");
+                item.SubItems.Add("1");
+                item.SubItems.Add("1.45");
+                listView1.Items.Add(item);
             }
 
             if (checkBox17.Checked == true)
             {
                 ostokset.Add(new Item("Iced Tea - Can", 1, 1.45));
-
+                ListViewItem item = new ListViewItem("Iced Tea - Can");
+                item.SubItems.Add("1");
+                item.SubItems.Add("1.45");
+                listView1.Items.Add(item);
             }
 
             if (checkBox18.Checked == true)
             {
                 ostokset.Add(new Item("Ginger Ale - Can", 1, 1.45));
+                ListViewItem item = new ListViewItem("Ginger Ale - Can");
+                item.SubItems.Add("1");
+                item.SubItems.Add("1.45");
+                listView1.Items.Add(item);
             }
 
 
             if (checkBox19.Checked == true)
             {
-                ostokset.Add(new Item("Diet Coke - Can", 1, 1.45));
+                ostokset.Add(new Item("Sprite - Can", 1, 1.45));
+                ListViewItem item = new ListViewItem("Sprite - Can");
+                item.SubItems.Add("1");
+                item.SubItems.Add("1.45");
+                listView1.Items.Add(item);
             }
 
             if (checkBox20.Checked == true)
             {
-                ostokset.Add(new Item("Sprite - Can", 1, 1.45));
+                ostokset.Add(new Item("Root Beer - Can", 1, 1.45));
+                ListViewItem item = new ListViewItem("Root Beer - Can");
+                item.SubItems.Add("1");
+                item.SubItems.Add("1.45");
+                listView1.Items.Add(item);
             }
 
 
             if (checkBox21.Checked == true)
             {
                 ostokset.Add(new Item("Bottled Water", 1, 1.25));
+                ListViewItem item = new ListViewItem("Bottled Water");
+                item.SubItems.Add("1");
+                item.SubItems.Add("1.25");
+                listView1.Items.Add(item);
             }
 
             //Muut tuotteet
@@ -242,30 +359,49 @@ namespace WindowsFormsApplication3
             if (checkBox22.Checked == true)
             {
                 ostokset.Add(new Item("Chicken Wings", 1, 3.00));
-
+                ListViewItem item = new ListViewItem("Chicken Wings");
+                item.SubItems.Add("1");
+                item.SubItems.Add("3.00");
+                listView1.Items.Add(item);
             }
 
             if (checkBox23.Checked == true)
             {
                 ostokset.Add(new Item("Poutine", 1, 3.00));
+                ListViewItem item = new ListViewItem("Poutine");
+                item.SubItems.Add("1");
+                item.SubItems.Add("3.00");
+                listView1.Items.Add(item);
 
             }
 
             if (checkBox24.Checked == true)
             {
                 ostokset.Add(new Item("Onion Rings", 1, 3.00));
+                ListViewItem item = new ListViewItem("Onion Rings");
+                item.SubItems.Add("1");
+                item.SubItems.Add("3.00");
+                listView1.Items.Add(item);
 
             }
 
             if (checkBox25.Checked == true)
             {
                 ostokset.Add(new Item("Cheesy Garlic Bread", 1, 3.00));
+                ListViewItem item = new ListViewItem("Cheesy Garlic Bread");
+                item.SubItems.Add("1");
+                item.SubItems.Add("3.00");
+                listView1.Items.Add(item);
 
             }
 
             if (checkBox26.Checked == true)
             {
                 ostokset.Add(new Item("Garlic Dip", 1, 0.00));
+                ListViewItem item = new ListViewItem("Garlic Dip");
+                item.SubItems.Add("1");
+                item.SubItems.Add("0.00");
+                listView1.Items.Add(item);
 
             }
 
@@ -273,12 +409,19 @@ namespace WindowsFormsApplication3
             if (checkBox27.Checked == true)
             {
                 ostokset.Add(new Item("BBQ Dip", 1, 0.00));
-
+                ListViewItem item = new ListViewItem("BBQ Dip");
+                item.SubItems.Add("1");
+                item.SubItems.Add("0.00");
+                listView1.Items.Add(item);
             }
 
             if (checkBox28.Checked == true)
             {
                 ostokset.Add(new Item("Sour Cream Dip", 1, 0.00));
+                ListViewItem item = new ListViewItem("Sour Cream Dip");
+                item.SubItems.Add("1");
+                item.SubItems.Add("0.00");
+                listView1.Items.Add(item);
             }
 
             try
